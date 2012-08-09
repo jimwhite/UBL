@@ -1,0 +1,75 @@
+nufusu en fazla olan eyaletin baskenti nedir
+(answer (capital (loc_2 (largest_one (population_1 (state all:e))))))
+
+rhode island aki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid rhode_island:e)))))
+
+hangi eyaletin baskenti salem dir
+(answer (state (loc_1 (capital (cityid salem:e _:e)))))
+
+montana a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid montana:e))))
+
+hangi sehir en cok insana sahiptir
+(answer (largest_one (population_1 (city all:e))))
+
+new hampshire in baskenti nedir
+(answer (capital (loc_2 (stateid new_hampshire:e))))
+
+seattle washington in nufusu nedir
+(answer (population_1 (cityid seattle:e wa:e)))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+maine in baskenti nedir
+(answer (capital (loc_2 (stateid maine:e))))
+
+rhode island da ne kadar insan yasamaktadir
+(answer (population_1 (stateid rhode_island:e)))
+
+birlesik devletler deki en alcak nokta nedir
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+new mexico de en yuksek yukselti nedir
+(answer (highest (place (loc_2 (stateid new_mexico:e)))))
+
+missouri nehrinin uzunlugu ne kadardir
+(answer (len (riverid missouri:e)))
+
+arizona a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid arizona:e))))
+
+mississippi ni ne kadar uzunluktadir
+(answer (len (riverid mississippi:e)))
+
+utah da hangi nehirler vardir
+(answer (river (loc_2 (stateid utah:e))))
+
+hangi eyaletin en cok eyalete siniri vardir
+(answer (most (state (next_to_2 (state all:e)))))
+
+baskenti des moines olan eyaletin en yuksek noktasi nedir
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid des_moines:e _:e))))))))
+
+texas en kadar buyuktur
+(answer (size (stateid texas:e)))
+
+new york taki nehirler nelerdir
+(answer (river (loc_2 (stateid new_york:e))))
+
+hangi eyaletlerde austin sehri vardir
+(answer (state (loc_1 (city (cityid austin:e _:e)))))
+
+usa deki en kisa nehir nedir
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+delaware a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid delaware:e))))
+
+dallas in nufusu nedir
+(answer (population_1 (cityid dallas:e _:e)))
+
+oregon nun nufusu nedir
+(answer (population_1 (stateid oregon:e)))
+

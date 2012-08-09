@@ -1,0 +1,75 @@
+que es la poblacion de tempe arizona
+(population:i tempe_az:c)
+
+donde esta el punto mas bajo en iowa
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 iowa:s)) (elevation:i $1)) $0))
+
+que es el punto mas alto en los usa
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+por cuales estados corre el mississippi
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+cuantos ciudadanos en alabama
+(population:i alabama:s)
+
+que rios mayores corren por illinois
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 illinois:s)))
+
+que es la ciudad mas grande
+(argmax $0 (city:t $0) (size:i $0))
+
+que es la ciudad mas pequena en los usa
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+cuales estados bordean a new jersey
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_jersey:s)))
+
+cuanto tiene de largo el rio rio grande
+(len:i rio_grande_river:r)
+
+cuales rios corren por alaska
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+cuantas personas viven en austin
+(population:i austin_tx:c)
+
+que es la capital de georgia
+(capital:c georgia:s)
+
+que es la ciudad mas grande en louisiana
+(argmax $0 (and (city:t $0) (loc:t $0 louisiana:s)) (size:i $0))
+
+que tan grande esta alaska
+(size:i alaska:s)
+
+que es el rio mas largo en los united states
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+que es el rio mas corto en los us
+(argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+que es la capital de new jersey
+(capital:c new_jersey:s)
+
+cuales estados tienen ciudades con el nombre dallas
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 dallas:n) (loc:t $1 $0)))))
+
+cuantas personas viven en new york
+(population:i new_york:s)
+
+que es la densidad de poblacion de el estado mas pequeno
+(density:i (argmin $0 (state:t $0) (size:i $0)))
+
+cuantas ciudades hay en montana
+(count $0 (and (city:t $0) (loc:t $0 montana:s)))
+
+que es la poblacion de san antonio
+(population:i san_antonio_tx:c)
+
+que es el punto mas bajo en nebraska en metros
+(argmin $0 (and (place:t $0) (loc:t $0 nebraska:s)) (elevation:i $0))
+
+por cuales estados corre el missouri
+(lambda $0 e (and (state:t $0) (loc:t missouri_river:r $0)))
+

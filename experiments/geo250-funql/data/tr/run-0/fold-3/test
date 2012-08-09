@@ -1,0 +1,75 @@
+missouri nehri hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid missouri:e))))
+
+kac tane baslica nehir ohio dan gecer
+(answer (count (major (river (traverse_2 (stateid ohio:e))))))
+
+mississippi nehri hangi eyaletlerden gecmektedir
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+rhode island daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid rhode_island:e)))))
+
+texas daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid texas:e)))))
+
+california daki en alcak nokta nerededir
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+illinois nun nufusu nedir
+(answer (population_1 (stateid illinois:e)))
+
+usa deki en buyuk sehir nedir
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+texas in baslica sehirleri nelerdir
+(answer (major (city (loc_2 (stateid texas:e)))))
+
+colorado daki butun nehirlerin isimlerini ver
+(answer (river (loc_2 (stateid colorado:e))))
+
+usa deki en kisa nehirin uzunlugu nedir
+(answer (len (shortest (river (loc_2 (countryid usa:e))))))
+
+ohio nehrinin uzunlugu ne kadardir
+(answer (len (riverid ohio:e)))
+
+hangi eyalet en uzun nehre sahiptir
+(answer (state (loc_1 (longest (river all:e)))))
+
+iowa in baskenti nedir
+(answer (capital (loc_2 (stateid iowa:e))))
+
+washington da kac tane nehir vardir
+(answer (count (river (loc_2 (stateid washington:e)))))
+
+texas daki nehirler nelerdir
+(answer (river (loc_2 (stateid texas:e))))
+
+nufus bakimindan en buyuk eyalet baskenti nedir
+(answer (largest_one (population_1 (capital_1 (state all:e)))))
+
+oklahoma ya siniri olan en kalabalik eyalet nedir
+(answer (largest_one (population_1 (state (next_to_2 (stateid oklahoma:e))))))
+
+wisconsin nin yuzolcumu nedir
+(answer (area_1 (stateid wisconsin:e)))
+
+hangi eyaletin en cok eyalete siniri vardir
+(answer (most (state (next_to_2 (state all:e)))))
+
+alaska daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid alaska:e)))))
+
+wisconsin deki en genis sehir nedir
+(answer (largest (city (loc_2 (stateid wisconsin:e)))))
+
+washington in baskenti nedir
+(answer (capital (loc_2 (stateid washington:e))))
+
+kansas daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid kansas:e)))))
+
+ohio nehri hangi eyaletlerin icinden gecer
+(answer (state (traverse_1 (riverid ohio:e))))
+

@@ -1,0 +1,180 @@
+how many cities are there in us
+(answer (count (city (loc_2 (countryid usa:e)))))
+
+how many people live in the capital of georgia
+(answer (population_1 (capital (loc_2 (stateid georgia:e)))))
+
+how many big cities are in pennsylvania
+(answer (count (major (city (loc_2 (stateid pennsylvania:e))))))
+
+what rivers run through the state with the lowest point in the usa
+(answer (river (traverse_2 (state (loc_1 (lowest (place (loc_2 (countryid usa:e)))))))))
+
+how many citizens in boulder
+(answer (population_1 (cityid boulder:e _:e)))
+
+what is the population of the major cities in wisconsin
+(answer (population_1 (major (city (loc_2 (stateid wisconsin:e))))))
+
+how many rivers are there in texas
+(answer (count (river (loc_2 (stateid texas:e)))))
+
+where is the lowest point in the us
+(answer (loc_1 (lowest (place (loc_2 (countryid usa:e))))))
+
+what is the combined population of all 50 states
+(answer (sum (population_1 (state all:e))))
+
+how long is the missouri river
+(answer (len (riverid missouri:e)))
+
+what is the highest point in wyoming
+(answer (highest (place (loc_2 (stateid wyoming:e)))))
+
+what is the area of idaho
+(answer (area_1 (stateid idaho:e)))
+
+what state has the smallest population density
+(answer (smallest_one (density_1 (state all:e))))
+
+how many states are there in united states
+(answer (count (state (loc_2 (countryid usa:e)))))
+
+what is the population of rhode island
+(answer (population_1 (stateid rhode_island:e)))
+
+what is the capital of the state with the highest elevation
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e)))))))
+
+what is the largest state bordering texas
+(answer (largest (state (next_to_2 (stateid texas:e)))))
+
+what is the population in boston
+(answer (population_1 (cityid boston:e _:e)))
+
+what cities are located in pennsylvania
+(answer (city (loc_2 (stateid pennsylvania:e))))
+
+what texas city has the largest population
+(answer (largest_one (population_1 (city (loc_2 (stateid texas:e))))))
+
+what is the height of the highest point in the usa
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e))))))
+
+where is the lowest spot in iowa
+(answer (loc_1 (lowest (place (loc_2 (stateid iowa:e))))))
+
+what is the capital of the state texas
+(answer (capital (loc_2 (stateid texas:e))))
+
+what is the highest point in the us
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+what is the population of texas
+(answer (population_1 (stateid texas:e)))
+
+which state has the least population density
+(answer (smallest_one (density_1 (state all:e))))
+
+what is the tallest mountain in america
+(answer (highest (mountain (loc_2 (countryid usa:e)))))
+
+what states have a city named austin
+(answer (state (loc_1 (city (cityid austin:e _:e)))))
+
+what is the lowest elevation in pennsylvania
+(answer (lowest (place (loc_2 (stateid pennsylvania:e)))))
+
+how many people live in san francisco
+(answer (population_1 (cityid san_francisco:e _:e)))
+
+what are the rivers in the state of texas
+(answer (river (loc_2 (stateid texas:e))))
+
+what state that borders texas is the largest
+(answer (largest (state (next_to_2 (stateid texas:e)))))
+
+what are the major cities in the largest state
+(answer (major (city (loc_2 (largest (state all:e))))))
+
+how many citizens in alabama
+(answer (population_1 (stateid alabama:e)))
+
+what state has highest elevation
+(answer (state (loc_1 (highest (place all:e)))))
+
+what is the population of illinois
+(answer (population_1 (stateid illinois:e)))
+
+what is the population of atlanta ga
+(answer (population_1 (cityid atlanta:e ga:e)))
+
+what is the capital of texas
+(answer (capital (loc_2 (stateid texas:e))))
+
+what states border missouri
+(answer (state (next_to_2 (stateid missouri:e))))
+
+what is the population of maine
+(answer (population_1 (stateid maine:e)))
+
+what state has the most cities
+(answer (most (state (loc_1 (city all:e)))))
+
+what is the size of california
+(answer (size (stateid california:e)))
+
+what are the major cities in the states through which the major river in virginia runs
+(answer (major (city (loc_2 (state (traverse_1 (major (river (loc_2 (stateid virginia:e))))))))))
+
+how many cities named austin are there in the usa
+(answer (count (intersection (city (cityid austin:e :e)) (loc_2 (countryid usa:e)))))
+
+what river is the longest one in the united states
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+of the states washed by the mississippi river which has the lowest point
+(answer (state (loc_1 (lowest (place (loc_2 (state (traverse_1 (riverid mississippi:e)))))))))
+
+what is the longest river in america
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+what is the capital of indiana
+(answer (capital (loc_2 (stateid indiana:e))))
+
+which states does not border texas
+(answer (exclude (state all:e) (next_to_2 (stateid texas:e))))
+
+what states have no bordering state
+(answer (exclude (state all:e) (next_to_2 (state all:e))))
+
+what states border states that the mississippi runs through
+(answer (state (next_to_2 (state (traverse_1 (riverid mississippi:e))))))
+
+what is the population of arizona
+(answer (population_1 (stateid arizona:e)))
+
+what is the area of the smallest state
+(answer (area_1 (smallest (state all:e))))
+
+what is the area of texas
+(answer (area_1 (stateid texas:e)))
+
+what is the city with the smallest population
+(answer (smallest_one (population_1 (city all:e))))
+
+what is the largest state that borders the state with the highest population
+(answer (largest (state (next_to_2 (largest_one (population_1 (state all:e)))))))
+
+where is mount whitney
+(answer (loc_1 (placeid mount_whitney:e)))
+
+how big is alaska
+(answer (size (stateid alaska:e)))
+
+what states border states that border colorado
+(answer (state (next_to_2 (state (next_to_2 (stateid colorado:e))))))
+
+how many states does the mississippi river run through
+(answer (count (state (traverse_1 (riverid mississippi:e)))))
+

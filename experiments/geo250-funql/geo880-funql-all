@@ -1,0 +1,4271 @@
+0:
+en: give me the cities in virginia
+zh: weijiniya zhou you shenme chengshi
+(answer (city (loc_2 (stateid virginia:e)))) 
+
+1:
+en: what are the high points of states surrounding mississippi
+tr: mississippi yi saran eyaletlerin yuksek noktalari nelerdir
+ja: mishishippi no mawari ni aru shuu no takai chiten wa nan desu ka
+es: que son los puntos altos de los estados rodeando a mississippi
+(answer (high_point_1 (state (next_to_2 (stateid mississippi:e))))) 
+
+2:
+en: name the rivers in arkansas
+tr: arkansas daki nehirlerin isimlerini ver
+ja: aakansaa no kawa wo agete kudasai
+es: nombra los rios en arkansas
+(answer (river (loc_2 (stateid arkansas:e)))) 
+
+3:
+en: name all the rivers in colorado
+(answer (river (loc_2 (stateid colorado:e)))) 
+
+4:
+en: can you tell me the capital of texas
+(answer (capital (loc_2 (stateid texas:e)))) 
+
+5:
+en: could you tell me what is the highest point in the state of oregon
+(answer (highest (place (loc_2 (stateid oregon:e)))))
+
+6:
+en: count the states which have elevations lower than what alabama has
+(answer (count (state (low_point_2 (lower_2 (low_point_1 (stateid alabama:e)))))))
+
+7:
+en: give me all the states of usa
+(answer (state (loc_2 (countryid usa:e)))) 
+
+8:
+en: give me the cities in texas
+(answer (city (loc_2 (stateid texas:e)))) 
+
+9:
+en: give me the cities in usa
+(answer (city (loc_2 (countryid usa:e)))) 
+
+10:
+en: give me the cities in virginia
+tr: virginia daki sehirlerin isimlerini ver
+ja: baajinia no toshi wa nan desu ka
+es: dame las ciudades en virginia
+(answer (city (loc_2 (stateid virginia:e)))) 
+
+11:
+en: give me the cities which are in texas
+(answer (city (loc_2 (stateid texas:e)))) 
+
+12:
+en: give me the lakes in california
+(answer (lake (loc_2 (stateid california:e)))) 
+
+13:
+en: give me the largest state
+tr: en genis eyaletin ismini ver
+ja: mottomo ookii shuu wa nan desu ka
+es: dame el estado mas grande
+(answer (largest (state all:e))) 
+
+14:
+en: give me the longest river that passes through the us
+(answer (longest (river (traverse_2 (countryid usa:e))))) 
+
+15:
+en: give me the number of rivers in california
+(answer (count (river (loc_2 (stateid california:e))))) 
+
+16:
+en: give me the states that border utah
+(answer (state (next_to_2 (stateid utah:e)))) 
+
+17:
+en: how big is alaska
+(answer (size (stateid alaska:e))) 
+
+18:
+en: how big is massachusetts
+(answer (size (stateid massachusetts:e))) 
+
+19:
+en: how big is new mexico
+(answer (size (stateid new_mexico:e))) 
+
+20:
+en: how big is north dakota
+(answer (size (stateid north_dakota:e))) 
+
+21:
+en: how big is texas
+tr: texas en kadar buyuktur
+ja: tekisasu no okisa wa nan desu ka
+es: que tamano esta texas
+(answer (size (stateid texas:e))) 
+
+22:
+en: how big is the city of new york
+(answer (size (cityid new_york:e _:e)))
+
+23:
+en: how high are the highest points of all the states
+(answer (elevation_1 (highest (place (loc_2 (state all:e)))))) 
+
+24:
+en: how high is guadalupe peak
+(answer (elevation_1 (placeid guadalupe_peak:e))) 
+
+25:
+en: how high is mount mckinley
+(answer (elevation_1 (placeid mount_mckinley:e))) 
+
+26:
+en: how high is the highest point in america
+tr: amerika daki en yuksek nokta ne kadar yuksektir
+ja: amerika no mottomo takai chiten no takasa wa nan desu ka
+es: que tan alto esta el punto mas alto en america
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e)))))) 
+
+27:
+en: how high is the highest point in montana
+tr: montana daki en yuksek nokta ne kadar yuksektir
+ja: montana no mottomo takai chiten no takasa wa desu ka
+es: que tan alto esta el punto mas alto en montana
+(answer (elevation_1 (highest (place (loc_2 (stateid montana:e)))))) 
+
+28:
+en: how high is the highest point in the largest state
+(answer (elevation_1 (highest (place (loc_2 (largest (state all:e))))))) 
+
+29:
+en: how high is the highest point of alabama
+(answer (elevation_1 (highest (place (loc_2 (stateid alabama:e)))))) 
+
+30:
+en: how high is the highest point of delaware
+(answer (elevation_1 (highest (place (loc_2 (stateid delaware:e)))))) 
+
+31:
+en: how high is the highest point of florida
+(answer (elevation_1 (highest (place (loc_2 (stateid florida:e)))))) 
+
+32:
+en: how high is the highest point of louisiana
+(answer (elevation_1 (highest (place (loc_2 (stateid louisiana:e)))))) 
+
+33:
+en: how large is alaska
+tr: alaska ne kadar genisliktedir
+ja: arasuka no ookisa wa dore gurai desu ka
+es: que tan grande esta alaska
+(answer (size (stateid alaska:e))) 
+
+34:
+en: how large is texas
+tr: texas ne kadar genistir
+ja: tekisasu no ookisa wa nan desu ka
+es: que tan grande esta texas
+(answer (size (stateid texas:e))) 
+
+35:
+en: how large is the largest city in alaska
+tr: alaska daki en genis sehirin genisligi ne kadardir
+ja: arasuka no mottomo ookii toshi wa nan desu ka
+es: que tan grande esta la ciudad mas grande en alaska
+(answer (size (largest (city (loc_2 (stateid alaska:e)))))) 
+
+36:
+en: how long is rio grande
+(answer (len (riverid rio_grande:e))) 
+
+37:
+en: how long is the colorado river
+tr: colorado nehrinin uzunlugu ne kadardir
+ja: kororado kawa no nagasa wa dore gurai desu ka
+es: que tan largo esta el rio colorado
+(answer (len (riverid colorado:e)))
+
+38:
+en: how long is the delaware river
+tr: delaware nehrinin uzunlugu ne kadardir
+ja: derawaru kawa no nagasa wa dore gurai desu ka
+es: que tan largo esta el rio delaware
+(answer (len (riverid delaware:e)))
+
+39:
+en: how long is the longest river in california
+(answer (len (longest (river (loc_2 (stateid california:e)))))) 
+
+40:
+en: how long is the longest river in the usa
+(answer (len (longest (river (loc_2 (countryid usa:e)))))) 
+
+41:
+en: how long is the mississippi
+tr: mississippi nehrinin uzunlugu ne kadardir
+ja: mishishippi kawa no nagasa wa dore gurai desu ka
+es: que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e)))
+
+42:
+en: how long is the mississippi river
+tr: mississippi nehrinin uzunlugu ne kadardir
+ja: mishishippi kawa no nagasa wa dore gurai desu ka
+es: que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e)))
+
+43:
+en: how long is the mississippi river in miles
+(answer (len (riverid mississippi:e)))
+
+44:
+en: how long is the missouri river
+tr: missouri nehrinin uzunlugu ne kadardir
+ja: mizuuri kawa no nagasa wa dore gurai desu ka
+es: que tan largo esta el rio missouri
+(answer (len (riverid missouri:e)))
+
+45:
+en: how long is the north platte river
+tr: north platte nehrinin uzunlugu ne kadardir
+ja: noosu puratte kawa no nagasa wa dore gurai desu ka
+es: que tan largo esta el rio north platte
+(answer (len (riverid north_platte:e)))
+
+46:
+en: how long is the ohio river
+tr: ohio nehrinin uzunlugu ne kadardir
+ja: ohaio kawa no nagasa wa dore gurai desu ka
+es: que tan largo esta el rio ohio
+(answer (len (riverid ohio:e)))
+
+47:
+en: how long is the rio grande river
+tr: rio grande nehrinin uzunlugu ne kadardir
+ja: rio gurande kawa no nagasa wa dore gurai desu ka
+es: cuanto tiene de largo el rio rio grande
+(answer (len (riverid rio_grande:e)))
+
+48:
+en: how long is the shortest river in the usa
+tr: usa deki en kisa nehirin uzunlugu nedir
+ja: amerika no mottomo mijikai kawa no nagasa wa dore gurai desu ka
+es: cuanto tiene de largo el rio mas corto en los usa
+(answer (len (shortest (river (loc_2 (countryid usa:e)))))) 
+
+49:
+en: how many big cities are in pennsylvania
+(answer (count (major (city (loc_2 (stateid pennsylvania:e)))))) 
+
+50:
+en: how many capitals does rhode island have
+(answer (count (capital (loc_2 (stateid rhode_island:e))))) 
+
+51:
+en: how many cities are in louisiana
+(answer (count (city (loc_2 (stateid louisiana:e))))) 
+
+52:
+en: how many cities are in montana
+tr: montana da kac tane sehir vardir
+ja: montana ni wa toshi ga ikutsu arimasu ka
+es: cuantas ciudades hay en montana
+(answer (count (city (loc_2 (stateid montana:e))))) 
+
+53:
+en: how many cities are there in the united states
+(answer (count (city (loc_2 (countryid usa:e))))) 
+
+54:
+en: how many cities are there in the us
+tr: us de kac tane sehir vardir
+ja: beikoku ni wa toshi ga ikutsu arimasu ka
+es: cuantas ciudades hay en los us
+(answer (count (city (loc_2 (countryid usa:e))))) 
+
+55:
+en: how many cities are there in us
+(answer (count (city (loc_2 (countryid usa:e))))) 
+
+56:
+en: how many cities are there in usa
+(answer (count (city (loc_2 (countryid usa:e))))) 
+
+57:
+en: how many cities does texas have
+(answer (count (city (loc_2 (stateid texas:e))))) 
+
+58:
+en: how many cities does the usa have
+(answer (count (city (loc_2 (countryid usa:e))))) 
+
+59:
+en: how many cities named austin are there in the usa
+(answer (count (intersection (city (cityid austin:e :e)) (loc_2 (countryid usa:e))))) 
+
+60:
+en: how many citizens does the biggest city have in the usa
+(answer (population_1 (largest (city all:e)))) 
+
+61:
+en: how many citizens in alabama
+tr: alabama da kac tane vatandas vardir
+ja: arabama ni wa nannin no shuumin ga imasu ka
+es: cuantos ciudadanos en alabama
+(answer (population_1 (stateid alabama:e))) 
+
+62:
+en: how many citizens in boulder
+(answer (population_1 (cityid boulder:e _:e))) 
+
+63:
+en: how many citizens live in california
+tr: california da ne kadar vatandas yasamaktadir
+ja: karifuorunia ni wa nannin no shuumin ga sumimasu ka
+es: cuantos ciudadanos viven en california
+(answer (population_1 (stateid california:e))) 
+
+64:
+en: how many colorado rivers are there
+(answer (count (riverid colorado:e)))
+
+65:
+en: how many inhabitants does montgomery have
+(answer (population_1 (cityid montgomery:e _:e))) 
+
+66:
+en: how many major cities are in arizona
+(answer (count (major (city (loc_2 (stateid arizona:e)))))) 
+
+67:
+en: how many major cities are in florida
+tr: florida da baslica kac tane sehir vardir
+ja: furorida no ookina toshi wa nankasho desu ka
+es: cuantas ciudades mayores hay en florida
+(answer (count (major (city (loc_2 (stateid florida:e)))))) 
+
+68:
+en: how many major cities are in states bordering nebraska
+(answer (count (major (city (loc_2 (state (next_to_2 (stateid nebraska:e)))))))) 
+
+69:
+en: how many major cities are in states bordering utah
+(answer (count (major (city (loc_2 (state (next_to_2 (stateid utah:e)))))))) 
+
+70:
+en: how many major cities are in texas
+(answer (count (major (city (loc_2 (stateid texas:e)))))) 
+
+71:
+en: how many major cities are there
+(answer (count (major (city all:e)))) 
+
+72:
+en: how many major cities are there in oregon
+(answer (count (major (city (loc_2 (stateid oregon:e)))))) 
+
+73:
+en: how many major rivers cross ohio
+tr: kac tane baslica nehir ohio dan gecer
+ja: okina kawa wa ohaio wo oodan ikutsu shimasu ka
+es: cuantos rios mayores cruzan ohio
+(answer (count (major (river (traverse_2 (stateid ohio:e)))))) 
+
+74:
+en: how many people are in the state of nevada
+(answer (population_1 (stateid nevada:e)))
+
+75:
+en: how many people are there in iowa
+(answer (population_1 (stateid iowa:e))) 
+
+76:
+en: how many people are there in new york
+(answer (population_1 (stateid new_york:e))) 
+
+77:
+en: how many people in boulder
+(answer (population_1 (cityid boulder:e _:e))) 
+
+78:
+en: how many people live in austin
+tr: austin da ne kadar insan yasamaktadir
+ja: ausuchin ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en austin
+(answer (population_1 (cityid austin:e _:e))) 
+
+79:
+en: how many people live in austin texas
+(answer (population_1 (cityid austin:e tx:e))) 
+
+80:
+en: how many people live in california
+tr: california da ne kadar insan yasamaktadir
+ja: karifuorunia ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en california
+(answer (population_1 (stateid california:e))) 
+
+81:
+en: how many people live in chicago
+(answer (population_1 (cityid chicago:e _:e))) 
+
+82:
+en: how many people live in detroit
+(answer (population_1 (cityid detroit:e _:e))) 
+
+83:
+en: how many people live in hawaii
+tr: hawaii da ne kadar insan yasamaktadir
+ja: hawai ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en hawaii
+(answer (population_1 (stateid hawaii:e))) 
+
+84:
+en: how many people live in houston
+(answer (population_1 (cityid houston:e _:e))) 
+
+85:
+en: how many people live in kalamazoo
+tr: kalamazoo da ne kadar insan yasamaktadir
+ja: karamazuu ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en kalamazoo
+(answer (population_1 (cityid kalamazoo:e _:e))) 
+
+86:
+en: how many people live in kansas
+(answer (population_1 (stateid kansas:e))) 
+
+87:
+en: how many people live in minneapolis minnesota
+tr: minneapolis minnesota da ne kadar insan yasamaktadir
+ja: minesota no mineaporisu ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en minneapolis minnesota
+(answer (population_1 (cityid minneapolis:e mn:e))) 
+
+88:
+en: how many people live in mississippi
+(answer (population_1 (stateid mississippi:e))) 
+
+89:
+en: how many people live in montana
+(answer (population_1 (stateid montana:e))) 
+
+90:
+en: how many people live in new hampshire
+(answer (population_1 (stateid new_hampshire:e))) 
+
+91:
+en: how many people live in new mexico
+(answer (population_1 (stateid new_mexico:e))) 
+
+92:
+en: how many people live in new york
+tr: new york da ne kadar insan yasamaktadir
+ja: nyuu yooku ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en new york
+(answer (population_1 (stateid new_york:e))) 
+
+93:
+en: how many people live in rhode island
+tr: rhode island da ne kadar insan yasamaktadir
+ja: roodoairando ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en rhode island
+(answer (population_1 (stateid rhode_island:e))) 
+
+94:
+en: how many people live in riverside
+tr: riverside da ne kadar insan yasamaktadir
+ja: ribaasaido ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en riverside
+(answer (population_1 (cityid riverside:e _:e))) 
+
+95:
+en: how many people live in san francisco
+(answer (population_1 (cityid san_francisco:e _:e))) 
+
+96:
+en: how many people live in south dakota
+(answer (population_1 (stateid south_dakota:e))) 
+
+97:
+en: how many people live in spokane washington
+tr: spokane washington da ne kadar insan yasamaktadir
+ja: washinton no supoken ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en spokane washington
+(answer (population_1 (cityid spokane:e wa:e))) 
+
+98:
+en: how many people live in texas
+(answer (population_1 (stateid texas:e))) 
+
+99:
+en: how many people live in the biggest city in new york state
+(answer (population_1 (largest (city (loc_2 (stateid new_york:e))))))
+
+100:
+en: how many people live in the capital of georgia
+(answer (population_1 (capital (loc_2 (stateid georgia:e))))) 
+
+101:
+en: how many people live in the capital of texas
+tr: texas in baskentinde ne kadar insan yasamaktadir
+ja: tekisasu no shuto ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en la capital de texas
+(answer (population_1 (capital (loc_2 (stateid texas:e))))) 
+
+102:
+en: how many people live in the smallest state bordering wyoming
+(answer (population_1 (smallest (state (next_to_2 (stateid wyoming:e)))))) 
+
+103:
+en: how many people live in the state with the largest population density
+(answer (population_1 (largest_one (density_1 (state all:e))))) 
+
+104:
+en: how many people live in the united states
+(answer (population_1 (countryid usa:e))) 
+
+105:
+en: how many people live in washington
+tr: washington da ne kadar insan yasamaktadir
+ja: washinton ni wa nannin no hito ga sumimasu ka
+es: cuantas personas viven en washington
+(answer (population_1 (stateid washington:e))) 
+
+106:
+en: how many people live in washington dc
+(answer (population_1 (cityid washington:e dc:e))) 
+
+107:
+en: how many people lived in austin
+(answer (population_1 (cityid austin:e _:e))) 
+
+108:
+en: how many people reside in utah
+(answer (population_1 (stateid utah:e))) 
+
+109:
+en: how many people stay in utah
+(answer (population_1 (stateid utah:e))) 
+
+110:
+en: how many residents live in texas
+(answer (population_1 (stateid texas:e))) 
+
+111:
+en: how many rivers are called colorado
+(answer (count (riverid colorado:e)))
+
+112:
+en: how many rivers are found in colorado
+(answer (count (river (loc_2 (stateid colorado:e))))) 
+
+113:
+en: how many rivers are in colorado
+tr: colorado da kac tane nehir vardir
+ja: kororado ni wa kawa ga ikutsu arimasu ka
+es: cuantos rios hay en colorado
+(answer (count (river (loc_2 (stateid colorado:e))))) 
+
+114:
+en: how many rivers are in iowa
+(answer (count (river (loc_2 (stateid iowa:e))))) 
+
+115:
+en: how many rivers are in missouri
+(answer (count (river (loc_2 (stateid missouri:e))))) 
+
+116:
+en: how many rivers are in new york
+tr: new york da kac tane nehir vardir
+ja: nyuu yooku ni wa kawa ga ikutsu arimasu ka
+es: cuantos rios hay en new york
+(answer (count (river (loc_2 (stateid new_york:e))))) 
+
+117:
+en: how many rivers are in the state that has the most rivers
+(answer (count (river (loc_2 (most (state (loc_1 (river all:e)))))))) 
+
+118:
+en: how many rivers are in the state with the highest point
+(answer (count (river (loc_2 (state (loc_1 (highest (place all:e)))))))) 
+
+119:
+en: how many rivers are in the state with the largest population
+(answer (count (river (loc_2 (largest_one (population_1 (state all:e))))))) 
+
+120:
+en: how many rivers are there in idaho
+tr: idaho da kac tane nehir vardir
+ja: aidahou ni wa kawa ga ikutsu arimasu ka
+es: cuantos rios hay en idaho
+(answer (count (river (loc_2 (stateid idaho:e))))) 
+
+121:
+en: how many rivers are there in texas
+(answer (count (river (loc_2 (stateid texas:e))))) 
+
+122:
+en: how many rivers are there in us
+(answer (count (river (loc_2 (countryid usa:e))))) 
+
+123:
+en: how many rivers do not traverse the state with the capital albany
+(answer (count (exclude (river al:e) (traverse_2 (state (loc_1 (capital (cityid albany:e _:e)))))))) 
+
+124:
+en: how many rivers does alaska have
+tr: alaska nun kac tane nehri vardir
+ja: arasuka wa kawa ga ikutsu arimasu ka
+es: cuantos rios tiene alaska
+(answer (count (river (loc_2 (stateid alaska:e))))) 
+
+125:
+en: how many rivers does colorado have
+tr: colorado nun kac tane nehri vardir
+ja: kororado wa kawa ga ikutsu arimasu ka
+es: cuantos rios tiene colorado
+(answer (count (river (loc_2 (stateid colorado:e))))) 
+
+126:
+en: how many rivers in texas are longer than the red
+(answer (count (intersection (river (loc_2 (stateid texas:e))) (longer (riverid red:e))))) 
+
+127:
+en: how many rivers in washington
+tr: washington da kac tane nehir vardir
+ja: washinton ni wa kawa ga ikutsu arimasu ka
+es: cuantos rios en washington
+(answer (count (river (loc_2 (stateid washington:e))))) 
+
+128:
+en: how many rivers run through texas
+(answer (count (river (traverse_2 (stateid texas:e))))) 
+
+129:
+en: how many rivers run through the states bordering colorado
+(answer (count (river (traverse_2 (state (next_to_2 (stateid colorado:e))))))) 
+
+130:
+en: how many square kilometers in the us
+tr: us kac kilometrekaredir
+ja: beikoku ni wa heihou kiromeetaa wa ikutsu arimasu ka
+es: cuantos kilometros cuadrados en los us
+(answer (area_1 (countryid usa:e))) 
+
+131:
+en: how many states are in the united states
+(answer (count (state (loc_2 (countryid usa:e))))) 
+
+132:
+en: how many states are in the usa
+(answer (count (state (loc_2 (countryid usa:e))))) 
+
+133:
+en: how many states are next to major rivers
+(answer (count (state (next_to_2 (major (river all:e)))))) 
+
+134:
+en: how many states are there
+(answer (count (state all:e))) 
+
+135:
+en: how many states are there in the usa
+(answer (count (state (loc_2 (countryid usa:e))))) 
+
+136:
+en: how many states are there in united states
+(answer (count (state (loc_2 (countryid usa:e))))) 
+
+137:
+en: how many states border alaska
+(answer (count (state (next_to_2 (stateid alaska:e))))) 
+
+138:
+en: how many states border at least one other state
+(answer (count (state (next_to_2 (state all:e))))) 
+
+139:
+en: how many states border colorado and border new mexico
+(answer (count (state (intersection (next_to_2 (stateid colorado:e)) (next_to_2 (stateid new_mexico:e)))))) 
+
+140:
+en: how many states border hawaii
+(answer (count (state (next_to_2 (stateid hawaii:e))))) 
+
+141:
+en: how many states border iowa
+(answer (count (state (next_to_2 (stateid iowa:e))))) 
+
+142:
+en: how many states border on the state whose capital is boston
+(answer (count (state (next_to_2 (state (loc_1 (capital (cityid boston:e _:e)))))))) 
+
+143:
+en: how many states border tennessee
+(answer (count (state (next_to_2 (stateid tennessee:e))))) 
+
+144:
+en: how many states border texas
+(answer (count (state (next_to_2 (stateid texas:e))))) 
+
+145:
+en: how many states border the largest state
+(answer (count (state (next_to_2 (largest (state all:e)))))) 
+
+146:
+en: how many states border the mississippi river
+(answer (count (state (next_to_2 (riverid mississippi:e)))))
+
+147:
+en: how many states border the state that borders the most states
+(answer (count (state (next_to_2 (most (state (next_to_2 (state all:e)))))))) 
+
+148:
+en: how many states border the state with the largest population
+(answer (count (state (next_to_2 (largest_one (population_1 (state all:e))))))) 
+
+149:
+en: how many states do not have rivers
+(answer (count (exclude (state al:e) (loc_1 (river all:e))))) 
+
+150:
+en: how many states does iowa border
+(answer (count (state (next_to_1 (stateid iowa:e))))) 
+
+151:
+en: how many states does missouri border
+(answer (count (state (next_to_1 (stateid missouri:e))))) 
+
+152:
+en: how many states does tennessee border
+(answer (count (state (next_to_1 (stateid tennessee:e))))) 
+
+153:
+en: how many states does the colorado river flow through
+(answer (count (state (traverse_1 (riverid colorado:e)))))
+
+154:
+en: how many states does the colorado river run through
+tr: colorado nehri kac eyaletin icinden gecer
+ja: kororado kawa wa ikutsu no shuu wo nagarete imasu ka
+es: por cuantos estados corre el rio colorado
+(answer (count (state (traverse_1 (riverid colorado:e))))) 
+
+155:
+en: how many states does the mississippi river run through
+tr: mississippi nehri kac tane eyaletten gecmektedir
+ja: mishishippi kawa wa ikutsu no shuu wo nagarete imasu ka
+es: por cuantos estados corre el rio mississippi
+(answer (count (state (traverse_1 (riverid mississippi:e))))) 
+
+156:
+en: how many states does the mississippi run through
+(answer (count (state (traverse_1 (riverid mississippi:e)))))
+
+157:
+en: how many states does the missouri river run through
+(answer (count (state (traverse_1 (riverid missouri:e))))) 
+
+158:
+en: how many states does usa have
+(answer (count (state (loc_2 (countryid usa:e))))) 
+
+159:
+en: how many states have a city called rochester
+(answer (count (state (loc_1 (city (cityid rochester:e _:e)))))) 
+
+160:
+en: how many states have a city named springfield
+(answer (count (state (loc_1 (city (cityid springfield:e _:e)))))) 
+
+161:
+en: how many states have a higher point than the highest point of the state with the largest capital city in the us
+(answer (count (state (loc_1 (place (higher_2 (highest (place (loc_2 (state (loc_1 (largest (capital (city (loc_2 (countryid usa:e)))))))))))))))) 
+
+162:
+en: how many states have cities named austin
+(answer (count (state (loc_1 (city (cityid austin:e _:e)))))) 
+
+163:
+en: how many states have cities or towns named springfield
+(answer (count (state (loc_1 (city (cityid springfield:e _:e)))))) 
+
+164:
+en: how many states have major rivers
+(answer (count (state (loc_1 (major (river all:e)))))) 
+
+165:
+en: how many states in the us does the shortest river run through
+(answer (count (intersection (state (loc_2 (countryid usa:e))) (traverse_1 (shortest (river all:e)))))) 
+
+166:
+en: how much population does texas have
+(answer (population_1 (stateid texas:e))) 
+
+167:
+en: how tall is mount mckinley
+(answer (elevation_1 (placeid mount_mckinley:e))) 
+
+168:
+en: how tall is the highest point in montana
+(answer (elevation_1 (highest (place (loc_2 (stateid montana:e)))))) 
+
+169:
+en: in what state is mount mckinley
+(answer (state (loc_1 (placeid mount_mckinley:e)))) 
+
+170:
+en: in which state does the highest point in usa exist
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e))))))) 
+
+171:
+en: in which state is rochester
+(answer (state (loc_1 (cityid rochester:e _:e)))) 
+
+172:
+en: iowa borders how many states
+(answer (count (state (next_to_1 (stateid iowa:e))))) 
+
+173:
+en: list the states
+(answer (state all:e)) 
+
+174:
+en: name all the lakes of us
+(answer (lake (loc_2 (countryid usa:e)))) 
+
+175:
+en: name all the rivers in colorado
+tr: colorado daki butun nehirlerin isimlerini ver
+ja: kororado no kawa wo zenbu agete kudasai
+es: nombra todos los rios en colorado
+(answer (river (loc_2 (stateid colorado:e)))) 
+
+176:
+en: name the 50 capitals in the usa
+(answer (capital (loc_2 (countryid usa:e)))) 
+
+177:
+en: name the longest river in us
+(answer (longest (river (loc_2 (countryid usa:e))))) 
+
+178:
+en: name the major lakes in michigan
+(answer (major (lake (loc_2 (stateid michigan:e))))) 
+
+179:
+en: name the major rivers in florida
+(answer (major (river (loc_2 (stateid florida:e))))) 
+
+180:
+en: name the rivers in arkansas
+(answer (river (loc_2 (stateid arkansas:e)))) 
+
+181:
+en: name the states which have no surrounding states
+(answer (exclude (state al:e) (next_to_2 (state all:e)))) 
+
+182:
+en: number of citizens in boulder
+(answer (population_1 (cityid boulder:e _:e))) 
+
+183:
+en: number of people in boulder
+(answer (population_1 (cityid boulder:e _:e))) 
+
+184:
+en: number of states bordering iowa
+(answer (count (state (next_to_2 (stateid iowa:e))))) 
+
+185:
+en: of the states washed by the mississippi river which has the lowest point
+(answer (state (loc_1 (lowest (place (loc_2 (state (traverse_1 (riverid mississippi:e))))))))) 
+
+186:
+en: people in boulder
+(answer (population_1 (cityid boulder:e _:e))) 
+
+187:
+en: population of boulder
+(answer (population_1 (cityid boulder:e _:e))) 
+
+188:
+en: rivers in new york
+tr: new york taki nehirler nelerdir
+ja: nyuu yooku no kawa ka
+es: rios en new york
+(answer (river (loc_2 (stateid new_york:e)))) 
+
+189:
+en: sacramento is the capital of which state
+(answer (state (loc_1 (capital (cityid sacramento:e _:e))))) 
+
+190:
+en: san antonio is in what state
+(answer (state (loc_1 (cityid san_antonio:e _:e)))) 
+
+191:
+en: show major cities in colorado
+(answer (major (city (loc_2 (stateid colorado:e))))) 
+
+192:
+en: show me all the major lakes in the us
+(answer (major (lake (loc_2 (countryid usa:e))))) 
+
+193:
+en: state the state with the largest area
+(answer (largest_one (area_1 (state all:e)))) 
+
+194:
+en: states bordering iowa
+(answer (state (next_to_2 (stateid iowa:e)))) 
+
+195:
+en: tell me what cities are in texas
+(answer (city (loc_2 (stateid texas:e)))) 
+
+196:
+en: through which states does the longest river in texas run
+(answer (state (traverse_1 (longest (river (loc_2 (stateid texas:e))))))) 
+
+197:
+en: through which states does the mississippi flow
+(answer (state (traverse_1 (riverid mississippi:e)))) 
+
+198:
+en: through which states does the mississippi run
+tr: mississippi nehrinin hangi eyaletlerden gecer
+ja: mishishippi kawa wa dono shuu wo nagarete imasu ka
+es: por cuales estados corre el mississippi
+(answer (state (traverse_1 (riverid mississippi:e)))) 
+
+199:
+en: what are all the rivers in texas
+tr: texas daki nehirler nelerdir
+ja: tekisasu no kawa wa nani zenbu desu ka
+es: que son todos los rios en texas
+(answer (river (loc_2 (stateid texas:e)))) 
+
+200:
+en: what are major rivers in texas
+(answer (major (river (loc_2 (stateid texas:e))))) 
+
+201:
+en: what are the biggest rivers in texas
+(answer (longest (river (loc_2 (stateid texas:e))))) 
+
+202:
+en: what are the capital cities of the states which border texas
+(answer (capital (city (loc_2 (state (next_to_2 (stateid texas:e))))))) 
+
+203:
+en: what is the capital city in texas
+(answer (capital (city (loc_2 (stateid texas:e))))) 
+
+204:
+en: what are the capitals of states that border missouri
+(answer (capital (loc_2 (state (next_to_2 (stateid missouri:e)))))) 
+
+205:
+en: what are the capitals of the states that border texas
+(answer (capital (loc_2 (state (next_to_2 (stateid texas:e)))))) 
+
+206:
+en: what are the cities in california
+(answer (city (loc_2 (stateid california:e)))) 
+
+207:
+en: what are the cities in states through which the mississippi runs
+(answer (city (loc_2 (state (traverse_1 (riverid mississippi:e)))))) 
+
+208:
+en: what are the cities of the state with the highest point
+(answer (city (loc_2 (state (loc_1 (highest (place all:e))))))) 
+
+209:
+en: what are the highest points of all the states
+(answer (highest (place (loc_2 (state all:e))))) 
+
+210:
+en: what are the highest points of states surrounding mississippi
+(answer (highest (place (loc_2 (state (next_to_2 (stateid mississippi:e))))))) 
+
+211:
+en: what are the lakes in states bordering texas
+(answer (lake (loc_2 (state (next_to_2 (stateid texas:e)))))) 
+
+212:
+en: what are the largest cities in the states that border the largest state
+(answer (largest (city (loc_2 (state (next_to_2 (largest (state all:e)))))))) 
+
+213:
+en: what are the major cities in alabama
+(answer (major (city (loc_2 (stateid alabama:e))))) 
+
+214:
+en: what are the major cities in alaska
+tr: alaska daki baslica sehirler nelerdir
+ja: arasuka ni wa donna daitoshi ga arimasu ka
+es: que son las ciudades mayores en alaska
+(answer (major (city (loc_2 (stateid alaska:e))))) 
+
+215:
+en: what are the major cities in california
+tr: california daki baslica sehirler nelerdir
+ja: karifuorunia no ookina toshi wa nan desu ka
+es: que son las ciudades mayores en california
+(answer (major (city (loc_2 (stateid california:e))))) 
+
+216:
+en: what are the major cities in delaware
+(answer (major (city (loc_2 (stateid delaware:e))))) 
+
+217:
+en: what are the major cities in kansas
+tr: kansas daki baslica sehirler nelerdir
+ja: kanzasu no ookina toshi wa nan desu ka
+es: que son las ciudades mayores en kansas
+(answer (major (city (loc_2 (stateid kansas:e))))) 
+
+218:
+en: what are the major cities in missouri
+(answer (major (city (loc_2 (stateid missouri:e))))) 
+
+219:
+en: what are the major cities in new mexico
+(answer (major (city (loc_2 (stateid new_mexico:e))))) 
+
+220:
+en: what are the major cities in new york
+(answer (major (city (loc_2 (stateid new_york:e))))) 
+
+221:
+en: what are the major cities in north carolina
+(answer (major (city (loc_2 (stateid north_carolina:e))))) 
+
+222:
+en: what are the major cities in ohio
+tr: ohio daki baslica sehirler nelerdir
+ja: ohaio ni wa donna daitoshi ga arimasu ka
+es: que son las ciudades mayores en ohio
+(answer (major (city (loc_2 (stateid ohio:e))))) 
+
+223:
+en: what are the major cities in oklahoma
+tr: oklahoma daki baslica sehirler nelerdir
+ja: okurahoma ni wa donna daitoshi ga arimasu ka
+es: que son las ciudades mayores en oklahoma
+(answer (major (city (loc_2 (stateid oklahoma:e))))) 
+
+224:
+en: what are the major cities in rhode island
+tr: rhode island daki baslica sehirler nelerdir
+ja: roodoairando ni wa donna daitoshi ga arimasu ka
+es: que son las ciudades mayores en rhode island
+(answer (major (city (loc_2 (stateid rhode_island:e))))) 
+
+225:
+en: what are the major cities in states through which the mississippi runs
+(answer (major (city (loc_2 (state (traverse_1 (riverid mississippi:e))))))) 
+
+226:
+en: what are the major cities in texas
+tr: texas daki baslica sehirler nelerdir
+ja: tekisasu ni wa donna daitoshi ga arimasu ka
+es: que son las ciudades mayores en texas
+(answer (major (city (loc_2 (stateid texas:e))))) 
+
+227:
+en: what are the major cities in the largest state
+(answer (major (city (loc_2 (largest (state all:e)))))) 
+
+228:
+en: what are the major cities in the smallest state in the us
+(answer (major (city (loc_2 (smallest (state (loc_2 (countryid usa:e)))))))) 
+
+229:
+en: what are the major cities in the state of california
+(answer (major (city (loc_2 (stateid california:e)))))
+
+230:
+en: what are the major cities in the states through which the major river in virginia runs
+(answer (major (city (loc_2 (state (traverse_1 (major (river (loc_2 (stateid virginia:e)))))))))) 
+
+231:
+en: what are the major cities in the usa
+(answer (major (city (loc_2 (countryid usa:e))))) 
+
+232:
+en: what are the major cities in vermont
+(answer (major (city (loc_2 (stateid vermont:e))))) 
+
+233:
+en: what are the major cities in wyoming
+tr: wyoming daki baslica sehirler nelerdir
+ja: waiomingu ni wa donna daitoshi ga arimasu ka
+es: que son las ciudades mayores en wyoming
+(answer (major (city (loc_2 (stateid wyoming:e))))) 
+
+234:
+en: what are the major cities of texas
+tr: texas in baslica sehirleri nelerdir
+ja: tekisasu no ookina toshi wa nan desu ka
+es: que son las ciudades mayores de texas
+(answer (major (city (loc_2 (stateid texas:e))))) 
+
+235:
+en: what are the major cities of the united states
+(answer (major (city (loc_2 (countryid usa:e))))) 
+
+236:
+en: what are the major cities of the us
+(answer (major (city (loc_2 (countryid usa:e))))) 
+
+237:
+en: what are the major lakes in united states
+(answer (major (lake (loc_2 (countryid usa:e))))) 
+
+238:
+en: what are the major rivers in ohio
+tr: ohio daki baslica nehirler nelerdir
+ja: ohaio no ookina kawa wa nan desu ka
+es: que son los rios mayores en ohio
+(answer (major (river (loc_2 (stateid ohio:e))))) 
+
+239:
+en: what are the major rivers in the us
+(answer (major (river (loc_2 (countryid usa:e))))) 
+
+240:
+en: what are the names of the major cities in illinois
+(answer (major (city (loc_2 (stateid illinois:e))))) 
+
+241:
+en: what are the neighboring states for michigan
+(answer (state (next_to_2 (stateid michigan:e)))) 
+
+242:
+en: what are the population densities of each us state
+(answer (density_1 (state all:e))) 
+
+243:
+en: what is the population of mississippi
+(answer (population_1 (stateid mississippi:e))) 
+
+244:
+en: what are the populations of all the major cities in montana
+(answer (population_1 (major (city (loc_2 (stateid montana:e)))))) 
+
+245:
+en: what are the populations of states through which the mississippi river runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+246:
+en: what are the populations of states through which the mississippi river runs
+tr: mississippi nehrinin icinden gectigi eyaletlerin nufuslari nelerdir
+ja: mishishippi kawa ga nagareru shuu no jinkou wa ikura desu ka
+es: que son las poblaciones de los estados por cual corre el rio mississippi
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+247:
+en: what are the populations of states through which the mississippi runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+248:
+en: what are the populations of states through which the mississippi runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+249:
+en: what are the populations of states which border texas
+(answer (population_1 (state (next_to_2 (stateid texas:e))))) 
+
+250:
+en: what are the populations of the major cities of texas
+(answer (population_1 (major (city (loc_2 (stateid texas:e)))))) 
+
+251:
+en: what are the populations of the states through which the mississippi river runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+252:
+en: what are the populations of the states through which the mississippi river runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+253:
+en: what are the populations of the states through which the mississippi runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+254:
+en: what are the populations of the states through which the mississippi runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e))))) 
+
+255:
+en: what are the rivers in alaska
+tr: alaska daki nehirler nelerdir
+ja: arasuka no kawa wa nan desu ka
+es: cuales son los rios en alaska
+(answer (river (loc_2 (stateid alaska:e)))) 
+
+256:
+en: what are the rivers in the state of indiana
+(answer (river (loc_2 (stateid indiana:e))))
+
+257:
+en: what are the rivers in the state of texas
+(answer (river (loc_2 (stateid texas:e)))) 
+
+258:
+en: what are the rivers of montana
+(answer (river (loc_2 (stateid montana:e)))) 
+
+259:
+en: what are the states
+(answer (state all:e)) 
+
+260:
+en: what are the states that border the state with the greatest population
+(answer (state (next_to_2 (largest_one (population_1 (state all:e)))))) 
+
+261:
+en: what are the states that the potomac runs through
+(answer (state (traverse_1 (riverid potomac:e)))) 
+
+262:
+en: what are the states through which the longest river runs
+(answer (state (traverse_1 (longest (river all:e))))) 
+
+263:
+en: what can you tell me about the population of missouri
+(answer (population_1 (stateid missouri:e))) 
+
+264:
+en: what capital has the largest population
+(answer (largest_one (population_1 (capital all:e)))) 
+
+265:
+en: what capital is the largest in the us
+tr: us deki en genis baskent hangisidir
+ja: beikoku no mottomo ookii shuto wa nan desu ka
+es: que capital es la mas grande en los us
+(answer (largest (capital (loc_2 (countryid usa:e))))) 
+
+266:
+en: what cities are located in pennsylvania
+(answer (city (loc_2 (stateid pennsylvania:e)))) 
+
+267:
+en: what cities in california
+(answer (city (loc_2 (stateid california:e)))) 
+
+268:
+en: what cities in texas have the highest number of citizens
+(answer (largest_one (population_1 (city (loc_2 (stateid texas:e)))))) 
+
+269:
+en: what cities in texas have the highest populations
+(answer (largest_one (population_1 (city (loc_2 (stateid texas:e)))))) 
+
+270:
+en: what city has the largest population
+(answer (largest_one (population_1 (city all:e)))) 
+
+271:
+en: what city has the least population
+(answer (smallest_one (population_1 (city all:e)))) 
+
+272:
+en: what city has the most people
+tr: hangi sehir en cok insana sahiptir
+ja: hotondo no hito ga iru toshi wa nan desu ka
+es: que ciudad tiene mas personas
+(answer (largest_one (population_1 (city all:e)))) 
+
+273:
+en: what city in the united states has the highest population density
+(answer (largest_one (density_1 (city (loc_2 (countryid usa:e)))))) 
+
+274:
+en: what is capital of iowa
+(answer (capital (loc_2 (stateid iowa:e)))) 
+
+275:
+en: what is capital of the state with the lowest point
+(answer (capital (loc_2 (state (loc_1 (lowest (place all:e))))))) 
+
+276:
+en: what is largest capital
+(answer (largest (capital all:e))) 
+
+277:
+en: what is the adjacent state of california
+(answer (state (next_to_2 (stateid california:e)))) 
+
+278:
+en: what is the area of alaska
+tr: alaska nin yuzolcumu nedir
+ja: arasuka no chiiki wa nan desu ka
+es: que es la area de alaska
+(answer (area_1 (stateid alaska:e))) 
+
+279:
+en: what is the area of all the states combined
+(answer (sum (area_1 (state all:e)))) 
+
+280:
+en: what is the area of california
+(answer (area_1 (stateid california:e))) 
+
+281:
+en: what is the area of florida
+(answer (area_1 (stateid florida:e))) 
+
+282:
+en: what is the area of idaho
+tr: idaho nin yuzolcumu nedir
+ja: aidahou no chiiki wa nan desu ka
+es: que es la area de idaho
+(answer (area_1 (stateid idaho:e))) 
+
+283:
+en: what is the area of maine
+tr: maine nin yuzolcumu nedir
+ja: meen no chiiki wa nan desu ka
+es: que es la area de maine
+(answer (area_1 (stateid maine:e))) 
+
+284:
+en: what is the area of maryland in square kilometers
+(answer (area_1 (stateid maryland:e))) 
+
+285:
+en: what is the area of new mexico
+(answer (area_1 (stateid new_mexico:e))) 
+
+286:
+en: what is the area of ohio
+(answer (area_1 (stateid ohio:e))) 
+
+287:
+en: what is the area of seattle
+(answer (area_1 (cityid seattle:e _:e))) 
+
+288:
+en: what is the area of south carolina
+tr: south carolina nin yuzolcumu nedir
+ja: sausu karoraina no chiiki wa nan desu ka
+es: que es la area de south carolina
+(answer (area_1 (stateid south_carolina:e))) 
+
+289:
+en: what is the area of texas
+(answer (area_1 (stateid texas:e))) 
+
+290:
+en: what is the area of the largest state
+tr: en genis eyaletin yuzolcumu nedir
+ja: mottomo ookii shuu no chiiki wa nan desu ka
+es: que es la area de el estado mas grande
+(answer (area_1 (largest (state all:e)))) 
+
+291:
+en: what is the area of the smallest state
+tr: en kucuk eyaletin yuzolcumu nedir
+ja: mottomo chiisai shuu no chiiki wa nan desu ka
+es: que es la area de el estado mas pequeno
+(answer (area_1 (smallest (state all:e)))) 
+
+292:
+en: what is the area of the state with the capital albany
+(answer (area_1 (state (loc_1 (capital (cityid albany:e _:e)))))) 
+
+293:
+en: what is the area of the state with the smallest population density
+(answer (area_1 (smallest_one (density_1 (state all:e))))) 
+
+294:
+en: what is the area of the states
+(answer (area_1 (state all:e))) 
+
+295:
+en: what is the area of the texas state
+(answer (area_1 (stateid texas:e)))
+
+296:
+en: what is the area of wisconsin
+tr: wisconsin nin yuzolcumu nedir
+ja: uisukonshin no chiiki wa nan desu ka
+es: que es la area de wisconsin
+(answer (area_1 (stateid wisconsin:e))) 
+
+297:
+en: what is the average population of the us by state
+(answer (density_1 (countryid usa:e))) 
+
+298:
+en: what is the average population per square km in pennsylvania
+(answer (density_1 (stateid pennsylvania:e))) 
+
+299:
+en: what is the average population per square km in the us
+(answer (density_1 (countryid usa:e))) 
+
+300:
+en: what is the biggest american city in a state with a river
+(answer (largest (city (loc_2 (state (loc_1 (river all:e))))))) 
+
+301:
+en: what is the biggest capital city in the us
+(answer (largest (capital (city (loc_2 (countryid usa:e)))))) 
+
+302:
+en: what is the biggest city in arizona
+tr: arizona daki en buyuk sehir nedir
+ja: arizona no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en arizona
+(answer (largest (city (loc_2 (stateid arizona:e))))) 
+
+303:
+en: what is the biggest city in georgia
+tr: georgia daki en buyuk sehir nedir
+ja: joojaa no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en georgia
+(answer (largest (city (loc_2 (stateid georgia:e))))) 
+
+304:
+en: what is the biggest city in kansas
+(answer (largest (city (loc_2 (stateid kansas:e))))) 
+
+305:
+en: what is the biggest city in louisiana
+tr: louisiana daki en buyuk sehir nedir
+ja: ruijiana no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en louisiana
+(answer (largest (city (loc_2 (stateid louisiana:e))))) 
+
+306:
+en: what is the biggest city in nebraska
+(answer (largest (city (loc_2 (stateid nebraska:e))))) 
+
+307:
+en: what is the biggest city in oregon
+tr: oregon daki en buyuk sehir nedir
+ja: oregon no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en oregon
+(answer (largest (city (loc_2 (stateid oregon:e))))) 
+
+308:
+en: what is the biggest city in texas
+tr: texas daki en buyuk sehir nedir
+ja: tekisasu no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en texas
+(answer (largest (city (loc_2 (stateid texas:e))))) 
+
+309:
+en: what is the biggest city in the smallest state
+(answer (largest (city (loc_2 (smallest (state all:e)))))) 
+
+310:
+en: what is the biggest city in the us
+tr: usa deki en buyuk sehir nedir
+ja: amerika no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en los usa
+(answer (largest (city (loc_2 (countryid usa:e))))) 
+
+311:
+en: what is the biggest city in the usa
+tr: usa deki en buyuk sehir nedir
+ja: amerika no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en los usa
+(answer (largest (city (loc_2 (countryid usa:e))))) 
+
+312:
+en: what is the biggest city in usa
+(answer (largest (city (loc_2 (countryid usa:e))))) 
+
+313:
+en: what is the biggest city in wyoming
+tr: wyoming daki en buyuk sehir nedir
+ja: waiomingu no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en wyoming
+(answer (largest (city (loc_2 (stateid wyoming:e))))) 
+
+314:
+en: what is the biggest river in illinois
+tr: illinois deki en buyuk nehir nedir
+ja: irinoi no mottomo ookii kawa wa nan desu ka
+es: que es el rio mas grande en illinois
+(answer (longest (river (loc_2 (stateid illinois:e))))) 
+
+315:
+en: what is the biggest state
+(answer (largest (state all:e))) 
+
+316:
+en: what is the biggest state in continental us
+(answer (largest (state (loc_2 (countryid usa:e))))) 
+
+317:
+en: what is the biggest state in the usa
+(answer (largest (state (loc_2 (countryid usa:e))))) 
+
+318:
+en: what is the capital city of the largest state in the us
+(answer (capital (city (loc_2 (largest (state (loc_2 (countryid usa:e)))))))) 
+
+319:
+en: what is the capital of california
+(answer (capital (loc_2 (stateid california:e)))) 
+
+320:
+en: what is the capital of colorado
+(answer (capital (loc_2 (stateid colorado:e)))) 
+
+321:
+en: what is the capital of georgia
+tr: georgia in baskenti nedir
+ja: joojaa no shuto wa nan desu ka
+es: que es la capital de georgia
+(answer (capital (loc_2 (stateid georgia:e)))) 
+
+322:
+en: what is the capital of hawaii
+(answer (capital (loc_2 (stateid hawaii:e)))) 
+
+323:
+en: what is the capital of illinois
+(answer (capital (loc_2 (stateid illinois:e)))) 
+
+324:
+en: what is the capital of indiana
+(answer (capital (loc_2 (stateid indiana:e)))) 
+
+325:
+en: what is the capital of iowa
+tr: iowa in baskenti nedir
+ja: aiowa no chuto wa nan desu ka
+es: que es la capital de iowa
+(answer (capital (loc_2 (stateid iowa:e)))) 
+
+326:
+en: what is the capital of maine
+tr: maine in baskenti nedir
+ja: meen no chuto wa nan desu ka
+es: que es la capital de maine
+(answer (capital (loc_2 (stateid maine:e)))) 
+
+327:
+en: what is the capital of maryland
+(answer (capital (loc_2 (stateid maryland:e)))) 
+
+328:
+en: what is the capital of massachusetts
+(answer (capital (loc_2 (stateid massachusetts:e)))) 
+
+329:
+en: what is the capital of michigan
+(answer (capital (loc_2 (stateid michigan:e)))) 
+
+330:
+en: what is the capital of new hampshire
+tr: new hampshire in baskenti nedir
+ja: nyuu hanpushaa no chuto wa nan desu ka
+es: que es la capital de new hampshire
+(answer (capital (loc_2 (stateid new_hampshire:e)))) 
+
+331:
+en: what is the capital of new jersey
+tr: new jersey in baskenti nedir
+ja: nyuu jaajii no chuto wa nan desu ka
+es: que es la capital de new jersey
+(answer (capital (loc_2 (stateid new_jersey:e)))) 
+
+332:
+en: what is the capital of new york
+(answer (capital (loc_2 (stateid new_york:e)))) 
+
+333:
+en: what is the capital of north dakota
+tr: north dakota in baskenti nedir
+ja: noosu dakota no chuto wa nan desu ka
+es: que es la capital de north dakota
+(answer (capital (loc_2 (stateid north_dakota:e)))) 
+
+334:
+en: what is the capital of ohio
+(answer (capital (loc_2 (stateid ohio:e)))) 
+
+335:
+en: what is the capital of pennsylvania
+(answer (capital (loc_2 (stateid pennsylvania:e)))) 
+
+336:
+en: what is the capital of states that have cities named durham
+(answer (capital (loc_2 (state (loc_1 (city (cityid durham:e _:e))))))) 
+
+337:
+en: what is the capital of texas
+(answer (capital (loc_2 (stateid texas:e)))) 
+
+338:
+en: what is the capital of the alabama state
+(answer (capital (loc_2 (stateid alabama:e)))) 
+
+339:
+en: what is the capital of the florida state
+(answer (capital (loc_2 (stateid florida:e))))
+
+340:
+en: what is the capital of the largest state
+(answer (capital (loc_2 (largest (state all:e))))) 
+
+341:
+en: what is the capital of the smallest state
+(answer (capital (loc_2 (smallest (state all:e))))) 
+
+342:
+en: what is the capital of the state texas
+(answer (capital (loc_2 (stateid texas:e)))) 
+
+343:
+en: what is the capital of the state that borders the most states
+(answer (capital (loc_2 (most (state (next_to_2 (state all:e))))))) 
+
+344:
+en: what is the capital of the state that borders the state that borders texas
+(answer (capital (loc_2 (state (next_to_2 (state (next_to_2 (stateid texas:e)))))))) 
+
+345:
+en: what is the capital of the state with the highest elevation
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e))))))) 
+
+346:
+en: what is the capital of the state with the highest point
+tr: en yuksek noktayi iceren eyaletin baskenti nedir
+ja: mottomo takai chiten ga aru shuu no shuto wa nan desu ka
+es: que es la capital de el estado con el punto mas alto
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e))))))) 
+
+347:
+en: what is the capital of the state with the largest population
+tr: nufusu en fazla olan eyaletin baskenti nedir
+ja: mottomo ookii jinkou ga aru shuu no shuto wa nan desu ka
+es: que es la capital de el estado con la poblacion mas grande
+(answer (capital (loc_2 (largest_one (population_1 (state all:e)))))) 
+
+348:
+en: what is the capital of the state with the largest population density
+(answer (capital (loc_2 (largest_one (density_1 (state all:e)))))) 
+
+349:
+en: what is the capital of the state with the longest river
+(answer (capital (loc_2 (state (loc_1 (longest (river all:e))))))) 
+
+350:
+en: what is the capital of the state with the most inhabitants
+(answer (capital (loc_2 (largest_one (population_1 (state all:e)))))) 
+
+351:
+en: what is the capital of utah
+tr: utah in baskenti nedir
+ja: yuutaa no chuto wa nan desu ka
+es: que es la capital de utah
+(answer (capital (loc_2 (stateid utah:e)))) 
+
+352:
+en: what is the capital of vermont
+tr: vermont in baskenti nedir
+ja: baamonto no chuto wa nan desu ka
+es: que es la capital de vermont
+(answer (capital (loc_2 (stateid vermont:e)))) 
+
+353:
+en: what is the capital of washington
+tr: washington in baskenti nedir
+ja: washinton no chuto wa nan desu ka
+es: que es la capital de washington
+(answer (capital (loc_2 (stateid washington:e)))) 
+
+354:
+en: what is the city in texas with the largest population
+(answer (largest_one (population_1 (city (loc_2 (stateid texas:e)))))) 
+
+355:
+en: what is the city with the smallest population
+tr: en az nufuslu sehir nedir
+ja: mottomo chiisai jinkou ga aru toshi wa nan desu ka
+es: que es la ciudad con la poblacion mas pequena
+(answer (smallest_one (population_1 (city all:e)))) 
+
+356:
+en: what is the combined area of all 50 states
+tr: 50 eyaletin toplam alani nedir
+ja: gojuu shuu zenbu no zentai no chiiki wa nan desu ka
+es: que es la area combinada de todos los 50 estados
+(answer (sum (area_1 (state all:e)))) 
+
+357:
+en: what is the combined population of all 50 states
+tr: 50 eyaletin toplam nufusu nedir
+ja: gojuu shuu no zentai no jinkou wa ikura desu ka
+es: que es la poblacion combinada de todos los 50 estados
+(answer (sum (population_1 (state all:e)))) 
+
+358:
+en: what is the density of texas
+(answer (density_1 (stateid texas:e))) 
+
+359:
+en: what is the density of the new york
+(answer (density_1 (stateid new_york:e))) 
+
+360:
+en: what is the elevation of death valley
+(answer (elevation_1 (placeid death_valley:e))) 
+
+361:
+en: what is the elevation of the highest point in the usa
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e)))))) 
+
+362:
+en: what is the height of mount mckinley
+(answer (elevation_1 (placeid mount_mckinley:e))) 
+
+363:
+en: what is the height of the highest mountain in texas
+(answer (elevation_1 (highest (mountain (loc_2 (stateid texas:e)))))) 
+
+364:
+en: what is the height of the highest point in the usa
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e)))))) 
+
+365:
+en: what is the high point of wyoming
+(answer (high_point_1 (stateid wyoming:e))) 
+
+366:
+en: what is the highest elevation in new mexico
+tr: new mexico de en yuksek yukselti nedir
+ja: nyuu mekishiko no mottomo takai kaibatsu wa nan desu ka
+es: que es la elevacion mas alta en new mexico
+(answer (highest (place (loc_2 (stateid new_mexico:e))))) 
+
+367:
+en: what is the highest elevation in south carolina
+(answer (highest (place (loc_2 (stateid south_carolina:e))))) 
+
+368:
+en: what is the highest elevation in texas
+(answer (highest (place (loc_2 (stateid texas:e))))) 
+
+369:
+en: what is the highest elevation in the united states
+(answer (highest (place (loc_2 (countryid usa:e))))) 
+
+370:
+en: what is the highest mountain in alaska
+(answer (highest (mountain (loc_2 (stateid alaska:e))))) 
+
+371:
+en: what is the highest mountain in texas
+(answer (highest (mountain (loc_2 (stateid texas:e))))) 
+
+372:
+en: what is the highest mountain in the us
+tr: us deki en yuksek dag nedir
+ja: beikoku no mottomo takai yama wa nan desu ka
+es: que es la montana mas alta en los us
+(answer (highest (mountain (loc_2 (countryid usa:e))))) 
+
+373:
+en: what is the highest mountain in us
+(answer (highest (mountain (loc_2 (countryid usa:e))))) 
+
+374:
+en: what is the highest point in colorado
+tr: colorado daki en yuksek nokta nedir
+ja: kororado no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en colorado
+(answer (highest (place (loc_2 (stateid colorado:e))))) 
+
+375:
+en: what is the highest point in delaware
+(answer (highest (place (loc_2 (stateid delaware:e))))) 
+
+376:
+en: what is the highest point in each state whose lowest point is sea level
+(answer (highest (place (loc_2 (state (loc_1 (place (elevation_2 0:e)))))))) 
+
+377:
+en: what is the highest point in florida
+(answer (highest (place (loc_2 (stateid florida:e))))) 
+
+378:
+en: what is the highest point in iowa
+tr: iowa daki en yuksek nokta nedir
+ja: aiowa no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en iowa
+(answer (highest (place (loc_2 (stateid iowa:e))))) 
+
+379:
+en: what is the highest point in kansas
+tr: kansas daki en yuksek nokta nedir
+ja: kanzasu no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en kansas
+(answer (highest (place (loc_2 (stateid kansas:e))))) 
+
+380:
+en: what is the highest point in maine
+(answer (highest (place (loc_2 (stateid maine:e))))) 
+
+381:
+en: what is the highest point in montana
+tr: montana daki en yuksek nokta nedir
+ja: montana no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en montana
+(answer (highest (place (loc_2 (stateid montana:e))))) 
+
+382:
+en: what is the highest point in nevada in meters
+tr: nevada daki en yuksek nokta metre olarak nedir
+ja: nebaada no mottomo takai chiten wa nan metoru desu ka
+es: que es el punto mas alto en nevada en metros
+(answer (highest (place (loc_2 (stateid nevada:e))))) 
+
+383:
+en: what is the highest point in new mexico
+(answer (highest (place (loc_2 (stateid new_mexico:e))))) 
+
+384:
+en: what is the highest point in ohio
+(answer (highest (place (loc_2 (stateid ohio:e))))) 
+
+385:
+en: what is the highest point in rhode island
+tr: rhode island daki en yuksek nokta nedir
+ja: roodoairando no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en rhode island
+(answer (highest (place (loc_2 (stateid rhode_island:e))))) 
+
+386:
+en: what is the highest point in states bordering georgia
+tr: georgia ya siniri olan eyaletlerdeki en yuksek nokta nedir
+ja: joojaa ni rinsetsu suru shuu no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en los estados bordeando a georgia
+(answer (highest (place (loc_2 (state (next_to_2 (stateid georgia:e))))))) 
+
+387:
+en: what is the highest point in texas
+(answer (highest (place (loc_2 (stateid texas:e))))) 
+
+388:
+en: what is the highest point in the country
+tr: ulkedeki en yuksek nokta nedir
+ja: kuni no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en el pais
+(answer (highest (place (loc_2 (countryid usa:e))))) 
+
+389:
+en: what is the highest point in the smallest state
+(answer (highest (place (loc_2 (smallest (state all:e)))))) 
+
+390:
+en: what is the highest point in the state with capital austin
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid austin:e _:e)))))))) 
+
+391:
+en: what is the highest point in the state with capital des moines
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid des_moines:e _:e)))))))) 
+
+392:
+en: what is the highest point in the state with the capital des moines
+tr: baskenti des moines olan eyaletin en yuksek noktasi nedir
+ja: demoin no shuto ga aru shuu no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto de el estado con la capital des moines
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid des_moines:e _:e)))))))) 
+
+393:
+en: what is the highest point in the state with the most rivers
+(answer (highest (place (loc_2 (most (state (traverse_1 (river all:e)))))))) 
+
+394:
+en: what is the highest point in the state with the smallest population
+(answer (highest (place (loc_2 (smallest_one (population_1 (state all:e))))))) 
+
+395:
+en: what is the highest point in the states bordering colorado
+(answer (highest (place (loc_2 (state (next_to_2 (stateid colorado:e))))))) 
+
+396:
+en: what is the highest point in the united states
+(answer (highest (place (loc_2 (countryid usa:e))))) 
+
+397:
+en: what is the highest point in the us
+tr: usa deki en yuksek nokta nedir
+ja: beikoku no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en los usa
+(answer (highest (place (loc_2 (countryid usa:e))))) 
+
+398:
+en: what is the highest point in the usa
+tr: usa deki en yuksek nokta nedir
+ja: beikoku no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en los usa
+(answer (highest (place (loc_2 (countryid usa:e))))) 
+
+399:
+en: what is the highest point in virginia
+(answer (highest (place (loc_2 (stateid virginia:e))))) 
+
+400:
+en: what is the highest point in wyoming
+tr: wyoming daki en yuksek nokta nedir
+ja: waiomingu no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto en wyoming
+(answer (highest (place (loc_2 (stateid wyoming:e))))) 
+
+401:
+en: what is the highest point of the state with the largest area
+tr: en genis alana sahip eyaletin en yuksek noktasi nedir
+ja: mottomo ookii chiiki ga aru shuu no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto de el estado con la area mas grande
+(answer (highest (place (loc_2 (largest_one (area_1 (state all:e))))))) 
+
+402:
+en: what is the highest point of the state with the smallest population density
+(answer (highest (place (loc_2 (smallest_one (density_1 (state all:e))))))) 
+
+403:
+en: what is the highest point of the usa
+tr: usa nin en yuksek noktasi nedir
+ja: amerika no mottomo takai chiten wa nan desu ka
+es: que es el punto mas alto de los usa
+(answer (highest (place (loc_2 (countryid usa:e))))) 
+
+404:
+en: what is the largest capital
+(answer (largest (capital all:e))) 
+
+405:
+en: what is the largest capital city in the usa
+(answer (largest (capital (city (loc_2 (countryid usa:e)))))) 
+
+406:
+en: what is the largest city in a state that borders texas
+(answer (largest (city (loc_2 (state (next_to_2 (stateid texas:e))))))) 
+
+407:
+en: what is the largest city in alabama
+(answer (largest (city (loc_2 (stateid alabama:e))))) 
+
+408:
+en: what is the largest city in california
+(answer (largest (city (loc_2 (stateid california:e))))) 
+
+409:
+en: what is the largest city in michigan
+(answer (largest (city (loc_2 (stateid michigan:e))))) 
+
+410:
+en: what is the largest city in minnesota by population
+tr: minnesota da nufus acisindan en buyuk sehir nedir
+ja: jinkou de minesota no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en minnesota por poblacion
+(answer (largest_one (population_1 (city (loc_2 (stateid minnesota:e)))))) 
+
+411:
+en: what is the largest city in missouri
+(answer (largest (city (loc_2 (stateid missouri:e))))) 
+
+412:
+en: what is the largest city in rhode island
+tr: rhode island aki en buyuk sehir nedir
+ja: roodoairando no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en rhode island
+(answer (largest (city (loc_2 (stateid rhode_island:e))))) 
+
+413:
+en: what is the largest city in smallest state through which the mississippi runs
+(answer (largest (city (loc_2 (smallest (state (traverse_1 (riverid mississippi:e)))))))) 
+
+414:
+en: what is the largest city in states that border california
+tr: california ya komsu eyaletler deki en genis sehir nedir
+ja: karifuorunia ni rinsetsu suru shuu no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en los estados que bordean a california
+(answer (largest (city (loc_2 (state (next_to_2 (stateid california:e))))))) 
+
+415:
+en: what is the largest city in texas
+(answer (largest (city (loc_2 (stateid texas:e))))) 
+
+416:
+en: what is the largest city in the smallest state in the usa
+(answer (largest (city (loc_2 (smallest (state (loc_2 (countryid usa:e)))))))) 
+
+417:
+en: what is the largest city in wisconsin
+tr: wisconsin deki en genis sehir nedir
+ja: uisukonshin no mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande en wisconsin
+(answer (largest (city (loc_2 (stateid wisconsin:e))))) 
+
+418:
+en: what is the largest city of kansas
+(answer (largest (city (loc_2 (stateid kansas:e))))) 
+
+419:
+en: what is the largest of the states that the rio grande runs through
+(answer (largest (state (traverse_1 (riverid rio_grande:e))))) 
+
+420:
+en: what is the largest river in washington state
+tr: washington eyaletindeki en genis nehir nedir
+ja: washinton shuu no mottomo nagai kawa wa nan desu ka
+es: que es el rio mas grande en el estado de washington
+(answer (longest (river (loc_2 (stateid washington:e))))) 
+
+421:
+en: what is the largest state
+(answer (largest (state all:e))) 
+
+422:
+en: what is the largest state bordering arkansas
+(answer (largest (state (next_to_2 (stateid arkansas:e))))) 
+
+423:
+en: what is the largest state bordering texas
+(answer (largest (state (next_to_2 (stateid texas:e))))) 
+
+424:
+en: what is the largest state capital in population
+tr: nufus bakimindan en buyuk eyalet baskenti nedir
+ja: jinkou de mottomo ookii shuto wa nan desu ka
+es: que es la capital de estado mas grande en poblacion
+(answer (largest_one (population_1 (capital_1 (state all:e))))) 
+
+425:
+en: what is the largest state in the us
+(answer (largest (state (loc_2 (countryid usa:e))))) 
+
+426:
+en: what is the largest state in usa
+(answer (largest (state (loc_2 (countryid usa:e))))) 
+
+427:
+en: what is the largest state that borders california
+(answer (largest (state (next_to_2 (stateid california:e))))) 
+
+428:
+en: what is the largest state that borders texas
+(answer (largest (state (next_to_2 (stateid texas:e))))) 
+
+429:
+en: what is the largest state that borders the state with the highest population
+(answer (largest (state (next_to_2 (largest_one (population_1 (state all:e))))))) 
+
+430:
+en: what is the largest state that borders the state with the lowest point in the usa
+(answer (largest (state (next_to_2 (state (loc_1 (lowest (place (loc_2 (countryid usa:e)))))))))) 
+
+431:
+en: what is the largest state traversed by the mississippi river
+(answer (largest (state (traverse_1 (riverid mississippi:e))))) 
+
+432:
+en: what is the least populous state
+(answer (smallest_one (population_1 (state all:e)))) 
+
+433:
+en: what is the length of the colorado river
+tr: colorado nehrinin uzunlugu nedir
+ja: kororado kawa no nagasa wa nan desu ka
+es: cuanto tiene de largo el rio colorado
+(answer (len (riverid colorado:e))) 
+
+434:
+en: what is the length of the colorado river in texas
+(answer (len (intersection (riverid colorado:e) (river (loc_2 (stateid texas:e)))))) 
+
+435:
+en: what is the length of the longest river in the usa
+(answer (len (longest (river (loc_2 (countryid usa:e)))))) 
+
+436:
+en: what is the length of the longest river that runs through texas
+(answer (len (longest (river (traverse_2 (stateid texas:e)))))) 
+
+437:
+en: what is the length of the mississippi river
+tr: mississippi nehrinin uzunlugu nedir
+ja: mishishippi kawa no nagasa wa nan desu ka
+es: que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e))) 
+
+438:
+en: what is the length of the river that flows through the most states
+(answer (len (most (river (traverse_2 (state all:e)))))) 
+
+439:
+en: what is the length of the river that runs through the most number of states
+(answer (len (most (river (traverse_2 (state all:e)))))) 
+
+440:
+en: what is the length of the river that runs through the most states
+(answer (len (most (river (traverse_2 (state all:e)))))) 
+
+441:
+en: what is the length of the river that traverses the most states
+(answer (len (most (river (traverse_2 (state all:e)))))) 
+
+442:
+en: what is the longest river in the us
+tr: birlesik devletler in en uzun nehri nedir
+ja: beikoku no mottomo nagai kawa wa nan desu ka
+es: que es el rio mas largo en los united states
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+443:
+en: what is the longest river flowing through new york
+(answer (longest (river (traverse_2 (stateid new_york:e))))) 
+
+444:
+en: what is the longest river in america
+(answer (longest (river (loc_2 (countryid usa:e))))) 
+
+445:
+en: what is the longest river in california
+(answer (longest (river (loc_2 (stateid california:e))))) 
+
+446:
+en: what is the longest river in florida
+tr: florida daki en uzun nehir nedir
+ja: furorida no mottomo nagai kawa wa nan desu ka
+es: que es el rio mas largo en florida
+(answer (longest (river (loc_2 (stateid florida:e))))) 
+
+447:
+en: what is the longest river in mississippi
+tr: mississippi nin en uzun nehri nedir
+ja: mishishippi de mottomo nagai kawa wa nan desu ka
+es: que es el rio mas largo en mississippi
+(answer (longest (river (loc_2 (stateid mississippi:e))))) 
+
+448:
+en: what is the longest river in new york
+(answer (longest (river (loc_2 (stateid new_york:e))))) 
+
+449:
+en: what is the longest river in pennsylvania
+(answer (longest (river (loc_2 (stateid pennsylvania:e))))) 
+
+450:
+en: what is the longest river in texas
+tr: texas daki en uzun nehir nedir
+ja: tekisasu no mottomo nagai kawa wa nan desu ka
+es: que es el rio mas largo en texas
+(answer (longest (river (loc_2 (stateid texas:e))))) 
+
+451:
+en: what is the longest river in the largest state
+(answer (longest (river (loc_2 (largest (state all:e)))))) 
+
+452:
+en: what is the longest river in the smallest state in the usa
+(answer (longest (river (loc_2 (smallest (state (loc_2 (countryid usa:e)))))))) 
+
+453:
+en: what is the longest river in the state with the highest point
+(answer (longest (river (loc_2 (state (loc_1 (highest (place all:e)))))))) 
+
+454:
+en: what is the longest river in the state with the most major cities
+(answer (longest (river (loc_2 (most (state (loc_1 (major (city all:e))))))))) 
+
+455:
+en: what is the longest river in the states that border nebraska
+(answer (longest (river (loc_2 (state (next_to_2 (stateid nebraska:e))))))) 
+
+456:
+en: what is the longest river in the united states
+tr: birlesik devletler in en uzun nehri nedir
+ja: beikoku no mottomo nagai kawa wa nan desu ka
+es: que es el rio mas largo en los united states
+(answer (longest (river (loc_2 (countryid usa:e))))) 
+
+457:
+en: what is the longest river in the us
+tr: us deki en uzun nehir nedir
+ja: beikoku no mottomo nagai kawa wa nan desu ka
+es: que es el rio mas largo en los us
+(answer (longest (river (loc_2 (countryid usa:e))))) 
+
+458:
+en: what is the longest river that does not run through texas
+(answer (longest (exclude (river al:e) (traverse_2 (stateid texas:e))))) 
+
+459:
+en: what is the longest river that flows through a state that borders indiana
+(answer (longest (river (traverse_2 (state (next_to_2 (stateid indiana:e))))))) 
+
+460:
+en: what is the longest river that flows through colorado
+(answer (longest (river (traverse_2 (stateid colorado:e))))) 
+
+461:
+en: what is the longest river that passes the states that border the state that borders the most states
+(answer (longest (river (traverse_2 (state (next_to_2 (most (state (next_to_2 (state all:e)))))))))) 
+
+462:
+en: what is the longest river that runs through a state that borders tennessee
+(answer (longest (river (traverse_2 (state (next_to_2 (stateid tennessee:e))))))) 
+
+463:
+en: what is the lowest elevation in pennsylvania
+(answer (lowest (place (loc_2 (stateid pennsylvania:e))))) 
+
+464:
+en: what is the lowest point in arkansas
+tr: arkansas daki en alcak nokta nerededir
+ja: aakansaa no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en arkansas
+(answer (lowest (place (loc_2 (stateid arkansas:e))))) 
+
+465:
+en: what is the lowest point in california
+tr: california daki en alcak nokta nerededir
+ja: karifuorunia no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en california
+(answer (lowest (place (loc_2 (stateid california:e))))) 
+
+466:
+en: what is the lowest point in louisiana
+tr: louisiana daki en alcak nokta nedir
+ja: ruijiana no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en louisiana
+(answer (lowest (place (loc_2 (stateid louisiana:e))))) 
+
+467:
+en: what is the lowest point in massachusetts
+tr: massachusetts daki en alcak nokta nerededir
+ja: masachuusettsu no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en massachusetts
+(answer (lowest (place (loc_2 (stateid massachusetts:e))))) 
+
+468:
+en: what is the lowest point in mississippi
+(answer (lowest (place (loc_2 (stateid mississippi:e))))) 
+
+469:
+en: what is the lowest point in nebraska in meters
+tr: nebraska daki en alcak nokta metre olarak nedir
+ja: neburasuka no mottomo hikui chiten wa nan metoru desu ka
+es: que es el punto mas bajo en nebraska en metros
+(answer (lowest (place (loc_2 (stateid nebraska:e))))) 
+
+470:
+en: what is the lowest point in oregon
+tr: oregon daki en alcak nokta nedir
+ja: oregon no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en oregon
+(answer (lowest (place (loc_2 (stateid oregon:e))))) 
+
+471:
+en: what is the lowest point in texas
+tr: texas daki en alcak nokta nerededir
+ja: tekisasu no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en texas
+(answer (lowest (place (loc_2 (stateid texas:e))))) 
+
+472:
+en: what is the lowest point in the state of california
+tr: california eyaletinin en alcak noktasi nedir
+ja: karifuorunia no shuu no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en el estado de california
+(answer (lowest (place (loc_2 (stateid california:e))))) 
+
+473:
+en: what is the lowest point in the state of texas
+tr: texas eyaletinin en alcak noktasi nedir
+ja: tekisasu no shuu no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en el estado de texas
+(answer (lowest (place (loc_2 (stateid texas:e))))) 
+
+474:
+en: what is the lowest point in the united states
+tr: birlesik devletler deki en alcak nokta nedir
+ja: beikoku no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo en los united states
+(answer (lowest (place (loc_2 (countryid usa:e))))) 
+
+475:
+en: what is the lowest point in usa
+(answer (lowest (place (loc_2 (countryid usa:e))))) 
+
+476:
+en: what is the lowest point in wisconsin
+(answer (lowest (place (loc_2 (stateid wisconsin:e))))) 
+
+477:
+en: what is the lowest point of all states through which the colorado river runs through
+(answer (lowest (place (loc_2 (state (traverse_1 (riverid colorado:e))))))) 
+
+478:
+en: what is the lowest point of colorado
+(answer (lowest (place (loc_2 (stateid colorado:e))))) 
+
+479:
+en: what is the lowest point of the state with the largest area
+tr: en genis alana sahip eyaletin en alcak noktasi nedir
+ja: mottomo ookii chiiki ga aru shuu no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo de el estado con la area mas grande
+(answer (lowest (place (loc_2 (largest_one (area_1 (state all:e))))))) 
+
+480:
+en: what is the lowest point of the us
+tr: us in en alcak noktasi nedir
+ja: beikoku no mottomo hikui chiten wa nan desu ka
+es: que es el punto mas bajo de los us
+(answer (lowest (place (loc_2 (countryid usa:e))))) 
+
+481:
+en: what is the major cities in montana
+(answer (major (city (loc_2 (stateid montana:e))))) 
+
+482:
+en: what is the maximum elevation of san francisco
+(answer (highest (place (loc_2 (cityid san_francisco:e _:e))))) 
+
+483:
+en: what is the most dense state in the usa
+(answer (largest_one (density_1 (state (loc_2 (countryid usa:e)))))) 
+
+484:
+en: what is the most populated capital in the usa
+(answer (largest_one (population_1 (capital (loc_2 (countryid usa:e)))))) 
+
+485:
+en: what is the most populated state bordering oklahoma
+tr: oklahoma ya siniri olan en kalabalik eyalet nedir
+ja: okurahoma ni rinsetsu suru mottomo ookii jinkou ga aru shuu wa nan desu ka
+es: que es el estado mas poblado bordeando a oklahoma
+(answer (largest_one (population_1 (state (next_to_2 (stateid oklahoma:e)))))) 
+
+486:
+en: what is the most populous city
+(answer (largest_one (population_1 (city all:e)))) 
+
+487:
+en: what is the most populous city in texas
+(answer (largest_one (population_1 (city (loc_2 (stateid texas:e)))))) 
+
+488:
+en: what is the most populous city in wyoming
+(answer (largest_one (population_1 (city (loc_2 (stateid wyoming:e)))))) 
+
+489:
+en: what is the most populous state
+tr: en kalabalik eyalet nedir
+ja: mottomo jinkou no ooi shuu wa nan desu ka
+es: que es el estado mas poblado
+(answer (largest_one (population_1 (state all:e)))) 
+
+490:
+en: what is the most populous state in the us
+(answer (largest_one (population_1 (state (loc_2 (countryid usa:e)))))) 
+
+491:
+en: what is the most populous state through which the mississippi runs
+(answer (largest_one (population_1 (state (traverse_1 (riverid mississippi:e)))))) 
+
+492:
+en: what is the name of the state with the lowest point
+(answer (state (loc_1 (lowest (place all:e))))) 
+
+493:
+en: what is the number of neighboring states for kentucky
+(answer (count (state (next_to_2 (stateid kentucky:e))))) 
+
+494:
+en: what is the population density in the state with capital austin
+(answer (density_1 (state (loc_1 (capital (cityid austin:e _:e)))))) 
+
+495:
+en: what is the population density of maine
+tr: maine in nufus yogunlugu nedir
+ja: meen no jinkou no mitsudo wa nan desu ka
+es: que es la densidad de poblacion de maine
+(answer (density_1 (stateid maine:e))) 
+
+496:
+en: what is the population density of south dakota
+(answer (density_1 (stateid south_dakota:e))) 
+
+497:
+en: what is the population density of texas
+tr: texas in nufus yogunlugu nedir
+ja: tekisasu no jinkou no mitsudo wa nan desu ka
+es: que es la densidad de poblacion de texas
+(answer (density_1 (stateid texas:e))) 
+
+498:
+en: what is the population density of the largest state
+(answer (density_1 (largest (state all:e)))) 
+
+499:
+en: what is the population density of the smallest state
+tr: en kucuk eyaletin nufus yogunlugu nedir
+ja: mottomo chiisai shuu no jinkou no mitsudo wa nan desu ka
+es: que es la densidad de poblacion de el estado mas pequeno
+(answer (density_1 (smallest (state all:e)))) 
+
+500:
+en: what is the population density of the state with the smallest area
+(answer (density_1 (smallest_one (area_1 (state all:e))))) 
+
+501:
+en: what is the population density of the state with the smallest population
+(answer (density_1 (smallest_one (population_1 (state all:e))))) 
+
+502:
+en: what is the population density of wyoming
+tr: wyoming in nufus yogunlugu nedir
+ja: waiomingu no jinkou no mitsudo wa nan desu ka
+es: que es la densidad de poblacion de wyoming
+(answer (density_1 (stateid wyoming:e))) 
+
+503:
+en: what is the population in boston
+(answer (population_1 (cityid boston:e _:e))) 
+
+504:
+en: what is the population of alaska
+(answer (population_1 (stateid alaska:e))) 
+
+505:
+en: what is the population of arizona
+tr: arizona nun nufusu nedir
+ja: arizona no jinkou wa nan desu ka
+es: que es la poblacion de arizona
+(answer (population_1 (stateid arizona:e))) 
+
+506:
+en: what is the population of atlanta
+(answer (population_1 (cityid atlanta:e _:e))) 
+
+507:
+en: what is the population of atlanta ga
+(answer (population_1 (cityid atlanta:e ga:e))) 
+
+508:
+en: what is the population of austin
+(answer (population_1 (cityid austin:e _:e))) 
+
+509:
+en: what is the population of austin texas
+(answer (population_1 (cityid austin:e tx:e))) 
+
+510:
+en: what is the population of boston massachusetts
+tr: boston massachusetts in nufusu nedir
+ja: masachuusettsu no bosuton no jinkou wa nan desu ka
+es: que es la poblacion de boston massachusetts
+(answer (population_1 (cityid boston:e ma:e))) 
+
+511:
+en: what is the population of boulder
+(answer (population_1 (cityid boulder:e _:e))) 
+
+512:
+en: what is the population of california
+(answer (population_1 (stateid california:e))) 
+
+513:
+en: what is the population of dallas
+tr: dallas in nufusu nedir
+ja: darasu no jinkou wa nan desu ka
+es: que es la poblacion de dallas
+(answer (population_1 (cityid dallas:e _:e))) 
+
+514:
+en: what is the population of denver
+(answer (population_1 (cityid denver:e _:e))) 
+
+515:
+en: what is the population of erie pennsylvania
+tr: erie pennsylvania in nufusu nedir
+ja: penshirubenia no eri no jinkou wa nan desu ka
+es: que es la poblacion de erie pennsylvania
+(answer (population_1 (cityid erie:e pa:e))) 
+
+516:
+en: what is the population of hawaii
+tr: hawaii nun nufusu nedir
+ja: hawai no jinkou wa nan desu ka
+es: que es la poblacion de hawaii
+(answer (population_1 (stateid hawaii:e))) 
+
+517:
+en: what is the population of houston
+(answer (population_1 (cityid houston:e _:e))) 
+
+518:
+en: what is the population of idaho
+tr: idaho nun nufusu nedir
+ja: aidahou no jinkou wa nan desu ka
+es: que es la poblacion de idaho
+(answer (population_1 (stateid idaho:e))) 
+
+519:
+en: what is the population of illinois
+tr: illinois nun nufusu nedir
+ja: irinoi no jinkou wa nan desu ka
+es: que es la poblacion de illinois
+(answer (population_1 (stateid illinois:e))) 
+
+520:
+en: what is the population of maine
+(answer (population_1 (stateid maine:e))) 
+
+521:
+en: what is the population of maryland
+(answer (population_1 (stateid maryland:e))) 
+
+522:
+en: what is the population of minnesota
+(answer (population_1 (stateid minnesota:e))) 
+
+523:
+en: what is the population of montana
+tr: montana in nufusu nedir
+ja: montana no jinkou wa nan desu ka
+es: que es la poblacion de montana
+(answer (population_1 (stateid montana:e))) 
+
+524:
+en: what is the population of new mexico
+(answer (population_1 (stateid new_mexico:e))) 
+
+525:
+en: what is the population of new york
+(answer (population_1 (stateid new_york:e))) 
+
+526:
+en: what is the population of new york city
+tr: new york sehrinin nufusu nedir
+ja: nyuu yooku toshi no jinkou wa nan desu ka
+es: que es la poblacion de la ciudad new york
+(answer (population_1 (cityid new_york:e _:e)))
+
+527:
+en: what is the population of oregon
+tr: oregon nun nufusu nedir
+ja: oregon no jinkou wa nan desu ka
+es: que es la poblacion de oregon
+(answer (population_1 (stateid oregon:e))) 
+
+528:
+en: what is the population of portland maine
+tr: portland maine in nufusu nedir
+ja: meen no porutorando no jinkou wa nan desu ka
+es: que es la poblacion de portland maine
+(answer (population_1 (cityid portland:e me:e))) 
+
+529:
+en: what is the population of rhode island
+(answer (population_1 (stateid rhode_island:e))) 
+
+530:
+en: what is the population of sacramento
+(answer (population_1 (cityid sacramento:e _:e))) 
+
+531:
+en: what is the population of san antonio
+tr: san antonio nun nufusu nedir
+ja: sanantonio no jinkou wa nan desu ka
+es: que es la poblacion de san antonio
+(answer (population_1 (cityid san_antonio:e _:e))) 
+
+532:
+en: what is the population of seattle
+(answer (population_1 (cityid seattle:e _:e))) 
+
+533:
+en: what is the population of seattle washington
+tr: seattle washington in nufusu nedir
+ja: washinton no shiatoru no jinkou wa nan desu ka
+es: que es la poblacion de seattle washington
+(answer (population_1 (cityid seattle:e wa:e))) 
+
+534:
+en: what is the population of south dakota
+tr: south dakota nun nufusu nedir
+ja: sausu dakota no jinkou wa nan desu ka
+es: que es la poblacion de south dakota
+(answer (population_1 (stateid south_dakota:e))) 
+
+535:
+en: what is the population of springfield missouri
+tr: springfield missouri in nufusu nedir
+ja: mizuuri no supuringufiirudo no jinkou wa nan desu ka
+es: que es la poblacion de springfield missouri
+(answer (population_1 (cityid springfield:e mo:e))) 
+
+536:
+en: what is the population of springfield south dakota
+(answer (population_1 (cityid springfield:e sd:e))) 
+
+537:
+en: what is the population of tempe arizona
+tr: tempe arizona in nufusu nedir
+ja: arizona no tenpi no jinkou wa nan desu ka
+es: que es la poblacion de tempe arizona
+(answer (population_1 (cityid tempe:e az:e))) 
+
+538:
+en: what is the population of texas
+tr: texas nun nufusu nedir
+ja: tekisasu no jinkou wa nan desu ka
+es: que es la poblacion de texas
+(answer (population_1 (stateid texas:e))) 
+
+539:
+en: what is the population of the capital of the largest state
+(answer (population_1 (capital (loc_2 (largest (state all:e)))))) 
+
+540:
+en: what is the population of the capital of the largest state through which the mississippi runs
+(answer (population_1 (capital (loc_2 (largest (state (traverse_1 (riverid mississippi:e)))))))) 
+
+541:
+en: what is the population of the capital of the smallest state
+tr: en kucuk eyaletin baskentinin nufusu nedir
+ja: mottomo chiisai shuu no shuto no jinkou wa nan desu ka
+es: que es la poblacion de la capital de el estado mas pequeno
+(answer (population_1 (capital (loc_2 (smallest (state all:e)))))) 
+
+542:
+en: what is the population of the largest city in the state with the largest area
+(answer (population_1 (largest (city (loc_2 (largest_one (area_1 (state all:e)))))))) 
+
+543:
+en: what is the population of the largest state
+(answer (population_1 (largest (state all:e)))) 
+
+544:
+en: what is the population of the largest state that borders texas
+(answer (population_1 (largest (state (next_to_2 (stateid texas:e)))))) 
+
+545:
+en: what is the population of the major cities in wisconsin
+tr: wisconsin deki baslica sehirlerin nufusu nedir
+ja: uisukonshin ni wa ookina toshi no jinkou ga nan desu ka
+es: que es la poblacion de las ciudades mayores en wisconsin
+(answer (population_1 (major (city (loc_2 (stateid wisconsin:e)))))) 
+
+546:
+en: what is the population of the smallest state
+(answer (smallest (population_1 (state all:e)))) 
+
+547:
+en: what is the population of the state that borders the most states
+(answer (population_1 (most (state (next_to_2 (state all:e)))))) 
+
+548:
+en: what is the population of the state with the highest population density
+(answer (population_1 (largest_one (density_1 (state all:e))))) 
+
+549:
+en: what is the population of the state with the largest area
+(answer (population_1 (largest_one (area_1 (state all:e))))) 
+
+550:
+en: what is the population of tucson
+tr: tucson nun nufusu nedir
+ja: tsuuson no jinkou wa nan desu ka
+es: que es la poblacion de tucson
+(answer (population_1 (cityid tucson:e _:e))) 
+
+551:
+en: what is the population of utah
+tr: utah nun nufusu nedir
+ja: yuutaa no jinkou wa nan desu ka
+es: que es la poblacion de utah
+(answer (population_1 (stateid utah:e))) 
+
+552:
+en: what is the population of washington
+(answer (population_1 (stateid washington:e))) 
+
+553:
+en: what is the population of washington dc
+(answer (population_1 (cityid washington:e dc:e))) 
+
+554:
+en: what is the river that cross over ohio
+(answer (river (traverse_2 (stateid ohio:e)))) 
+
+555:
+en: what is the shortest river
+tr: en kisa nehir nedir
+ja: mottomo mijikai kawa wa nan desu ka
+es: que es el rio mas corto
+(answer (shortest (river all:e))) 
+
+556:
+en: what is the shortest river in alaska
+(answer (shortest (river (loc_2 (stateid alaska:e))))) 
+
+557:
+en: what is the shortest river in iowa
+tr: iowa daki en kisa nehir nedir
+ja: aiowa no mottomo mijikai kawa wa nan desu ka
+es: que es el rio mas corto en iowa
+(answer (shortest (river (loc_2 (stateid iowa:e))))) 
+
+558:
+en: what is the shortest river in nebraska
+(answer (shortest (river (loc_2 (stateid nebraska:e))))) 
+
+559:
+en: what is the shortest river in texas
+(answer (shortest (river (loc_2 (stateid texas:e))))) 
+
+560:
+en: what is the shortest river in the united states
+(answer (shortest (river (loc_2 (countryid usa:e))))) 
+
+561:
+en: what is the shortest river in the us
+tr: us deki en kisa nehir nedir
+ja: beikoku no mottomo mijikai kawa wa nan desu ka
+es: que es el rio mas corto en los us
+(answer (shortest (river (loc_2 (countryid usa:e))))) 
+
+562:
+en: what is the shortest river in the usa
+tr: usa deki en kisa nehir nedir
+ja: amerika no mottomo mijikai kawa wa nan desu ka
+es: que es el rio mas corto en los usa
+(answer (shortest (river (loc_2 (countryid usa:e))))) 
+
+563:
+en: what is the size of california
+(answer (size (stateid california:e))) 
+
+564:
+en: what is the size of florida
+(answer (size (stateid florida:e))) 
+
+565:
+en: what is the size of texas
+(answer (size (stateid texas:e))) 
+
+566:
+en: what is the size of the capital of texas
+(answer (size (capital (loc_2 (stateid texas:e))))) 
+
+567:
+en: what is the size of the largest state in the usa
+(answer (size (largest (state (loc_2 (countryid usa:e)))))) 
+
+568:
+en: what is the smallest city in alaska
+tr: alaska daki en kucuk sehir nedir
+ja: arasuka no mottomo chiisai toshi wa nan desu ka
+es: que es la ciudad mas pequena en alaska
+(answer (smallest (city (loc_2 (stateid alaska:e))))) 
+
+569:
+en: what is the smallest city in arkansas
+(answer (smallest (city (loc_2 (stateid arkansas:e))))) 
+
+570:
+en: what is the smallest city in hawaii
+tr: hawaii deki en kucuk sehir nedir
+ja: hawai no mottomo chiisai toshi wa nan desu ka
+es: que es la ciudad mas pequena en hawaii
+(answer (smallest (city (loc_2 (stateid hawaii:e))))) 
+
+571:
+en: what is the smallest city in the largest state
+(answer (smallest (city (loc_2 (largest (state all:e)))))) 
+
+572:
+en: what is the smallest city in the us
+tr: usa deki en kucuk sehir nedir
+ja: beikoku no mottomo chiisai toshi wa nan desu ka
+es: que es la ciudad mas pequena en los usa
+(answer (smallest (city (loc_2 (countryid usa:e))))) 
+
+573:
+en: what is the smallest city in the usa
+tr: usa deki en kucuk sehir nedir
+ja: beikoku no mottomo chiisai toshi wa nan desu ka
+es: que es la ciudad mas pequena en los usa
+(answer (smallest (city (loc_2 (countryid usa:e))))) 
+
+574:
+en: what is the smallest city in washington
+tr: washington daki en kucuk sehir nedir
+ja: washinton no mottomo chiisai toshi wa nan desu ka
+es: que es la ciudad mas pequena en washington
+(answer (smallest (city (loc_2 (stateid washington:e))))) 
+
+575:
+en: what is the smallest city of the smallest state in the us
+(answer (smallest (city (loc_2 (smallest (state (loc_2 (countryid usa:e)))))))) 
+
+576:
+en: what is the smallest state bordering ohio
+(answer (smallest (state (next_to_2 (stateid ohio:e))))) 
+
+577:
+en: what is the smallest state bordering wyoming
+(answer (smallest (state (next_to_2 (stateid wyoming:e))))) 
+
+578:
+en: what is the smallest state by area
+tr: alan acisindan en kucuk eyalet nedir
+ja: chiiki de mottomo chiisai shuu wa nan desu ka
+es: que es el estado mas pequeno por area
+(answer (smallest_one (area_1 (state all:e)))) 
+
+579:
+en: what is the smallest state in the usa
+tr: usa deki en kucuk eyalet nedir
+ja: amerika no mottomo chiisai shuu wa nan desu ka
+es: que es el estado mas pequeno en los usa
+(answer (smallest (state (loc_2 (countryid usa:e))))) 
+
+580:
+en: what is the smallest state that borders texas
+(answer (smallest (state (next_to_2 (stateid texas:e))))) 
+
+581:
+en: what is the smallest state that borders the most states
+(answer (smallest (most (state (next_to_2 (state all:e)))))) 
+
+582:
+en: what is the smallest state that the mississippi river runs through
+(answer (smallest (state (traverse_1 (riverid mississippi:e))))) 
+
+583:
+en: what is the smallest state through which the longest river runs
+(answer (smallest (state (traverse_1 (longest (river all:e)))))) 
+
+584:
+en: what is the state that contains the highest point
+(answer (state (loc_1 (highest (place all:e))))) 
+
+585:
+en: what is the state with the highest elevation in the united states
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e))))))) 
+
+586:
+en: what is the state with the largest area
+(answer (largest_one (area_1 (state all:e)))) 
+
+587:
+en: what is the state with the largest density in usa
+(answer (largest_one (density_1 (state (loc_2 (countryid usa:e)))))) 
+
+588:
+en: what is the state with the largest population density
+(answer (largest_one (density_1 (state all:e)))) 
+
+589:
+en: what is the state with the lowest point
+(answer (state (loc_1 (lowest (place all:e))))) 
+
+590:
+en: what is the state with the lowest population
+tr: en az nufuslu eyalet nedir
+ja: mottomo chiisai jinkou ga aru shuu wa nan desu ka
+es: que es el estado con la poblacion mas baja
+(answer (smallest_one (population_1 (state all:e)))) 
+
+591:
+en: what is the state with the lowest population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+592:
+en: what is the state with the smallest area
+(answer (smallest_one (area_1 (state all:e)))) 
+
+593:
+en: what is the tallest mountain in america
+(answer (highest (mountain (loc_2 (countryid usa:e))))) 
+
+594:
+en: what is the tallest mountain in the united states
+(answer (highest (mountain (loc_2 (countryid usa:e))))) 
+
+595:
+en: what is the total area of the usa
+tr: usa nin toplam yuzolcumu nedir
+ja: amerika no zentai no chiiki wa nan desu ka
+es: que es la area total de los usa
+(answer (area_1 (countryid usa:e))) 
+
+596:
+en: what is the total length of all rivers in the usa
+(answer (sum (len (river all:e)))) 
+
+597:
+en: what is the total population of the states that border texas
+tr: texas a komsu eyaletlerin toplam nufusu nedir
+ja: tekisasu ni rinsetsu suru shuu no zentai no jinkou wa ikura desu ka
+es: que es el total de la poblacion de los estados que bordean a texas
+(answer (sum (population_1 (state (next_to_2 (stateid texas:e)))))) 
+
+598:
+en: what length is the mississippi
+tr: mississippi ni ne kadar uzunluktadir
+ja: mishishippi kawa no nagasa wa nan desu ka
+es: cuanto tiene de largo el mississippi
+(answer (len (riverid mississippi:e))) 
+
+599:
+en: what major cities are located in pennsylvania
+(answer (major (city (loc_2 (stateid pennsylvania:e))))) 
+
+600:
+en: what major rivers run through illinois
+tr: illinois den baslica hangi nehirler gecer
+ja: ookina kawa wa irinoi wo nagarete imasu ka
+es: que rios mayores corren por illinois
+(answer (major (river (traverse_2 (stateid illinois:e))))) 
+
+601:
+en: what mountains are in alaska
+(answer (mountain (loc_2 (stateid alaska:e)))) 
+
+602:
+en: what river flows through kansas
+(answer (river (traverse_2 (stateid kansas:e)))) 
+
+603:
+en: what river flows through texas
+(answer (river (traverse_2 (stateid texas:e)))) 
+
+604:
+en: what river flows through the most states
+(answer (most (river (traverse_2 (state all:e))))) 
+
+605:
+en: what river is the longest one in the united states
+(answer (longest (river (loc_2 (countryid usa:e))))) 
+
+606:
+en: what river runs through illinois
+(answer (river (traverse_2 (stateid illinois:e)))) 
+
+607:
+en: what river runs through the most states
+(answer (most (river (traverse_2 (state all:e))))) 
+
+608:
+en: what river runs through the state with the most cities
+(answer (river (traverse_2 (most (state (loc_1 (city all:e))))))) 
+
+609:
+en: what river runs through virginia
+(answer (river (traverse_2 (stateid virginia:e)))) 
+
+610:
+en: what river traverses the most states
+(answer (most (river (traverse_2 (state all:e))))) 
+
+611:
+en: what river traverses the state which borders the most states
+(answer (river (traverse_2 (most (state (next_to_2 (state all:e))))))) 
+
+612:
+en: what rivers are in nevada
+(answer (river (loc_2 (stateid nevada:e)))) 
+
+613:
+en: what rivers are in new mexico
+(answer (river (loc_2 (stateid new_mexico:e)))) 
+
+614:
+en: what rivers are in oregon
+(answer (river (loc_2 (stateid oregon:e)))) 
+
+615:
+en: what rivers are in states that border texas
+(answer (river (loc_2 (state (next_to_2 (stateid texas:e)))))) 
+
+616:
+en: what rivers are in texas
+(answer (river (loc_2 (stateid texas:e)))) 
+
+617:
+en: what rivers are in utah
+tr: utah da hangi nehirler vardir
+ja: yuutaa ni wa kawa ga nan desu ka
+es: que rios estan en utah
+(answer (river (loc_2 (stateid utah:e)))) 
+
+618:
+en: what rivers are there in texas
+(answer (river (loc_2 (stateid texas:e)))) 
+
+619:
+en: what rivers do not run through tennessee
+tr: hangi nehirler tennessee den gecmez
+ja: teneshii wo nagarenai kawa wa nan desu ka
+es: que rios no corren por tennessee
+(answer (exclude (river al:e) (traverse_2 (stateid tennessee:e)))) 
+
+620:
+en: what rivers flow through colorado
+(answer (river (traverse_2 (stateid colorado:e)))) 
+
+621:
+en: what rivers flow through missouri
+(answer (river (traverse_2 (stateid missouri:e)))) 
+
+622:
+en: what rivers flow through states that alabama borders
+(answer (river (traverse_2 (state (next_to_1 (stateid alabama:e)))))) 
+
+623:
+en: what rivers flow through states that border the state with the largest population
+(answer (river (traverse_2 (state (next_to_2 (largest_one (population_1 (state all:e)))))))) 
+
+624:
+en: what rivers flow through the largest state
+(answer (river (traverse_2 (largest (state all:e))))) 
+
+625:
+en: what rivers flow through the state with the largest population
+(answer (river (traverse_2 (largest_one (population_1 (state all:e)))))) 
+
+626:
+en: what rivers run through arizona
+(answer (river (traverse_2 (stateid arizona:e)))) 
+
+627:
+en: what rivers run through austin texas
+(answer (river (traverse_2 (cityid austin:e tx:e)))) 
+
+628:
+en: what rivers run through colorado
+tr: colorado dan hangi nehirler gecer
+ja: dono kawa wa kororado wo nagarete imasu ka
+es: que rios corren por colorado
+(answer (river (traverse_2 (stateid colorado:e)))) 
+
+629:
+en: what rivers run through louisiana
+(answer (river (traverse_2 (stateid louisiana:e)))) 
+
+630:
+en: what rivers run through maine
+(answer (river (traverse_2 (stateid maine:e)))) 
+
+631:
+en: what rivers run through new york
+tr: new york dan hangi nehirler gecer
+ja: dono kawa wa nyoo yooku wo nagarete imasu ka
+es: que rios corren por new york
+(answer (river (traverse_2 (stateid new_york:e)))) 
+
+632:
+en: what rivers run through the state with the lowest point in the usa
+(answer (river (traverse_2 (state (loc_1 (lowest (place (loc_2 (countryid usa:e))))))))) 
+
+633:
+en: what rivers run through the states that border the state with the capital atlanta
+tr: baskenti atlanta olan eyalete komsu eyaletlerden gecen nehir nedir
+ja: ataranta wo shuto ni motsu shuu ni rinsetsu suru shuu wo nagareru kawa wa nan desu ka
+es: que rios corren por los estados que bordean a el estado con la capital atlanta
+(answer (river (traverse_2 (state (next_to_2 (state (loc_1 (capital (cityid atlanta:e _:e))))))))) 
+
+634:
+en: what rivers run through west virginia
+tr: west virginia dan hangi nehirler gecer
+ja: dono kawa wa uesuto baajinia wo nagarete imasu ka
+es: que rios corren por west virginia
+(answer (river (traverse_2 (stateid west_virginia:e)))) 
+
+635:
+en: what rivers traverses the state which borders the most states
+(answer (river (traverse_2 (most (state (next_to_2 (state all:e))))))) 
+
+636:
+en: what state bordering nevada has the largest population
+(answer (largest_one (population_1 (state (next_to_2 (stateid nevada:e)))))) 
+
+637:
+en: what state borders michigan
+tr: hangi eyaletin michigan ya siniri vardir
+ja: mishigan ni rinsetsu suru shuu wa dochira desu ka
+es: cual estado bordea a michigan
+(answer (state (next_to_2 (stateid michigan:e)))) 
+
+638:
+en: what state borders most other states
+(answer (most (state (next_to_2 (state all:e))))) 
+
+639:
+en: what state borders new york
+(answer (state (next_to_2 (stateid new_york:e)))) 
+
+640:
+en: what state borders the least states
+(answer (fewest (state (next_to_2 (state all:e))))) 
+
+641:
+en: what state borders the least states excluding alaska and excluding hawaii
+(answer (fewest (state (next_to_2 (exclude (exclude (state al:e) (stateid alaska:e)) (stateid hawaii:e)))))) 
+
+642:
+en: what state borders the most states
+(answer (most (state (next_to_2 (state all:e))))) 
+
+643:
+en: what state borders the state with the smallest population
+(answer (state (next_to_2 (smallest_one (population_1 (state all:e)))))) 
+
+644:
+en: what state contains the highest point in the us
+tr: hangi eyalet us deki en yusek noktayi kapsar
+ja: dono shuu wa beikoku no mottomo takai chiten ga arimasu ka
+es: que estado contiene el punto mas alto en los us
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e))))))) 
+
+645:
+en: what state contains the highest point of those the colorado river traverses
+(answer (state (loc_1 (highest (place (loc_2 (state (traverse_1 (riverid colorado:e))))))))) 
+
+646:
+en: what state has highest elevation
+tr: hangi eyalet en yuksek yukseltiye sahiptir
+ja: dono shuu wa mottomo takai kaibatsu ga arimasu ka
+es: que estado tiene la elevacion mas alta
+(answer (state (loc_1 (highest (place all:e))))) 
+
+647:
+en: what state has no rivers
+(answer (exclude (state al:e) (loc_1 (river all:e)))) 
+
+648:
+en: what state has the capital salem
+tr: hangi eyaletin baskenti salem dir
+ja: dono shuu wa saremu to iu shuto ga arimasu ka
+es: que estado tiene la capital salem
+(answer (state (loc_1 (capital (cityid salem:e _:e))))) 
+
+649:
+en: what state has the city flint
+tr: hangi eyalet in flint sehri vardir
+ja: dono shuu wa furinto toshi ga arimasu ka
+es: que estado tiene la ciudad flint
+(answer (state (loc_1 (cityid flint:e _:e))))
+
+650:
+en: what state has the city with the largest population
+(answer (state (loc_1 (largest_one (population_1 (city all:e)))))) 
+
+651:
+en: what state has the city with the most population
+(answer (state (loc_1 (largest_one (population_1 (city all:e)))))) 
+
+652:
+en: what state has the greatest population density
+tr: hangi eyalet en buyuk nufus yogunluguna sahiptir
+ja: mottomo ookii jinkou no mitsudo ga aru shuu wa nan desu ka
+es: que estado tiene la densidad de poblacion mas grande
+(answer (largest_one (density_1 (state all:e)))) 
+
+653:
+en: what state has the highest elevation
+tr: hangi eyalet en yuksek yukseltiye sahiptir
+ja: dono shuu wa mottomo takai kaibatsu ga arimsua ka
+es: que estado tiene la elevacion mas alta
+(answer (state (loc_1 (highest (place all:e))))) 
+
+654:
+en: what state has the highest population
+tr: hangi eyalet en yuksek nufusa sahiptir
+ja: dono shuu wa mottomo ookii jinkou ga ariumasu ka
+es: cual estado tiene la poblacion mas alta
+(answer (largest_one (population_1 (state all:e)))) 
+
+655:
+en: what state has the highest population density
+(answer (largest_one (density_1 (state all:e)))) 
+
+656:
+en: what state has the largest area
+(answer (largest_one (area_1 (state all:e)))) 
+
+657:
+en: what state has the largest capital
+(answer (state (loc_1 (largest (capital all:e))))) 
+
+658:
+en: what state has the largest city
+(answer (state (loc_1 (largest (city all:e))))) 
+
+659:
+en: what state has the largest population
+(answer (largest_one (population_1 (state all:e)))) 
+
+660:
+en: what state has the largest population density
+tr: hangi eyalet en buyuk nufus yogunluguna sahiptir
+ja: mottomo ookii jinkou no mitsudo ga aru shuu wa nan desu ka
+es: que estado tiene la densidad de poblacion mas grande
+(answer (largest_one (density_1 (state all:e)))) 
+
+661:
+en: what state has the largest urban population
+(answer (largest_one (population_1 (state all:e)))) 
+
+662:
+en: what state has the least population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+663:
+en: what state has the longest river
+(answer (state (loc_1 (longest (river all:e))))) 
+
+664:
+en: what state has the lowest population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+665:
+en: what state has the most cities
+(answer (most (state (loc_1 (city all:e))))) 
+
+666:
+en: what state has the most major cities
+(answer (most (state (loc_1 (major (city all:e)))))) 
+
+667:
+en: what state has the most major rivers running through it
+(answer (most (state (traverse_1 (major (river all:e)))))) 
+
+668:
+en: what state has the most people
+(answer (largest_one (population_1 (state all:e)))) 
+
+669:
+en: what state has the most rivers
+(answer (most (state (loc_1 (river all:e))))) 
+
+670:
+en: what state has the most rivers running through it
+(answer (most (state (traverse_1 (river all:e))))) 
+
+671:
+en: what state has the shortest river
+(answer (state (loc_1 (shortest (river all:e))))) 
+
+672:
+en: what state has the smallest area
+(answer (smallest_one (area_1 (state all:e)))) 
+
+673:
+en: what state has the smallest capital
+(answer (state (loc_1 (smallest (capital all:e))))) 
+
+674:
+en: what state has the smallest population
+(answer (smallest_one (population_1 (state all:e)))) 
+
+675:
+en: what state has the smallest population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+676:
+en: what state has the smallest urban population
+(answer (smallest_one (population_1 (state all:e)))) 
+
+677:
+en: what state has the sparsest population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+678:
+en: what state is austin in
+(answer (state (loc_1 (cityid austin:e _:e)))) 
+
+679:
+en: what state is austin the capital of
+(answer (state (loc_1 (capital (cityid austin:e _:e))))) 
+
+680:
+en: what state is boston in
+(answer (state (loc_1 (cityid boston:e _:e)))) 
+
+681:
+en: what state is columbus the capital of
+tr: columbus hangi eyaletin baskentidir
+ja: koronbaasu wa dono shuu no shuto desu ka
+es: de cual estado es columbus la capital
+(answer (state (loc_1 (capital (cityid columbus:e _:e))))) 
+
+682:
+en: what state is dallas in
+(answer (state (loc_1 (cityid dallas:e _:e)))) 
+
+683:
+en: what state is des moines located in
+tr: des moines hangi eyalettedir
+ja: demoin wa dono shuu ni arimasu ka
+es: en que estado se encuentra des moines
+(answer (state (loc_1 (cityid des_moines:e _:e)))) 
+
+684:
+en: what state is miami in
+(answer (state (loc_1 (cityid miami:e _:e)))) 
+
+685:
+en: what state is pittsburgh in
+(answer (state (loc_1 (cityid pittsburgh:e _:e)))) 
+
+686:
+en: what state is the biggest
+(answer (largest (state all:e))) 
+
+687:
+en: what state is the largest in population
+(answer (largest_one (population_1 (state all:e)))) 
+
+688:
+en: what state is the state with the most rivers
+(answer (state (most (state (loc_1 (river all:e)))))) 
+
+689:
+en: what state that borders texas has the highest population
+(answer (largest_one (population_1 (state (next_to_2 (stateid texas:e)))))) 
+
+690:
+en: what state that borders texas is the largest
+(answer (largest (state (next_to_2 (stateid texas:e))))) 
+
+691:
+en: what state which the mississippi runs through has the largest population
+(answer (largest_one (population_1 (state (traverse_1 (riverid mississippi:e)))))) 
+
+692:
+en: what states are next to arizona
+(answer (state (next_to_2 (stateid arizona:e)))) 
+
+693:
+en: what states are next to texas
+(answer (state (next_to_2 (stateid texas:e)))) 
+
+694:
+en: what states are next to the mississippi
+(answer (state (next_to_2 (stateid mississippi:e)))) 
+
+695:
+en: what states border alaska
+(answer (state (next_to_2 (stateid alaska:e)))) 
+
+696:
+en: what states border arkansas
+tr: arkansas a siniri olan eyaletler nelerdir
+ja: aakansaa ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a arkansas
+(answer (state (next_to_2 (stateid arkansas:e)))) 
+
+697:
+en: what states border delaware
+tr: delaware a siniri olan eyaletler nelerdir
+ja: derawaru ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a delaware
+(answer (state (next_to_2 (stateid delaware:e)))) 
+
+698:
+en: what states border florida
+tr: florida a siniri olan eyaletler nelerdir
+ja: furorida ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a florida
+(answer (state (next_to_2 (stateid florida:e)))) 
+
+699:
+en: what states border georgia
+tr: georgia a siniri olan eyaletler nelerdir
+ja: joojaa ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a georgia
+(answer (state (next_to_2 (stateid georgia:e)))) 
+
+700:
+en: what states border hawaii
+tr: hawaii a siniri olan eyaletler nelerdir
+ja: hawai ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a hawaii
+(answer (state (next_to_2 (stateid hawaii:e)))) 
+
+701:
+en: what states border indiana
+tr: indiana a siniri olan eyaletler nelerdir
+ja: indiana ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a indiana
+(answer (state (next_to_2 (stateid indiana:e)))) 
+
+702:
+en: what states border kentucky
+tr: kentucky a siniri olan eyaletler nelerdir
+ja: kentakkii ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e)))) 
+
+703:
+en: what states border michigan
+(answer (state (next_to_2 (stateid michigan:e)))) 
+
+704:
+en: what states border missouri
+(answer (state (next_to_2 (stateid missouri:e)))) 
+
+705:
+en: what states border montana
+tr: montana a siniri olan eyaletler nelerdir
+ja: montana ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a montana
+(answer (state (next_to_2 (stateid montana:e)))) 
+
+706:
+en: what states border new hampshire
+tr: new hampshire a siniri olan eyaletler nelerdir
+ja: nyuu hanpushaa ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a new hampshire
+(answer (state (next_to_2 (stateid new_hampshire:e)))) 
+
+707:
+en: what states border new jersey
+tr: new jersey a siniri olan eyaletler nelerdir
+ja: nyuu jaajii ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a new jersey
+(answer (state (next_to_2 (stateid new_jersey:e)))) 
+
+708:
+en: what states border ohio
+tr: ohio ya siniri bulunan eyaletler nelerdir
+ja: ohaio ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a ohio
+(answer (state (next_to_2 (stateid ohio:e)))) 
+
+709:
+en: what states border rhode island
+tr: rhode island a siniri olan eyaletler nelerdir
+ja: roodoairando ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a rhode island
+(answer (state (next_to_2 (stateid rhode_island:e)))) 
+
+710:
+en: what states border states that border colorado
+(answer (state (next_to_2 (state (next_to_2 (stateid colorado:e)))))) 
+
+711:
+en: what states border states that border mississippi
+(answer (state (next_to_2 (state (next_to_2 (stateid mississippi:e)))))) 
+
+712:
+en: what states border states that border states that border florida
+(answer (state (next_to_2 (state (next_to_2 (state (next_to_2 (stateid florida:e)))))))) 
+
+713:
+en: what states border states that border states that border states that border texas
+(answer (state (next_to_2 (state (next_to_2 (state (next_to_2 (state (next_to_2 (stateid texas:e)))))))))) 
+
+714:
+en: what states border states that border the state with the largest population
+(answer (state (next_to_2 (state (next_to_2 (largest_one (population_1 (state all:e)))))))) 
+
+715:
+en: what states border states that the mississippi runs through
+(answer (state (next_to_2 (state (traverse_1 (riverid mississippi:e)))))) 
+
+716:
+en: what states border states that the ohio runs through
+(answer (state (next_to_2 (state (traverse_1 (riverid ohio:e)))))) 
+
+717:
+en: what states border states which the mississippi runs through
+(answer (state (next_to_2 (state (traverse_1 (riverid mississippi:e)))))) 
+
+718:
+en: what states border texas
+(answer (state (next_to_2 (stateid texas:e)))) 
+
+719:
+en: what states border texas and have a major river
+(answer (intersection (state (next_to_2 (stateid texas:e))) (loc_1 (major (river all:e))))) 
+
+720:
+en: what states border the mississippi river
+(answer (state (next_to_2 (riverid mississippi:e)))) 
+
+721:
+en: what states border the most populous state
+(answer (state (next_to_2 (largest_one (population_1 (state all:e)))))) 
+
+722:
+en: what states border the state that borders the most states
+(answer (state (next_to_2 (most (state (next_to_2 (state all:e))))))) 
+
+723:
+en: what states border the state with the most cities
+(answer (state (next_to_2 (most (state (loc_1 (city all:e))))))) 
+
+724:
+en: what states border the state with the most major cities
+(answer (state (next_to_2 (most (state (loc_1 (major (city all:e)))))))) 
+
+725:
+en: what states border the state with the smallest area
+(answer (state (next_to_2 (smallest_one (area_1 (state all:e)))))) 
+
+726:
+en: what states border the states with the most cities
+(answer (state (next_to_2 (most (state (loc_1 (city all:e))))))) 
+
+727:
+en: what states border wisconsin
+(answer (state (next_to_2 (stateid wisconsin:e)))) 
+
+728:
+en: what state 's capital is dover
+tr: hangi eyaletin baskenti dover dir
+ja: doobaa to iu shuto wa dono shuu desu ka
+es: que estado tiene la capital dover
+(answer (state (capital_2 (cityid dover:e _:e)))) 
+
+729:
+en: what states contain at least one major rivers
+(answer (state (loc_1 (major (river all:e))))) 
+
+730:
+en: what states does the colorado river run through
+(answer (state (traverse_1 (riverid colorado:e)))) 
+
+731:
+en: what states does the delaware river run through
+tr: delaware nehri hangi eyaletlerden gecer
+ja: derawaru kawa wa dono shuu wo nagarete imasu ka
+es: por cuales estados corre el rio delaware
+(answer (state (traverse_1 (riverid delaware:e)))) 
+
+732:
+en: what states does the mississippi river run through
+(answer (state (traverse_1 (riverid mississippi:e)))) 
+
+733:
+en: what states does the mississippi run through
+(answer (state (traverse_1 (riverid mississippi:e)))) 
+
+734:
+en: what states does the missouri river run through
+(answer (state (traverse_1 (riverid missouri:e)))) 
+
+735:
+en: what states does the missouri run through
+tr: missouri hangi eyaletlerin icinden gecer
+ja: mizuuri kawa wa dono shuu wo nagarete imasu ka
+es: por cuales estados corre el missouri
+(answer (state (traverse_1 (riverid missouri:e)))) 
+
+736:
+en: what states does the ohio river go through
+tr: ohio nehri hangi eyaletlerin icinden gecer
+ja: ohaio kawa wa dono shuu wo nagarete imasu ka
+es: por cuales estados corre el rio ohio
+(answer (state (traverse_1 (riverid ohio:e)))) 
+
+737:
+en: what states does the ohio river run through
+(answer (state (traverse_1 (riverid ohio:e)))) 
+
+738:
+en: what states does the shortest river run through
+(answer (state (traverse_1 (shortest (river all:e))))) 
+
+739:
+en: what states have a capital that is the highest point in the state
+(answer (state (loc_1 (capital (highest (place all:e)))))) 
+
+740:
+en: what states have a city named austin
+(answer (state (loc_1 (city (cityid austin:e _:e))))) 
+
+741:
+en: what states have cities named austin
+(answer (state (loc_1 (city (cityid austin:e _:e))))) 
+
+742:
+en: what states have cities named dallas
+tr: hangi eyaletlerde dallas sehri vardir
+ja: darasu to iu toshi ga aru shuu wa nan desu ka
+es: cuales estados tienen ciudades con el nombre dallas
+(answer (state (loc_1 (city (cityid dallas:e _:e))))) 
+
+743:
+en: what states have cities named plano
+tr: hangi eyaletlerde plano sehri vardir
+ja: purano to iu toshi ga aru shuu wa nan desu ka
+es: cuales estados tienen ciudades con el nombre plano
+(answer (state (loc_1 (city (cityid plano:e _:e))))) 
+
+744:
+en: what states have cities named portland
+(answer (state (loc_1 (city (cityid portland:e _:e))))) 
+
+745:
+en: what states have cities named rochester
+(answer (state (loc_1 (city (cityid rochester:e _:e))))) 
+
+746:
+en: what states have cities named salt lake city
+(answer (state (loc_1 (city (cityid salt_lake_city:e _:e))))) 
+
+747:
+en: what states have no bordering state
+(answer (exclude (state al:e) (next_to_2 (state all:e)))) 
+
+748:
+en: what states have rivers named colorado
+(answer (state (loc_1 (river (riverid colorado:e)))))
+
+749:
+en: what states have rivers running through them
+(answer (state (traverse_1 (river all:e)))) 
+
+750:
+en: what states have towns named springfield
+(answer (state (loc_1 (city (cityid springfield:e _:e))))) 
+
+751:
+en: what state 's high point is higher than that of colorado
+(answer (state (high_point_2 (higher_2 (high_point_1 (stateid colorado:e)))))) 
+
+752:
+en: what states in the united states have a city of springfield
+(answer (intersection (state (loc_2 (countryid usa:e))) (loc_1 (city (cityid springfield:e _:e))))) 
+
+753:
+en: what states neighbor maine
+(answer (state (next_to_2 (stateid maine:e)))) 
+
+754:
+en: what states surround kentucky
+tr: kentucky yi hangi eyaletler cevreler
+ja: donna shuu ga kentakkii no mawari ni arimasu ka
+es: cuales estados rodean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e)))) 
+
+755:
+en: what texas city has the largest population
+(answer (largest_one (population_1 (city (loc_2 (stateid texas:e)))))) 
+
+756:
+en: what 's the largest city
+tr: en buyuk sehir nedir
+ja: mottomo ookii toshi wa nan desu ka
+es: que es la ciudad mas grande
+(answer (largest (city all:e))) 
+
+757:
+en: where are mountains
+(answer (loc_1 (mountain all:e))) 
+
+758:
+en: where is austin
+(answer (loc_1 (cityid austin:e _:e))) 
+
+759:
+en: where is baton rouge
+(answer (loc_1 (cityid baton_rouge:e _:e))) 
+
+760:
+en: where is dallas
+(answer (loc_1 (cityid dallas:e _:e))) 
+
+761:
+en: where is fort wayne
+(answer (loc_1 (cityid fort_wayne:e _:e))) 
+
+762:
+en: where is houston
+(answer (loc_1 (cityid houston:e _:e))) 
+
+763:
+en: where is indianapolis
+(answer (loc_1 (cityid indianapolis:e _:e))) 
+
+764:
+en: where is massachusetts
+(answer (loc_1 (stateid massachusetts:e))) 
+
+765:
+en: where is mount whitney
+(answer (loc_1 (placeid mount_whitney:e))) 
+
+766:
+en: where is mount whitney located
+(answer (loc_1 (placeid mount_whitney:e))) 
+
+767:
+en: where is new hampshire
+(answer (loc_1 (stateid new_hampshire:e))) 
+
+768:
+en: where is new orleans
+(answer (loc_1 (cityid new_orleans:e _:e))) 
+
+769:
+en: where is portland
+(answer (loc_1 (cityid portland:e _:e))) 
+
+770:
+en: where is san diego
+(answer (loc_1 (cityid san_diego:e _:e))) 
+
+771:
+en: where is san jose
+(answer (loc_1 (cityid san_jose:e _:e))) 
+
+772:
+en: where is scotts valley
+(answer (loc_1 (cityid scotts_valley:e _:e))) 
+
+773:
+en: where is springfield
+(answer (loc_1 (cityid springfield:e _:e))) 
+
+774:
+en: where is the chattahoochee river
+(answer (loc_1 (riverid chattahoochee:e))) 
+
+775:
+en: where is the highest mountain of the united states
+(answer (highest (mountain (loc_2 (countryid usa:e))))) 
+
+776:
+en: where is the highest point in hawaii
+tr: hawaii deki en yuksek nokta nerededir
+ja: hawai no mottomo takai chiten wa doko desu ka
+es: que es el punto mas alto en hawaii
+(answer (highest (place (loc_2 (stateid hawaii:e))))) 
+
+777:
+en: where is the highest point in montana
+tr: montana daki en yuksek nokta nerededir
+ja: montana no mottomo takai chiten wa doko desu ka
+es: donde esta el punto mas alto en montana
+(answer (highest (place (loc_2 (stateid montana:e))))) 
+
+778:
+en: where is the lowest point in maryland
+(answer (lowest (place (loc_2 (stateid maryland:e))))) 
+
+779:
+en: where is the lowest point in the us
+tr: us deki en alcak nokta nerededir
+ja: beikoku no mottomo hikui chiten wa doko desu ka
+es: donde esta el punto mas bajo en los us
+(answer (lowest (place (loc_2 (countryid usa:e))))) 
+
+780:
+en: where is the lowest spot in iowa
+tr: iowa daki en alcak nokta nerededir
+ja: aiowa no mottomo hikui chiten wa nan desu ka
+es: donde esta el punto mas bajo en iowa
+(answer (lowest (place (loc_2 (stateid iowa:e))))) 
+
+781:
+en: where is the most populated area of new mexico
+(answer (largest_one (population_1 (city (loc_2 (stateid new_mexico:e)))))) 
+
+782:
+en: where is the smallest city
+(answer (loc_1 (smallest (city all:e)))) 
+
+783:
+en: which capitals are in the states that border texas
+(answer (capital (loc_2 (state (next_to_2 (stateid texas:e)))))) 
+
+784:
+en: which capitals are not major cities
+(answer (exclude (capital al:e) (major (city all:e)))) 
+
+785:
+en: which city in california has the largest population
+(answer (largest_one (population_1 (city (loc_2 (stateid california:e)))))) 
+
+786:
+en: which is the density of the state that the largest river in the united states runs through
+(answer (density_1 (state (traverse_1 (longest (river (loc_2 (countryid usa:e)))))))) 
+
+787:
+en: which is the highest peak not in alaska
+(answer (highest (exclude (mountain al:e) (loc_2 (stateid alaska:e))))) 
+
+788:
+en: which is the longest river in usa
+(answer (longest (river (loc_2 (countryid usa:e))))) 
+
+789:
+en: which is the lowest point of the states that the mississippi runs through
+(answer (lowest (place (loc_2 (state (traverse_1 (riverid mississippi:e))))))) 
+
+790:
+en: which is the shortest river
+(answer (shortest (river all:e))) 
+
+791:
+en: which is the smallest state
+(answer (smallest (state all:e))) 
+
+792:
+en: which of the states bordering pennsylvania has the largest population
+(answer (largest_one (population_1 (state (next_to_2 (stateid pennsylvania:e)))))) 
+
+793:
+en: which river goes through the most states
+(answer (most (river (traverse_2 (state all:e))))) 
+
+794:
+en: which river runs through most states
+(answer (most (river (traverse_2 (state all:e))))) 
+
+795:
+en: which river runs through the most states
+tr: hangi nehir en cok eyaletten gecer
+ja: donna kawa ga mottomo ooku no kawa wo nagarete imasu ka
+es: cual rio corre por mas estados
+(answer (most (river (traverse_2 (state all:e))))) 
+
+796:
+en: which river traverses most states
+(answer (most (river (traverse_2 (state all:e))))) 
+
+797:
+en: which rivers are in alaska
+(answer (river (loc_2 (stateid alaska:e)))) 
+
+798:
+en: which rivers do not run through texas
+(answer (exclude (river al:e) (traverse_2 (stateid texas:e)))) 
+
+799:
+en: which rivers do not run through usa
+(answer (exclude (river al:e) (traverse_2 (countryid usa:e)))) 
+
+800:
+en: which rivers flow through alaska
+tr: hangi nehirler alaska nin icinden akar
+ja: dono kawa wa arasuka wo nagarete imasu ka
+es: cuales rios corren por alaska
+(answer (river (traverse_2 (stateid alaska:e)))) 
+
+801:
+en: which rivers run through states bordering new mexico
+tr: hangi nehirler new mexico ya siniri olan eyaletlerden gecer
+ja: donna kawa wa nyuu mekishiko ni rinsetsu suru shuu wo nagarete imasu ka
+es: cuales rios corren por estados bordeando a new mexico
+(answer (river (traverse_2 (state (next_to_2 (stateid new_mexico:e)))))) 
+
+802:
+en: which rivers run through states that border the state with the capital austin
+(answer (river (traverse_2 (state (next_to_2 (state (loc_1 (capital (cityid austin:e _:e))))))))) 
+
+803:
+en: which rivers run through states with fewest cities
+(answer (river (traverse_2 (fewest (state (loc_1 (city all:e))))))) 
+
+804:
+en: which rivers run through the state with the largest city in the us
+(answer (river (traverse_2 (state (loc_1 (largest (city (loc_2 (countryid usa:e))))))))) 
+
+805:
+en: which rivers run through the state with the lowest elevation in the usa
+(answer (river (traverse_2 (state (loc_1 (lowest (place (loc_2 (countryid usa:e))))))))) 
+
+806:
+en: which state border kentucky
+tr: hangi eyaletin kentucky ye siniri vardir
+ja: kentakkii ni rinsetsu suru shuu wa nan desu ka
+es: cual estado bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e)))) 
+
+807:
+en: which state borders florida
+tr: hangi eyaletin florida ya siniri vardir
+ja: furorida ni rinsetsu suru shuu wa dochira desu ka
+es: cual estado bordea a florida
+(answer (state (next_to_2 (stateid florida:e)))) 
+
+808:
+en: which state borders hawaii
+tr: hangi eyaletin hawaii ya siniri vardir
+ja: hawai ni rinsetsu suru shuu wa dochira desu ka
+es: cual estado bordea a hawaii
+(answer (state (next_to_2 (stateid hawaii:e)))) 
+
+809:
+en: which state borders most states
+tr: hangi eyaletin en cok eyalete siniri vardir
+ja: donna shuu ga mottomo ooku no shuu ni rinsetsu shite imasu ka
+es: cual estado bordea a los mas estados
+(answer (most (state (next_to_2 (state all:e))))) 
+
+810:
+en: which state borders the most states
+tr: hangi eyaletin en cok eyalete siniri vardir
+ja: donna shuu ga mottomo ooku no shuu ni rinsetsu shite imasu ka
+es: cual estado bordea a mas estados
+(answer (most (state (next_to_2 (state all:e))))) 
+
+811:
+en: which state capital has the smallest population
+(answer (smallest_one (population_1 (capital all:e)))) 
+
+812:
+en: which state contains most rivers
+(answer (most (state (loc_1 (river all:e))))) 
+
+813:
+en: which state has the biggest population
+(answer (largest_one (population_1 (state all:e)))) 
+
+814:
+en: which state has the greatest density
+(answer (largest_one (density_1 (state all:e)))) 
+
+815:
+en: which state has the greatest population
+tr: hangi eyalet en buyuk nufusa sahiptir
+ja: dono shuu wa mottomo ookii jinkou ga ariumasu ka
+es: cual estado tiene la poblacion mas grande
+(answer (largest_one (population_1 (state all:e)))) 
+
+816:
+en: which state has the highest elevation
+tr: hangi eyalet en yuksek yukseltiye sahiptir
+ja: dono shuu wa mottomo takai kaibatsu ga arimasu ka
+es: cual estado tiene la elevacion mas alta
+(answer (state (loc_1 (highest (place all:e))))) 
+
+817:
+en: which state has the highest peak in the country
+tr: hangi eyalet ulkedeki en yuksek zirveye sahiptir
+ja: dono shuu wa kuni no mottomo takai choujou ga arimasu ka
+es: cual estado tiene el pico mas alto en el pais
+(answer (state (loc_1 (highest (place all:e))))) 
+
+818:
+en: which state has the highest point
+tr: hangi eyalet en yuksek noktaya sahiptir
+ja: dono shuu wa mottomo takai chiten ga arimasu ka
+es: cual estado tiene el punto mas alto
+(answer (state (loc_1 (highest (place all:e))))) 
+
+819:
+en: which state has the highest population density
+tr: hangi eyalet en yuksek nufus yogunluguna sahiptir
+ja: dono shuu wa mottomo ookii jinkou no mitsudo ga arimasu ka
+es: cual estado tiene la densidad de poblacion mas alta
+(answer (largest_one (density_1 (state all:e)))) 
+
+820:
+en: which state has the largest city
+tr: hangi eyalet en buyuk sehre sahiptir
+ja: dono shuu wa mottomo ookii toshi ga arimasu ka
+es: cual estado tiene la ciudad mas grande
+(answer (state (loc_1 (largest (city all:e))))) 
+
+821:
+en: which state has the largest density
+(answer (largest_one (density_1 (state all:e)))) 
+
+822:
+en: which state has the least population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+823:
+en: which state has the longest river
+tr: hangi eyalet en uzun nehre sahiptir
+ja: dono shuu wa mottomo nagai kawa ga arimasu ka
+es: cual estado tiene el rio mas largo
+(answer (state (loc_1 (longest (river all:e))))) 
+
+824:
+en: which state has the lowest elevation
+(answer (state (loc_1 (lowest (place all:e))))) 
+
+825:
+en: which state has the lowest point that borders idaho
+(answer (state (loc_1 (lowest (place (loc_2 (next_to_2 (stateid idaho:e)))))))) 
+
+826:
+en: which state has the lowest population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+827:
+en: which state has the most major cities
+(answer (most (state (loc_1 (major (city all:e)))))) 
+
+828:
+en: which state has the most major rivers
+(answer (most (state (loc_1 (major (river all:e)))))) 
+
+829:
+en: which state has the most major rivers running through it
+(answer (most (state (traverse_1 (major (river all:e)))))) 
+
+830:
+en: which state has the most people
+(answer (largest_one (population_1 (state all:e)))) 
+
+831:
+en: which state has the most population
+(answer (largest_one (population_1 (state all:e)))) 
+
+832:
+en: which state has the most rivers
+(answer (most (state (loc_1 (river all:e))))) 
+
+833:
+en: which state has the most rivers running through it
+(answer (most (state (traverse_1 (river all:e))))) 
+
+834:
+en: which state has the red river
+(answer (state (loc_1 (riverid red:e)))) 
+
+835:
+en: which state has the smallest area that borders texas
+(answer (smallest_one (area_1 (state (next_to_2 (stateid texas:e)))))) 
+
+836:
+en: which state has the smallest average urban population
+(answer (smallest_one (density_1 (state all:e)))) 
+
+837:
+en: which state has the smallest population density
+tr: hangi eyalet en kucuk nufus yogunluguna sahiptir
+ja: mottomo chiisai jinkou no mitsudo ga aru shuu wa nan desu ka
+es: cual estado tiene la densidad de poblacion mas pequena
+(answer (smallest_one (density_1 (state all:e)))) 
+
+838:
+en: which state has the sparsest population density
+(answer (smallest_one (density_1 (state all:e)))) 
+
+839:
+en: which state is kalamazoo in
+tr: kalamazoo hangi eyalettedir
+ja: dono shuu ni wa karamazuu kawa desu ka
+es: en que estado esta kalamazoo
+(answer (state (loc_1 (cityid kalamazoo:e _:e)))) 
+
+840:
+en: which state is mount mckinley in
+(answer (state (loc_1 (placeid mount_mckinley:e)))) 
+
+841:
+en: which state is the city denver located in
+tr: denver sehri hangi eyalettedir
+ja: dono shuu ni wa denbaru toshi ga arimasu ka
+es: en cual estado se encuentra la ciudad denver
+(answer (state (loc_1 (cityid denver:e _:e))))
+
+842:
+en: which state is the largest city in montana in
+(answer (state (loc_1 (largest (city (loc_2 (stateid montana:e))))))) 
+
+843:
+en: which state is the smallest
+tr: hangi eyalet en kucuktur
+ja: mottomo chiisai shuu wa nan desu ka
+es: cual estado es el mas pequeno
+(answer (smallest (state all:e))) 
+
+844:
+en: which states adjoin alabama
+(answer (state (next_to_2 (stateid alabama:e)))) 
+
+845:
+en: which states border alabama
+(answer (state (next_to_2 (stateid alabama:e)))) 
+
+846:
+en: which states border alaska
+(answer (state (next_to_2 (stateid alaska:e)))) 
+
+847:
+en: which states border arizona
+tr: arizona a siniri olan eyaletler nelerdir
+ja: arizona ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a arizona
+(answer (state (next_to_2 (stateid arizona:e)))) 
+
+848:
+en: which states border colorado
+tr: colorado a siniri olan eyaletler nelerdir
+ja: kororado ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a colorado
+(answer (state (next_to_2 (stateid colorado:e)))) 
+
+849:
+en: which states border hawaii
+(answer (state (next_to_2 (stateid hawaii:e)))) 
+
+850:
+en: which states border illinois
+(answer (state (next_to_2 (stateid illinois:e)))) 
+
+851:
+en: which states border iowa
+(answer (state (next_to_2 (stateid iowa:e)))) 
+
+852:
+en: which states border kentucky
+tr: kentucky a siniri olan eyaletler nelerdir
+ja: kentakkii ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e)))) 
+
+853:
+en: which states border michigan
+(answer (state (next_to_2 (stateid michigan:e)))) 
+
+854:
+en: which states border new york
+tr: new york a siniri olan eyaletler nelerdir
+ja: nyuu yooku ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a new york
+(answer (state (next_to_2 (stateid new_york:e)))) 
+
+855:
+en: which states border no other states
+(answer (exclude (state al:e) (next_to_2 (state all:e)))) 
+
+856:
+en: which states border south dakota
+tr: south dakota a siniri olan eyaletler nelerdir
+ja: sausu dakota ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a south dakota
+(answer (state (next_to_2 (stateid south_dakota:e)))) 
+
+857:
+en: which states border states through which the mississippi traverses
+(answer (state (next_to_2 (state (traverse_1 (riverid mississippi:e)))))) 
+
+858:
+en: which states border texas
+tr: hangi eyaletin texas ye siniri vardir
+ja: tekisasu ni rinsetsu suru shuu wa nan desu ka
+es: cuales estados bordean a texas
+(answer (state (next_to_2 (stateid texas:e)))) 
+
+859:
+en: which states border the longest river in the usa
+(answer (state (next_to_2 (longest (river (loc_2 (countryid usa:e))))))) 
+
+860:
+en: which states border the missouri river
+(answer (state (next_to_2 (riverid missouri:e)))) 
+
+861:
+en: which states border the state with the smallest area
+(answer (state (next_to_2 (smallest_one (area_1 (state all:e)))))) 
+
+862:
+en: which state 's capital city is the largest
+tr: hangi eyaletin baskenti en buyuktur
+ja: dono shuu no shuto wa mottomo ookii desu ka
+es: cual estado tiene la ciudad capital mas grande
+(answer (state (loc_1 (largest (city (capital_1 (state all:e))))))) 
+
+863:
+en: which states do colorado river flow through
+(answer (state (traverse_1 (riverid colorado:e)))) 
+
+864:
+en: which states does not border texas
+(answer (exclude (state al:e) (next_to_2 (stateid texas:e)))) 
+
+865:
+en: which states does the chattahoochee river run through
+(answer (state (traverse_1 (riverid chattahoochee:e)))) 
+
+866:
+en: which states does the colorado river run through
+(answer (state (traverse_1 (riverid colorado:e)))) 
+
+867:
+en: which states does the longest river cross
+(answer (state (traverse_1 (longest (river all:e))))) 
+
+868:
+en: which states does the longest river run through
+(answer (state (traverse_1 (longest (river all:e))))) 
+
+869:
+en: which states does the mississippi river run through
+tr: mississippi nehri hangi eyaletlerden gecmektedir
+ja: mishishippi kawa wa donna shuu wo nagarete imasu ka
+es: por cuales estados corre el rio mississippi
+(answer (state (traverse_1 (riverid mississippi:e)))) 
+
+870:
+en: which states does the mississippi run through
+tr: mississippi hangi eyaletlerden gecer
+ja: mishishippi kawa wa dono shuu wo nagarete imasu ka
+es: por cuales estados corre el mississippi
+(answer (state (traverse_1 (riverid mississippi:e)))) 
+
+871:
+en: which states does the missouri river pass through
+(answer (state (traverse_1 (riverid missouri:e)))) 
+
+872:
+en: which states does the missouri river run through
+tr: missouri nehri hangi eyaletlerden gecer
+ja: mizuuri kawa wa donna shuu wo nagarete imasu ka
+es: por cuales estados corre el rio missouri
+(answer (state (traverse_1 (riverid missouri:e)))) 
+
+873:
+en: which states have a major city named austin
+(answer (state (loc_1 (major (city (cityid austin:e _:e)))))) 
+
+874:
+en: which states have a river
+(answer (state (loc_1 (river all:e)))) 
+
+875:
+en: which states have cities named austin
+tr: hangi eyaletlerde austin sehri vardir
+ja: ausuchin to iu toshi ga aru shuu dono desu ka
+es: cuales estados tienen ciudades con el nombre austin
+(answer (state (loc_1 (city (cityid austin:e _:e))))) 
+
+876:
+en: which states have points higher than the highest point in colorado
+tr: hangi eyaletler colorado nun en yuksek noktasindan daha yuksek noktaya sahiptirler
+ja: kororado no mottomo takai chiten yori motto takai chiten ga aru shuu wa nan desu ka
+es: cuales estados tienen puntos mas alto que el punto mas alto en colorado
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e))))))))) 
+
+877:
+en: which states have points that are higher than the highest point in texas
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid texas:e))))))))) 
+
+878:
+en: which states lie on the largest river in the united states
+(answer (state (traverse_1 (longest (river (loc_2 (countryid usa:e))))))) 
+
+879:
+en: which us city has the highest population density
+(answer (largest_one (density_1 (city all:e)))) 
+

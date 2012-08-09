@@ -1,0 +1,75 @@
+montana daki en yuksek nokta nerededir
+(answer (loc_1 (highest (place (loc_2 (stateid montana:e))))))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+north dakota in baskenti nedir
+(answer (capital (loc_2 (stateid north_dakota:e))))
+
+utah in baskenti nedir
+(answer (capital (loc_2 (stateid utah:e))))
+
+iowa daki en kisa nehir nedir
+(answer (shortest (river (loc_2 (stateid iowa:e)))))
+
+oklahoma daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid oklahoma:e)))))
+
+delaware nehrinin uzunlugu ne kadardir
+(answer (len (riverid delaware:e)))
+
+oregon daki en alcak nokta nedir
+(answer (lowest (place (loc_2 (stateid oregon:e)))))
+
+en kalabalik eyalet nedir
+(answer (largest_one (population_1 (state all:e))))
+
+texas a komsu eyaletlerin toplam nufusu nedir
+(answer (sum (population_1 (state (next_to_2 (stateid texas:e))))))
+
+mississippi hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+hangi eyaletin florida ya siniri vardir
+(answer (state (next_to_2 (stateid florida:e))))
+
+hangi eyalet in flint sehri vardir
+(answer (state (loc_1 (cityid flint:e _:e))))
+
+rhode island a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid rhode_island:e))))
+
+minnesota da nufus acisindan en buyuk sehir nedir
+(answer (largest_one (population_1 (city (loc_2 (stateid minnesota:e))))))
+
+en kucuk eyaletin yuzolcumu nedir
+(answer (area_1 (smallest (state all:e))))
+
+en genis eyaletin yuzolcumu nedir
+(answer (area_1 (largest (state all:e))))
+
+alan acisindan en kucuk eyalet nedir
+(answer (smallest_one (area_1 (state all:e))))
+
+north platte nehrinin uzunlugu ne kadardir
+(answer (len (riverid north_platte:e)))
+
+colorado daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid colorado:e)))))
+
+riverside da ne kadar insan yasamaktadir
+(answer (population_1 (cityid riverside:e _:e)))
+
+kentucky yi hangi eyaletler cevreler
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+columbus hangi eyaletin baskentidir
+(answer (state (loc_1 (capital (cityid columbus:e _:e)))))
+
+us deki en alcak nokta nerededir
+(answer (loc_1 (lowest (place (loc_2 (countryid usa:e))))))
+
+louisiana daki en alcak nokta nedir
+(answer (lowest (place (loc_2 (stateid louisiana:e)))))
+

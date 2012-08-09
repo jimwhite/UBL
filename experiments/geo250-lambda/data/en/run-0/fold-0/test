@@ -1,0 +1,75 @@
+what state borders michigan
+(lambda $0 e (and (state:t $0) (next_to:t $0 michigan:s)))
+
+what are the major cities in ohio
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 ohio:s)))
+
+what is the lowest point in arkansas
+(argmin $0 (and (place:t $0) (loc:t $0 arkansas:s)) (elevation:i $0))
+
+what states border georgia
+(lambda $0 e (and (state:t $0) (next_to:t $0 georgia:s)))
+
+how many rivers are in new york
+(count $0 (and (river:t $0) (loc:t $0 new_york:s)))
+
+what is the lowest point in the state of texas
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+which states border texas
+(lambda $0 e (and (state:t $0) (next_to:t $0 texas:s)))
+
+what is the smallest city in washington
+(argmin $0 (and (city:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+what states border ohio
+(lambda $0 e (and (state:t $0) (next_to:t $0 ohio:s)))
+
+what is the population of new york city
+(population:i new_york_city:c)
+
+how many people live in california
+(population:i california:s)
+
+how many people live in spokane washington
+(population:i spokane_wa:c)
+
+what is the population of springfield missouri
+(population:i springfield_mo:c)
+
+what states border hawaii
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+what is the total area of the usa
+(area:i usa:co)
+
+what is the highest point in states bordering georgia
+(argmax $0 (and (place:t $0) (exists $1 (and (state:t $1) (next_to:t $1 georgia:s) (loc:t $0 $1)))) (elevation:i $0))
+
+what is the highest point in montana
+(argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0))
+
+how high is the highest point in america
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0)))
+
+what are the major cities in california
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 california:s)))
+
+what is the combined population of all 50 states
+(sum $0 (state:t $0) (population:i $0))
+
+what is the smallest city in the usa
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+what capital is the largest in the us
+(argmax $0 (and (capital:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+what is the highest mountain in the us
+(argmax $0 (and (mountain:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+what rivers run through the states that border the state with the capital atlanta
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (loc:t $0 $1) (next_to:t $1 (the $2 (and (state:t $2) (capital:t $2 atlanta_ga:c))))))))
+
+what states border florida
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+

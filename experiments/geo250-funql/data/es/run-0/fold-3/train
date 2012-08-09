@@ -1,0 +1,675 @@
+cuantos rios hay en idaho
+(answer (count (river (loc_2 (stateid idaho:e)))))
+
+cuales estados bordean a rhode island
+(answer (state (next_to_2 (stateid rhode_island:e))))
+
+cuales estados bordean a ohio
+(answer (state (next_to_2 (stateid ohio:e))))
+
+que es el punto mas bajo en los united states
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+nombra los rios en arkansas
+(answer (river (loc_2 (stateid arkansas:e))))
+
+que es la area total de los usa
+(answer (area_1 (countryid usa:e)))
+
+cuantas ciudades hay en los us
+(answer (count (city (loc_2 (countryid usa:e)))))
+
+que es el rio mas grande en illinois
+(answer (longest (river (loc_2 (stateid illinois:e)))))
+
+que es el punto mas alto en los usa
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+e _:e))))))))
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid des_moines:e _:e))))))))
+
+cuales estados tienen ciudades con el nombre plano
+(answer (state (loc_1 (city (cityid plano:e _:e)))))
+
+que tan grande esta alaska
+(answer (size (stateid alaska:e)))
+
+que es la poblacion de south dakota
+(answer (population_1 (stateid south_dakota:e)))
+
+que es la poblacion de oregon
+(answer (population_1 (stateid oregon:e)))
+
+que es la poblacion de la capital de el estado mas pequeno
+(answer (population_1 (capital (loc_2 (smallest (state all:e))))))
+
+que estado tiene la capital dover
+(answer (state (capital_2 (cityid dover:e _:e))))
+
+cuantas personas viven en california
+(answer (population_1 (stateid california:e)))
+
+que es la densidad de poblacion de texas
+(answer (density_1 (stateid texas:e)))
+
+cual estado bordea a michigan
+(answer (state (next_to_2 (stateid michigan:e))))
+
+que son los puntos altos de los estados rodeando a mississippi
+(answer (high_point_1 (state (next_to_2 (stateid mississippi:e)))))
+
+que es la ciudad mas pequena en hawaii
+(answer (smallest (city (loc_2 (stateid hawaii:e)))))
+
+de cual estado es columbus la capital
+(answer (state (loc_1 (capital (cityid columbus:e _:e)))))
+
+que es el punto mas bajo de el estado con la area mas grande
+(answer (lowest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+cuales estados bordean a south dakota
+(answer (state (next_to_2 (stateid south_dakota:e))))
+
+que es la ciudad mas grande en los usa
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+que es la densidad de poblacion de wyoming
+(answer (density_1 (stateid wyoming:e)))
+
+que es la capital de new jersey
+(answer (capital (loc_2 (stateid new_jersey:e))))
+
+dame las ciudades en virginia
+(answer (city (loc_2 (stateid virginia:e))))
+
+que rios corren por los estados que bordean a el estado con la capital atlanta
+(answer (river (traverse_2 (state (next_to_2 (state (loc_1 (capital (cityid atlanta:e _:e)))))))))
+
+donde esta el punto mas bajo en iowa
+(answer (loc_1 (lowest (place (loc_2 (stateid iowa:e))))))
+
+que es la poblacion de la ciudad new york
+(answer (population_1 (cityid new_york:e _:e)))
+
+que es el punto mas bajo en louisiana
+(answer (lowest (place (loc_2 (stateid louisiana:e)))))
+
+cuales rios corren por alaska
+(answer (river (traverse_2 (stateid alaska:e))))
+
+que es la ciudad mas grande en minnesota por poblacion
+(answer (largest_one (population_1 (city (loc_2 (stateid minnesota:e))))))
+
+cuales estados bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+que rios no corren por tennessee
+(answer (exclude (river all:e) (traverse_2 (stateid tennessee:e))))
+
+cuantos kilometros cuadrados en los us
+(answer (area_1 (countryid usa:e)))
+
+que es el rio mas corto en iowa
+(answer (shortest (river (loc_2 (stateid iowa:e)))))
+
+que es el rio mas largo en los us
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+cual estado tiene la densidad de poblacion mas pequena
+(answer (smallest_one (density_1 (state all:e))))
+
+cual estado bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+que es la ciudad mas pequena en alaska
+(answer (smallest (city (loc_2 (stateid alaska:e)))))
+
+cuales estados bordean a new jersey
+(answer (state (next_to_2 (stateid new_jersey:e))))
+
+que son las ciudades mayores en wyoming
+(answer (major (city (loc_2 (stateid wyoming:e)))))
+
+que es la poblacion de montana
+(answer (population_1 (stateid montana:e)))
+
+que es el rio mas largo en los united states
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+que es el rio mas largo en texas
+(answer (longest (river (loc_2 (stateid texas:e)))))
+
+en que estado esta kalamazoo
+(answer (state (loc_1 (cityid kalamazoo:e _:e))))
+
+que es el total de la poblacion de los estados que bordean a texas
+(answer (sum (population_1 (state (next_to_2 (stateid texas:e))))))
+
+que es el punto mas alto en iowa
+(answer (highest (place (loc_2 (stateid iowa:e)))))
+
+que estado tiene la elevacion mas alta
+(answer (state (loc_1 (highest (place all:e)))))
+
+que es el estado mas pequeno por area
+(answer (smallest_one (area_1 (state all:e))))
+
+cuantas personas viven en riverside
+(answer (population_1 (cityid riverside:e _:e)))
+
+que es el rio mas largo en los united states
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+que es el punto mas bajo en nebraska en metros
+(answer (lowest (place (loc_2 (stateid nebraska:e)))))
+
+que es la ciudad con la poblacion mas pequena
+(answer (smallest_one (population_1 (city all:e))))
+
+que son las ciudades mayores en ohio
+(answer (major (city (loc_2 (stateid ohio:e)))))
+
+e _:e))))
+(answer (state (loc_1 (cityid des_moines:e _:e))))
+
+por cuales estados corre el mississippi
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+cuantas ciudades hay en montana
+(answer (count (city (loc_2 (stateid montana:e)))))
+
+que es el punto mas bajo en texas
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+dame el estado mas grande
+(answer (largest (state all:e)))
+
+que estado tiene la capital salem
+(answer (state (loc_1 (capital (cityid salem:e _:e)))))
+
+que estado tiene la densidad de poblacion mas grande
+(answer (largest_one (density_1 (state all:e))))
+
+cual rio corre por mas estados
+(answer (most (river (traverse_2 (state all:e)))))
+
+que rios corren por west virginia
+(answer (river (traverse_2 (stateid west_virginia:e))))
+
+que es el punto mas alto de el estado con la area mas grande
+(answer (highest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+que rios corren por new york
+(answer (river (traverse_2 (stateid new_york:e))))
+
+que rios estan en utah
+(answer (river (loc_2 (stateid utah:e))))
+
+que es el punto mas bajo en el estado de california
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+cual estado bordea a florida
+(answer (state (next_to_2 (stateid florida:e))))
+
+que es el rio mas largo en mississippi
+(answer (longest (river (loc_2 (stateid mississippi:e)))))
+
+cuales rios corren por estados bordeando a new mexico
+(answer (river (traverse_2 (state (next_to_2 (stateid new_mexico:e))))))
+
+que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e)))
+
+por cuales estados corre el missouri
+(answer (state (traverse_1 (riverid missouri:e))))
+
+cual estado tiene el pico mas alto en el pais
+(answer (state (loc_1 (highest (place all:e)))))
+
+que es la poblacion de dallas
+(answer (population_1 (cityid dallas:e _:e)))
+
+que es la ciudad mas grande en texas
+(answer (largest (city (loc_2 (stateid texas:e)))))
+
+que es la ciudad mas grande en rhode island
+(answer (largest (city (loc_2 (stateid rhode_island:e)))))
+
+que es la ciudad mas pequena en washington
+(answer (smallest (city (loc_2 (stateid washington:e)))))
+
+por cuantos estados corre el rio colorado
+(answer (count (state (traverse_1 (riverid colorado:e)))))
+
+cuantas personas viven en new york
+(answer (population_1 (stateid new_york:e)))
+
+que son las ciudades mayores en california
+(answer (major (city (loc_2 (stateid california:e)))))
+
+que es el punto mas bajo en arkansas
+(answer (lowest (place (loc_2 (stateid arkansas:e)))))
+
+que capital es la mas grande en los us
+(answer (largest (capital (loc_2 (countryid usa:e)))))
+
+que es el punto mas alto en los usa
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+donde esta el punto mas bajo en los us
+(answer (loc_1 (lowest (place (loc_2 (countryid usa:e))))))
+
+cuales estados tienen ciudades con el nombre dallas
+(answer (state (loc_1 (city (cityid dallas:e _:e)))))
+
+que es la elevacion mas alta en new mexico
+(answer (highest (place (loc_2 (stateid new_mexico:e)))))
+
+cual estado tiene la poblacion mas alta
+(answer (largest_one (population_1 (state all:e))))
+
+que es la poblacion de san antonio
+(answer (population_1 (cityid san_antonio:e _:e)))
+
+que es el estado con la poblacion mas baja
+(answer (smallest_one (population_1 (state all:e))))
+
+que es el punto mas alto en kansas
+(answer (highest (place (loc_2 (stateid kansas:e)))))
+
+cual estado tiene la poblacion mas grande
+(answer (largest_one (population_1 (state all:e))))
+
+cuales estados bordean a delaware
+(answer (state (next_to_2 (stateid delaware:e))))
+
+que es la area de el estado mas pequeno
+(answer (area_1 (smallest (state all:e))))
+
+que es la poblacion de las ciudades mayores en wisconsin
+(answer (population_1 (major (city (loc_2 (stateid wisconsin:e))))))
+
+que es la ciudad mas grande en georgia
+(answer (largest (city (loc_2 (stateid georgia:e)))))
+
+que es la densidad de poblacion de maine
+(answer (density_1 (stateid maine:e)))
+
+cual estado tiene el punto mas alto
+(answer (state (loc_1 (highest (place all:e)))))
+
+cual estado bordea a hawaii
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+cuantas personas viven en hawaii
+(answer (population_1 (stateid hawaii:e)))
+
+que son los rios mayores en ohio
+(answer (major (river (loc_2 (stateid ohio:e)))))
+
+que es el rio mas corto
+(answer (shortest (river all:e)))
+
+que es el rio mas largo en florida
+(answer (longest (river (loc_2 (stateid florida:e)))))
+
+por cuantos estados corre el rio mississippi
+(answer (count (state (traverse_1 (riverid mississippi:e)))))
+
+cuales estados bordean a colorado
+(answer (state (next_to_2 (stateid colorado:e))))
+
+que es el punto mas bajo en oregon
+(answer (lowest (place (loc_2 (stateid oregon:e)))))
+
+que es el rio mas grande en el estado de washington
+(answer (longest (river (loc_2 (stateid washington:e)))))
+
+cuales estados bordean a georgia
+(answer (state (next_to_2 (stateid georgia:e))))
+
+que es la capital de north dakota
+(answer (capital (loc_2 (stateid north_dakota:e))))
+
+que es la poblacion de arizona
+(answer (population_1 (stateid arizona:e)))
+
+cuantas personas viven en spokane washington
+(answer (population_1 (cityid spokane:e wa:e)))
+
+que es la ciudad mas grande
+(answer (largest (city all:e)))
+
+que es la area de el estado mas grande
+(answer (area_1 (largest (state all:e))))
+
+que tan largo esta el rio north platte
+(answer (len (riverid north_platte:e)))
+
+que estado tiene la ciudad flint
+(answer (state (loc_1 (cityid flint:e _:e))))
+
+que es la montana mas alta en los us
+(answer (highest (mountain (loc_2 (countryid usa:e)))))
+
+cuantos ciudadanos viven en california
+(answer (population_1 (stateid california:e)))
+
+cuantos rios hay en colorado
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+que estado tiene la densidad de poblacion mas grande
+(answer (largest_one (density_1 (state all:e))))
+
+que tan largo esta el rio colorado
+(answer (len (riverid colorado:e)))
+
+cual estado bordea a mas estados
+(answer (most (state (next_to_2 (state all:e)))))
+
+que es la poblacion de idaho
+(answer (population_1 (stateid idaho:e)))
+
+que es el punto mas alto de los usa
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+que es la poblacion de tempe arizona
+(answer (population_1 (cityid tempe:e az:e)))
+
+que es el punto mas bajo de los us
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+que es la capital de utah
+(answer (capital (loc_2 (stateid utah:e))))
+
+cuales estados bordean a new york
+(answer (state (next_to_2 (stateid new_york:e))))
+
+que es la ciudad mas grande en louisiana
+(answer (largest (city (loc_2 (stateid louisiana:e)))))
+
+que es la ciudad mas grande en oregon
+(answer (largest (city (loc_2 (stateid oregon:e)))))
+
+que es la poblacion de utah
+(answer (population_1 (stateid utah:e)))
+
+cuales estados bordean a florida
+(answer (state (next_to_2 (stateid florida:e))))
+
+que es la poblacion de erie pennsylvania
+(answer (population_1 (cityid erie:e pa:e)))
+
+cuantas personas viven en la capital de texas
+(answer (population_1 (capital (loc_2 (stateid texas:e)))))
+
+por cuales estados corre el mississippi
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+que es la capital de maine
+(answer (capital (loc_2 (stateid maine:e))))
+
+cuales estados bordean a arizona
+(answer (state (next_to_2 (stateid arizona:e))))
+
+que es la poblacion de hawaii
+(answer (population_1 (stateid hawaii:e)))
+
+cuantas ciudades mayores hay en florida
+(answer (count (major (city (loc_2 (stateid florida:e))))))
+
+que tan grande esta texas
+(answer (size (stateid texas:e)))
+
+que es la ciudad mas grande en los estados que bordean a california
+(answer (largest (city (loc_2 (state (next_to_2 (stateid california:e)))))))
+
+que es la ciudad mas pequena en los usa
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+cuantas personas viven en minneapolis minnesota
+(answer (population_1 (cityid minneapolis:e mn:e)))
+
+cuales estados bordean a new hampshire
+(answer (state (next_to_2 (stateid new_hampshire:e))))
+
+que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e)))
+
+que estado tiene la elevacion mas alta
+(answer (state (loc_1 (highest (place all:e)))))
+
+que es la poblacion de portland maine
+(answer (population_1 (cityid portland:e me:e)))
+
+cual estado tiene la elevacion mas alta
+(answer (state (loc_1 (highest (place all:e)))))
+
+que es la area de alaska
+(answer (area_1 (stateid alaska:e)))
+
+cuantas personas viven en washington
+(answer (population_1 (stateid washington:e)))
+
+cuales estados bordean a hawaii
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+que es la poblacion combinada de todos los 50 estados
+(answer (sum (population_1 (state all:e))))
+
+que es la area de idaho
+(answer (area_1 (stateid idaho:e)))
+
+que es el punto mas alto en colorado
+(answer (highest (place (loc_2 (stateid colorado:e)))))
+
+que es el punto mas bajo en el estado de texas
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+que es la capital de el estado con el punto mas alto
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e)))))))
+
+que tan alto esta el punto mas alto en america
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e))))))
+
+que tan grande esta la ciudad mas grande en alaska
+(answer (size (largest (city (loc_2 (stateid alaska:e))))))
+
+cuales estados tienen ciudades con el nombre austin
+(answer (state (loc_1 (city (cityid austin:e _:e)))))
+
+que rios mayores corren por illinois
+(answer (major (river (traverse_2 (stateid illinois:e)))))
+
+cual estado es el mas pequeno
+(answer (smallest (state all:e)))
+
+rios en new york
+(answer (river (loc_2 (stateid new_york:e))))
+
+que es la capital de el estado con la poblacion mas grande
+(answer (capital (loc_2 (largest_one (population_1 (state all:e))))))
+
+que rios corren por colorado
+(answer (river (traverse_2 (stateid colorado:e))))
+
+que es la ciudad mas pequena en los usa
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+que son las poblaciones de los estados por cual corre el rio mississippi
+(answer (population_1 (state (traverse_1 (riverid mississippi:e)))))
+
+que es el punto mas alto en montana
+(answer (highest (place (loc_2 (stateid montana:e)))))
+
+cuantos rios tiene alaska
+(answer (count (river (loc_2 (stateid alaska:e)))))
+
+que es la capital de new hampshire
+(answer (capital (loc_2 (stateid new_hampshire:e))))
+
+que es la poblacion de springfield missouri
+(answer (population_1 (cityid springfield:e mo:e)))
+
+que es la ciudad mas grande en arizona
+(answer (largest (city (loc_2 (stateid arizona:e)))))
+
+que son las ciudades mayores en oklahoma
+(answer (major (city (loc_2 (stateid oklahoma:e)))))
+
+que es el punto mas alto en los estados bordeando a georgia
+(answer (highest (place (loc_2 (state (next_to_2 (stateid georgia:e)))))))
+
+cuantas personas viven en rhode island
+(answer (population_1 (stateid rhode_island:e)))
+
+que es la capital de georgia
+(answer (capital (loc_2 (stateid georgia:e))))
+
+cuales estados rodean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+que es el punto mas bajo en massachusetts
+(answer (lowest (place (loc_2 (stateid massachusetts:e)))))
+
+cuales estados bordean a arkansas
+(answer (state (next_to_2 (stateid arkansas:e))))
+
+que es el estado mas poblado
+(answer (largest_one (population_1 (state all:e))))
+
+que es la ciudad mas grande en wyoming
+(answer (largest (city (loc_2 (stateid wyoming:e)))))
+
+que es la poblacion de boston massachusetts
+(answer (population_1 (cityid boston:e ma:e)))
+
+que estado contiene el punto mas alto en los us
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e)))))))
+
+cuales estados bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+que tan largo esta el rio delaware
+(answer (len (riverid delaware:e)))
+
+que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e)))
+
+que es el estado mas pequeno en los usa
+(answer (smallest (state (loc_2 (countryid usa:e)))))
+
+cuantas personas viven en kalamazoo
+(answer (population_1 (cityid kalamazoo:e _:e)))
+
+cuales estados tienen puntos mas alto que el punto mas alto en colorado
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e)))))))))
+
+que es la capital de vermont
+(answer (capital (loc_2 (stateid vermont:e))))
+
+cuales estados bordean a indiana
+(answer (state (next_to_2 (stateid indiana:e))))
+
+cuales estados bordean a montana
+(answer (state (next_to_2 (stateid montana:e))))
+
+que es la area combinada de todos los 50 estados
+(answer (sum (area_1 (state all:e))))
+
+que tan alto esta el punto mas alto en montana
+(answer (elevation_1 (highest (place (loc_2 (stateid montana:e))))))
+
+cual estado tiene la densidad de poblacion mas alta
+(answer (largest_one (density_1 (state all:e))))
+
+que es la densidad de poblacion de el estado mas pequeno
+(answer (density_1 (smallest (state all:e))))
+
+cual estado tiene la ciudad mas grande
+(answer (state (loc_1 (largest (city all:e)))))
+
+cuanto tiene de largo el rio colorado
+(answer (len (riverid colorado:e)))
+
+que es el punto mas alto en el pais
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+que es la area de south carolina
+(answer (area_1 (stateid south_carolina:e)))
+
+que es la poblacion de texas
+(answer (population_1 (stateid texas:e)))
+
+que es el rio mas corto en los usa
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+en cual estado se encuentra la ciudad denver
+(answer (state (loc_1 (cityid denver:e _:e))))
+
+que es la poblacion de tucson
+(answer (population_1 (cityid tucson:e _:e)))
+
+que es el punto mas alto en nevada en metros
+(answer (highest (place (loc_2 (stateid nevada:e)))))
+
+cuantos rios hay en new york
+(answer (count (river (loc_2 (stateid new_york:e)))))
+
+que es la area de maine
+(answer (area_1 (stateid maine:e)))
+
+cuantas personas viven en austin
+(answer (population_1 (cityid austin:e _:e)))
+
+cuantos ciudadanos en alabama
+(answer (population_1 (stateid alabama:e)))
+
+que es el punto mas alto en rhode island
+(answer (highest (place (loc_2 (stateid rhode_island:e)))))
+
+que ciudad tiene mas personas
+(answer (largest_one (population_1 (city all:e))))
+
+cuanto tiene de largo el rio rio grande
+(answer (len (riverid rio_grande:e)))
+
+que tan largo esta el rio missouri
+(answer (len (riverid missouri:e)))
+
+que es la poblacion de seattle washington
+(answer (population_1 (cityid seattle:e wa:e)))
+
+cuales estados bordean a texas
+(answer (state (next_to_2 (stateid texas:e))))
+
+por cuales estados corre el rio delaware
+(answer (state (traverse_1 (riverid delaware:e))))
+
+que es el rio mas corto en los us
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+cuanto tiene de largo el mississippi
+(answer (len (riverid mississippi:e)))
+
+cuales son los rios en alaska
+(answer (river (loc_2 (stateid alaska:e))))
+
+que es el punto mas alto en hawaii
+(answer (loc_1 (highest (place (loc_2 (stateid hawaii:e))))))
+
+cuantos rios tiene colorado
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+donde esta el punto mas alto en montana
+(answer (loc_1 (highest (place (loc_2 (stateid montana:e))))))
+
+que es el punto mas alto en wyoming
+(answer (highest (place (loc_2 (stateid wyoming:e)))))
+
+cual estado tiene la ciudad capital mas grande
+(answer (state (loc_1 (largest (city (capital_1 (state all:e)))))))
+
+que tamano esta texas
+(answer (size (stateid texas:e)))
+

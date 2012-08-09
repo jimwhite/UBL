@@ -1,0 +1,75 @@
+donde esta el punto mas alto en montana
+(answer (loc_1 (highest (place (loc_2 (stateid montana:e))))))
+
+cual estado tiene la elevacion mas alta
+(answer (state (loc_1 (highest (place all:e)))))
+
+que es la capital de north dakota
+(answer (capital (loc_2 (stateid north_dakota:e))))
+
+que es la capital de utah
+(answer (capital (loc_2 (stateid utah:e))))
+
+que es el rio mas corto en iowa
+(answer (shortest (river (loc_2 (stateid iowa:e)))))
+
+que son las ciudades mayores en oklahoma
+(answer (major (city (loc_2 (stateid oklahoma:e)))))
+
+que tan largo esta el rio delaware
+(answer (len (riverid delaware:e)))
+
+que es el punto mas bajo en oregon
+(answer (lowest (place (loc_2 (stateid oregon:e)))))
+
+que es el estado mas poblado
+(answer (largest_one (population_1 (state all:e))))
+
+que es el total de la poblacion de los estados que bordean a texas
+(answer (sum (population_1 (state (next_to_2 (stateid texas:e))))))
+
+por cuales estados corre el mississippi
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+cual estado bordea a florida
+(answer (state (next_to_2 (stateid florida:e))))
+
+que estado tiene la ciudad flint
+(answer (state (loc_1 (cityid flint:e _:e))))
+
+cuales estados bordean a rhode island
+(answer (state (next_to_2 (stateid rhode_island:e))))
+
+que es la ciudad mas grande en minnesota por poblacion
+(answer (largest_one (population_1 (city (loc_2 (stateid minnesota:e))))))
+
+que es la area de el estado mas pequeno
+(answer (area_1 (smallest (state all:e))))
+
+que es la area de el estado mas grande
+(answer (area_1 (largest (state all:e))))
+
+que es el estado mas pequeno por area
+(answer (smallest_one (area_1 (state all:e))))
+
+que tan largo esta el rio north platte
+(answer (len (riverid north_platte:e)))
+
+que es el punto mas alto en colorado
+(answer (highest (place (loc_2 (stateid colorado:e)))))
+
+cuantas personas viven en riverside
+(answer (population_1 (cityid riverside:e _:e)))
+
+cuales estados rodean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+de cual estado es columbus la capital
+(answer (state (loc_1 (capital (cityid columbus:e _:e)))))
+
+donde esta el punto mas bajo en los us
+(answer (loc_1 (lowest (place (loc_2 (countryid usa:e))))))
+
+que es el punto mas bajo en louisiana
+(answer (lowest (place (loc_2 (stateid louisiana:e)))))
+

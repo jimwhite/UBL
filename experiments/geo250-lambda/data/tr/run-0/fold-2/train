@@ -1,0 +1,675 @@
+north dakota in baskenti nedir
+(capital:c north_dakota:s)
+
+en genis eyaletin ismini ver
+(argmax $0 (state:t $0) (size:i $0))
+
+washington in baskenti nedir
+(capital:c washington:s)
+
+wyoming daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 wyoming:s)) (elevation:i $0))
+
+oregon daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 oregon:s)) (size:i $0))
+
+kansas daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 kansas:s)) (elevation:i $0))
+
+baskenti atlanta olan eyalete komsu eyaletlerden gecen nehir nedir
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (loc:t $0 $1) (next_to:t $1 (the $2 (and (state:t $2) (capital:t $2 atlanta_ga:c))))))))
+
+minneapolis minnesota da ne kadar insan yasamaktadir
+(population:i minneapolis_mn:c)
+
+50 eyaletin toplam nufusu nedir
+(sum $0 (state:t $0) (population:i $0))
+
+us deki en uzun nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+montana daki en yuksek nokta ne kadar yuksektir
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0)))
+
+usa deki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+en az nufuslu eyalet nedir
+(argmin $0 (state:t $0) (population:i $0))
+
+delaware nehri hangi eyaletlerden gecer
+(lambda $0 e (and (state:t $0) (loc:t delaware_river:r $0)))
+
+hangi eyalet en buyuk nufus yogunluguna sahiptir
+(argmax $0 (state:t $0) (density:i $0))
+
+usa deki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+rhode island a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 rhode_island:s)))
+
+kansas daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 kansas:s)))
+
+hangi eyaletin en cok eyalete siniri vardir
+(argmax $0 (state:t $0) (count $1 (and (state:t $1) (next_to:t $0 $1))))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (place:t $1) (elevation:i $1)) $0)))
+
+50 eyaletin toplam alani nedir
+(sum $0 (state:t $0) (area:i $0))
+
+california daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 california:s)))
+
+idaho nin yuzolcumu nedir
+(area:i idaho:s)
+
+wyoming daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 wyoming:s)) (size:i $0))
+
+florida da baslica kac tane sehir vardir
+(count $0 (and (major:t $0) (city:t $0) (loc:t $0 florida:s)))
+
+florida daki en uzun nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 florida:s)) (len:i $0))
+
+en kucuk eyaletin yuzolcumu nedir
+(area:i (argmin $0 (state:t $0) (size:i $0)))
+
+baskenti des moines olan eyaletin en yuksek noktasi nedir
+(argmax $0 (and (place:t $0) (loc:t $0 (the $1 (and (state:t $1) (capital:t $1 des_moines_ia:c))))) (elevation:i $0))
+
+en genis eyaletin yuzolcumu nedir
+(area:i (argmax $0 (state:t $0) (size:i $0)))
+
+alaska daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 alaska:s)))
+
+colorado nehri kac eyaletin icinden gecer
+(count $0 (and (state:t $0) (loc:t colorado_river:r $0)))
+
+georgia ya siniri olan eyaletlerdeki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (exists $1 (and (state:t $1) (next_to:t $1 georgia:s) (loc:t $0 $1)))) (elevation:i $0))
+
+hangi eyalet ulkedeki en yuksek zirveye sahiptir
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (mountain:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+colorado nun kac tane nehri vardir
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+montana a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 montana:s)))
+
+wisconsin nin yuzolcumu nedir
+(area:i wisconsin:s)
+
+colorado nehrinin uzunlugu ne kadardir
+(len:i colorado_river:r)
+
+alaska daki en genis sehirin genisligi ne kadardir
+(size:i (argmax $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0)))
+
+hangi eyaletlerde austin sehri vardir
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 austin:n) (loc:t $1 $0)))))
+
+en kucuk eyaletin baskentinin nufusu nedir
+(population:i (capital:c (argmin $1 (state:t $1) (size:i $1))))
+
+texas daki en alcak nokta nerededir
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+mississippi nin en uzun nehri nedir
+(argmax $0 (and (river:t $0) (loc:t $0 mississippi:s)) (len:i $0))
+
+california da ne kadar vatandas yasamaktadir
+(population:i california:s)
+
+arizona a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 arizona:s)))
+
+us deki en alcak nokta nerededir
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0))
+
+kentucky a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+new york dan hangi nehirler gecer
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+washington da ne kadar insan yasamaktadir
+(population:i washington:s)
+
+hangi eyaletin en cok eyalete siniri vardir
+(argmax $0 (state:t $0) (count $1 (and (state:t $1) (next_to:t $0 $1))))
+
+wyoming daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 wyoming:s)))
+
+us kac kilometrekaredir
+(size:i usa:co)
+
+utah da hangi nehirler vardir
+(lambda $0 e (and (river:t $0) (loc:t $0 utah:s)))
+
+us de kac tane sehir vardir
+(count $0 (and (city:t $0) (loc:t $0 usa:co)))
+
+hangi eyalet en buyuk nufus yogunluguna sahiptir
+(argmax $0 (state:t $0) (density:i $0))
+
+new york da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 new_york:s)))
+
+delaware nehrinin uzunlugu ne kadardir
+(len:i delaware_river:r)
+
+kac tane baslica nehir ohio dan gecer
+(count $0 (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+hangi eyaletin kentucky ye siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+arizona nun nufusu nedir
+(population:i arizona:s)
+
+usa deki en kucuk eyalet nedir
+(argmin $0 (and (state:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+texas in baskentinde ne kadar insan yasamaktadir
+(population:i (capital:c texas:s))
+
+maine nin yuzolcumu nedir
+(area:i maine:s)
+
+washington daki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+amerika daki en yuksek nokta ne kadar yuksektir
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0)))
+
+hawaii nun nufusu nedir
+(population:i hawaii:s)
+
+kalamazoo hangi eyalettedir
+(lambda $0 e (and (state:t $0) (loc:t kalamazoo_mi:c $0)))
+
+south dakota a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 south_dakota:s)))
+
+texas daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 texas:s)))
+
+idaho nun nufusu nedir
+(population:i idaho:s)
+
+mississippi hangi eyaletlerden gecer
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+new hampshire a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_hampshire:s)))
+
+maine in baskenti nedir
+(capital:c maine:s)
+
+colorado daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 colorado:s)) (elevation:i $0))
+
+riverside da ne kadar insan yasamaktadir
+(population:i riverside_ca:c)
+
+usa deki en kisa nehirin uzunlugu nedir
+(len:i (argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0)))
+
+oklahoma daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 oklahoma:s)))
+
+birlesik devletler in en uzun nehri nedir
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+north platte nehrinin uzunlugu ne kadardir
+(len:i north_platte_river:r)
+
+oklahoma ya siniri olan en kalabalik eyalet nedir
+(argmax $0 (and (state:t $0) (next_to:t $0 oklahoma:s)) (population:i $0))
+
+new york a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_york:s)))
+
+texas in nufus yogunlugu nedir
+(density:i texas:s)
+
+ohio daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 ohio:s)))
+
+wisconsin deki baslica sehirlerin nufusu nedir
+(population:i (the $0 (and (major:t $0) (loc:t $0 wisconsin:s) (city:t $0))))
+
+hangi eyalet en yuksek noktaya sahiptir
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (place:t $1) (elevation:i $1)) $0)))
+
+wyoming in nufus yogunlugu nedir
+(density:i wyoming:s)
+
+montana daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0))
+
+hangi eyaletin baskenti salem dir
+(lambda $0 e (and (state:t $0) (capital:t $0 salem_or:c)))
+
+new york taki nehirler nelerdir
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+rhode island da ne kadar insan yasamaktadir
+(population:i rhode_island:s)
+
+seattle washington in nufusu nedir
+(population:i seattle_wa:c)
+
+hangi eyaletin baskenti en buyuktur
+(lambda $0 e (and (state:t $0) (capital:t $0 (argmax $1 (capital:t $1) (size:i $1)))))
+
+iowa daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 iowa:s)) (elevation:i $0))
+
+hangi nehir en cok eyaletten gecer
+(argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1))))
+
+hangi nehirler new mexico ya siniri olan eyaletlerden gecer
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (next_to:t $1 new_mexico:s) (loc:t $0 $1)))))
+
+colorado a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 colorado:s)))
+
+erie pennsylvania in nufusu nedir
+(population:i erie_pa:c)
+
+des moines hangi eyalettedir
+(lambda $0 e (and (state:t $0) (loc:t des_moines_ia:c $0)))
+
+nevada daki en yuksek nokta metre olarak nedir
+(argmax $0 (and (place:t $0) (loc:t $0 nevada:s)) (elevation:i $0))
+
+iowa in baskenti nedir
+(capital:c iowa:s)
+
+california ya komsu eyaletler deki en genis sehir nedir
+(argmax $0 (and (city:t $0) (exists $1 (and (state:t $1) (next_to:t $1 california:s) (loc:t $0 $1)))) (size:i $0))
+
+hangi eyaletin florida ya siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+
+columbus hangi eyaletin baskentidir
+(lambda $0 e (and (state:t $0) (capital:t $0 columbus_oh:c)))
+
+us deki en yuksek dag nedir
+(argmax $0 (and (mountain:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+denver sehri hangi eyalettedir
+(lambda $0 e (and (state:t $0) (loc:t denver_co:c $0)))
+
+nufusu en fazla olan eyaletin baskenti nedir
+(capital:c (argmax $1 (state:t $1) (population:i $1)))
+
+idaho da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 idaho:s)))
+
+mississippi ni ne kadar uzunluktadir
+(len:i mississippi_river:r)
+
+en genis alana sahip eyaletin en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+ohio daki baslica nehirler nelerdir
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+hangi eyalet en kucuk nufus yogunluguna sahiptir
+(argmin $0 (state:t $0) (density:i $0))
+
+hawaii deki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 hawaii:s)) (size:i $0))
+
+en kisa nehir nedir
+(argmin $0 (river:t $0) (len:i $0))
+
+usa nin toplam yuzolcumu nedir
+(area:i usa:co)
+
+hangi eyaletin hawaii ya siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+hawaii da ne kadar insan yasamaktadir
+(population:i hawaii:s)
+
+en az nufuslu sehir nedir
+(argmin $0 (city:t $0) (population:i $0))
+
+new hampshire in baskenti nedir
+(capital:c new_hampshire:s)
+
+mississippi nehri hangi eyaletlerden gecmektedir
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+louisiana daki en alcak nokta nedir
+(argmin $0 (and (place:t $0) (loc:t $0 louisiana:s)) (elevation:i $0))
+
+hangi eyaletin michigan ya siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 michigan:s)))
+
+mississippi nehri kac tane eyaletten gecmektedir
+(count $0 (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+kentucky a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+arkansas daki en alcak nokta nerededir
+(argmin $0 (and (place:t $0) (loc:t $0 arkansas:s)) (elevation:i $0))
+
+california daki en alcak nokta nerededir
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+massachusetts daki en alcak nokta nerededir
+(argmin $0 (and (place:t $0) (loc:t $0 massachusetts:s)) (elevation:i $0))
+
+georgia a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 georgia:s)))
+
+washington eyaletindeki en genis nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+delaware a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 delaware:s)))
+
+oregon daki en alcak nokta nedir
+(argmin $0 (and (place:t $0) (loc:t $0 oregon:s)) (elevation:i $0))
+
+hangi eyalet us deki en yusek noktayi kapsar
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+springfield missouri in nufusu nedir
+(population:i springfield_mo:c)
+
+alaska nun kac tane nehri vardir
+(count $0 (and (river:t $0) (loc:t $0 alaska:s)))
+
+illinois nun nufusu nedir
+(population:i illinois:s)
+
+usa deki en kisa nehir nedir
+(argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+texas ne kadar genistir
+(size:i texas:s)
+
+california eyaletinin en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+kentucky yi hangi eyaletler cevreler
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+hangi eyaletin baskenti dover dir
+(lambda $0 e (and (state:t $0) (capital:t $0 dover_de:c)))
+
+hangi eyalet en buyuk nufusa sahiptir
+(argmax $0 (state:t $0) (population:i $0))
+
+rhode island daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 rhode_island:s)))
+
+colorado nehrinin uzunlugu nedir
+(len:i colorado_river:r)
+
+hangi eyalet in flint sehri vardir
+(lambda $0 e (and (state:t $0) (loc:t flint_mi:c $0)))
+
+washington da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 washington:s)))
+
+us in en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+missouri nehri hangi eyaletlerden gecer
+(lambda $0 e (and (state:t $0) (loc:t missouri_river:r $0)))
+
+hangi eyalet en yuksek nufus yogunluguna sahiptir
+(argmax $0 (state:t $0) (density:i $0))
+
+ohio nehri hangi eyaletlerin icinden gecer
+(lambda $0 e (and (state:t $0) (loc:t ohio_river:r $0)))
+
+nufus bakimindan en buyuk eyalet baskenti nedir
+(argmax $0 (capital:t $0) (population:i $0))
+
+hangi sehir en cok insana sahiptir
+(argmax $0 (city:t $0) (population:i $0))
+
+alaska nin yuzolcumu nedir
+(area:i alaska:s)
+
+south carolina nin yuzolcumu nedir
+(area:i south_carolina:s)
+
+boston massachusetts in nufusu nedir
+(population:i boston_ma:c)
+
+colorado daki butun nehirlerin isimlerini ver
+(lambda $0 e (and (river:t $0) (loc:t $0 colorado:s)))
+
+new york sehrinin nufusu nedir
+(population:i new_york_city:c)
+
+indiana a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 indiana:s)))
+
+west virginia dan hangi nehirler gecer
+(lambda $0 e (and (river:t $0) (loc:t $0 west_virginia:s)))
+
+maine in nufus yogunlugu nedir
+(density:i maine:s)
+
+hawaii deki en yuksek nokta nerededir
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 hawaii:s)) (elevation:i $1)) $0))
+
+montana daki en yuksek nokta nerededir
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 montana:s)) (elevation:i $1)) $0))
+
+dallas in nufusu nedir
+(population:i dallas_tx:c)
+
+arkansas daki nehirlerin isimlerini ver
+(lambda $0 e (and (river:t $0) (loc:t $0 arkansas:s)))
+
+us deki en genis baskent hangisidir
+(argmax $0 (and (capital:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+hangi eyalet en yuksek nufusa sahiptir
+(argmax $0 (state:t $0) (population:i $0))
+
+mississippi nehrinin uzunlugu nedir
+(len:i mississippi_river:r)
+
+colorado dan hangi nehirler gecer
+(lambda $0 e (and (river:t $0) (loc:t $0 colorado:s)))
+
+colorado da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+ulkedeki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+hawaii a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+alaska daki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0))
+
+oregon nun nufusu nedir
+(population:i oregon:s)
+
+texas a komsu eyaletlerin toplam nufusu nedir
+(sum $0 (and (state:t $0) (next_to:t $0 texas:s)) (population:i $0))
+
+hangi eyalet en kucuktur
+(argmin $0 (state:t $0) (size:i $0))
+
+mississippi nehrinin uzunlugu ne kadardir
+(len:i mississippi_river:r)
+
+portland maine in nufusu nedir
+(population:i portland_me:c)
+
+tucson nun nufusu nedir
+(population:i tucson_az:c)
+
+vermont in baskenti nedir
+(capital:c vermont:s)
+
+mississippi nehrinin uzunlugu ne kadardir
+(len:i mississippi_river:r)
+
+birlesik devletler deki en alcak nokta nedir
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+texas daki en uzun nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 texas:s)) (len:i $0))
+
+texas daki nehirler nelerdir
+(lambda $0 e (and (river:t $0) (loc:t $0 texas:s)))
+
+usa nin en yuksek noktasi nedir
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+ohio ya siniri bulunan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 ohio:s)))
+
+arizona daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 arizona:s)) (size:i $0))
+
+en genis alana sahip eyaletin en yuksek noktasi nedir
+(argmax $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+minnesota da nufus acisindan en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 minnesota:s)) (population:i $0))
+
+montana in nufusu nedir
+(population:i montana:s)
+
+utah nun nufusu nedir
+(population:i utah:s)
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(argmax $1 (state:t $1) (elevation:i $1))
+
+mississippi nehrinin icinden gectigi eyaletlerin nufuslari nelerdir
+(lambda $0 e (exists $1 (and (state:t $1) (loc:t mississippi_river:r $1) (population:t $1 $0))))
+
+rhode island daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 rhode_island:s)) (elevation:i $0))
+
+iowa daki en kisa nehir nedir
+(argmin $0 (and (river:t $0) (loc:t $0 iowa:s)) (len:i $0))
+
+hangi eyaletin texas ye siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 texas:s)))
+
+hangi nehirler tennessee den gecmez
+(lambda $0 e (and (river:t $0) (not (loc:t $0 tennessee:s))))
+
+texas en kadar buyuktur
+(size:i texas:s)
+
+hangi eyaletlerde plano sehri vardir
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 plano:n) (loc:t $1 $0)))))
+
+alaska daki nehirler nelerdir
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+mississippi yi saran eyaletlerin yuksek noktalari nelerdir
+(lambda $0 e (exists $1 (and (state:t $1) (next_to:t $1 mississippi:s) (high_point:t $1 $0))))
+
+alan acisindan en kucuk eyalet nedir
+(argmin $0 (state:t $0) (area:i $0))
+
+hangi eyalet en uzun nehre sahiptir
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (river:t $1) (len:i $1)) $0)))
+
+virginia daki sehirlerin isimlerini ver
+(lambda $0 e (and (city:t $0) (loc:t $0 virginia:s)))
+
+wisconsin deki en genis sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 wisconsin:s)) (size:i $0))
+
+new mexico de en yuksek yukselti nedir
+(argmax $0 (and (place:t $0) (loc:t $0 new_mexico:s)) (elevation:i $0))
+
+ohio nehrinin uzunlugu ne kadardir
+(len:i ohio_river:r)
+
+california da ne kadar insan yasamaktadir
+(population:i california:s)
+
+rhode island aki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 rhode_island:s)) (size:i $0))
+
+usa deki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+texas eyaletinin en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+florida a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+
+arkansas a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 arkansas:s)))
+
+texas daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 texas:s)) (size:i $0))
+
+texas in baslica sehirleri nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 texas:s)))
+
+en kalabalik eyalet nedir
+(argmax $0 (state:t $0) (population:i $0))
+
+spokane washington da ne kadar insan yasamaktadir
+(population:i spokane_wa:c)
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(argmax $0 (state:t $0) (elevation:i $0))
+
+illinois deki en buyuk nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 illinois:s)) (size:i $0))
+
+georgia daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 georgia:s)) (size:i $0))
+
+utah in baskenti nedir
+(capital:c utah:s)
+
+usa deki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+missouri nehrinin uzunlugu ne kadardir
+(len:i missouri_river:r)
+
+en yuksek noktayi iceren eyaletin baskenti nedir
+(capital:c (the $1 (and (state:t $1) (loc:t (argmax $2 (place:t $2) (elevation:i $2)) $1))))
+
+hangi eyalet en buyuk sehre sahiptir
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (city:t $1) (size:i $1)) $0)))
+
+south dakota nun nufusu nedir
+(population:i south_dakota:s)
+
+texas nun nufusu nedir
+(population:i texas:s)
+
+kalamazoo da ne kadar insan yasamaktadir
+(population:i kalamazoo_mi:c)
+
+hangi eyaletler colorado nun en yuksek noktasindan daha yuksek noktaya sahiptirler
+(lambda $0 e (and (state:t $0) (exists $1 (and (place:t $1) (> (elevation:i $1) (elevation:i (argmax $2 (and (place:t $2) (loc:t $2 colorado:s)) (elevation:i $2))))))))
+

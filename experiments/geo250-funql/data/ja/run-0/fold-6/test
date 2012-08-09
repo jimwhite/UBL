@@ -1,0 +1,75 @@
+mottomo ookii jinkou ga aru shuu no shuto wa nan desu ka
+(answer (capital (loc_2 (largest_one (population_1 (state all:e))))))
+
+roodoairando no mottomo ookii toshi wa nan desu ka
+(answer (largest (city (loc_2 (stateid rhode_island:e)))))
+
+dono shuu wa saremu to iu shuto ga arimasu ka
+(answer (state (loc_1 (capital (cityid salem:e _:e)))))
+
+montana ni rinsetsu suru shuu wa nan desu ka
+(answer (state (next_to_2 (stateid montana:e))))
+
+hotondo no hito ga iru toshi wa nan desu ka
+(answer (largest_one (population_1 (city all:e))))
+
+nyuu hanpushaa no chuto wa nan desu ka
+(answer (capital (loc_2 (stateid new_hampshire:e))))
+
+washinton no shiatoru no jinkou wa nan desu ka
+(answer (population_1 (cityid seattle:e wa:e)))
+
+dono shuu wa mottomo takai kaibatsu ga arimasu ka
+(answer (state (loc_1 (highest (place all:e)))))
+
+meen no chuto wa nan desu ka
+(answer (capital (loc_2 (stateid maine:e))))
+
+roodoairando ni wa nannin no hito ga sumimasu ka
+(answer (population_1 (stateid rhode_island:e)))
+
+beikoku no mottomo hikui chiten wa nan desu ka
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+nyuu mekishiko no mottomo takai kaibatsu wa nan desu ka
+(answer (highest (place (loc_2 (stateid new_mexico:e)))))
+
+mizuuri kawa no nagasa wa dore gurai desu ka
+(answer (len (riverid missouri:e)))
+
+arizona ni rinsetsu suru shuu wa nan desu ka
+(answer (state (next_to_2 (stateid arizona:e))))
+
+mishishippi kawa no nagasa wa nan desu ka
+(answer (len (riverid mississippi:e)))
+
+yuutaa ni wa kawa ga nan desu ka
+(answer (river (loc_2 (stateid utah:e))))
+
+donna shuu ga mottomo ooku no shuu ni rinsetsu shite imasu ka
+(answer (most (state (next_to_2 (state all:e)))))
+
+demoin no shuto ga aru shuu no mottomo takai chiten wa nan desu ka
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid des_moines:e _:e))))))))
+
+tekisasu no okisa wa nan desu ka
+(answer (size (stateid texas:e)))
+
+nyuu yooku no kawa ka
+(answer (river (loc_2 (stateid new_york:e))))
+
+ausuchin to iu toshi ga aru shuu dono desu ka
+(answer (state (loc_1 (city (cityid austin:e _:e)))))
+
+amerika no mottomo mijikai kawa wa nan desu ka
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+derawaru ni rinsetsu suru shuu wa nan desu ka
+(answer (state (next_to_2 (stateid delaware:e))))
+
+darasu no jinkou wa nan desu ka
+(answer (population_1 (cityid dallas:e _:e)))
+
+oregon no jinkou wa nan desu ka
+(answer (population_1 (stateid oregon:e)))
+

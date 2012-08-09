@@ -1,0 +1,75 @@
+kororado ni wa kawa ga ikutsu arimasu ka
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+kororado no mottomo takai chiten yori motto takai chiten ga aru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (exists $1 (and (place:t $1) (> (elevation:i $1) (elevation:i (argmax $2 (and (place:t $2) (loc:t $2 colorado:s)) (elevation:i $2))))))))
+
+mishishippi kawa no nagasa wa dore gurai desu ka
+(len:i mississippi_river:r)
+
+mottomo chiisai jinkou no mitsudo ga aru shuu wa nan desu ka
+(argmin $0 (state:t $0) (density:i $0))
+
+aidahou no chiiki wa nan desu ka
+(area:i idaho:s)
+
+mishishippi kawa no nagasa wa dore gurai desu ka
+(len:i mississippi_river:r)
+
+kororado kawa no nagasa wa dore gurai desu ka
+(len:i colorado_river:r)
+
+aakansaa no kawa wo agete kudasai
+(lambda $0 e (and (river:t $0) (loc:t $0 arkansas:s)))
+
+dono kawa wa uesuto baajinia wo nagarete imasu ka
+(lambda $0 e (and (river:t $0) (loc:t $0 west_virginia:s)))
+
+arasuka no kawa wa nan desu ka
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+karifuorunia ni rinsetsu suru shuu no mottomo ookii toshi wa nan desu ka
+(argmax $0 (and (city:t $0) (exists $1 (and (state:t $1) (next_to:t $1 california:s) (loc:t $0 $1)))) (size:i $0))
+
+aidahou no jinkou wa nan desu ka
+(population:i idaho:s)
+
+gojuu shuu zenbu no zentai no chiiki wa nan desu ka
+(sum $0 (state:t $0) (area:i $0))
+
+aakansaa ni rinsetsu suru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 arkansas:s)))
+
+hawai no mottomo takai chiten wa doko desu ka
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 hawaii:s)) (elevation:i $1)) $0))
+
+dono shuu ni wa karamazuu kawa desu ka
+(lambda $0 e (and (state:t $0) (loc:t kalamazoo_mi:c $0)))
+
+karifuorunia no shuu no mottomo hikui chiten wa nan desu ka
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+mishishippi de mottomo nagai kawa wa nan desu ka
+(argmax $0 (and (river:t $0) (loc:t $0 mississippi:s)) (len:i $0))
+
+nyuu yooku ni rinsetsu suru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_york:s)))
+
+waiomingu no mottomo takai chiten wa nan desu ka
+(argmax $0 (and (place:t $0) (loc:t $0 wyoming:s)) (elevation:i $0))
+
+aiowa no mottomo takai chiten wa nan desu ka
+(argmax $0 (and (place:t $0) (loc:t $0 iowa:s)) (elevation:i $0))
+
+hawai ni wa nannin no hito ga sumimasu ka
+(population:i hawaii:s)
+
+donna kawa wa nyuu mekishiko ni rinsetsu suru shuu wo nagarete imasu ka
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (next_to:t $1 new_mexico:s) (loc:t $0 $1)))))
+
+penshirubenia no eri no jinkou wa nan desu ka
+(population:i erie_pa:c)
+
+roodoairando no mottomo takai chiten wa nan desu ka
+(argmax $0 (and (place:t $0) (loc:t $0 rhode_island:s)) (elevation:i $0))
+

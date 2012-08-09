@@ -1,0 +1,75 @@
+usa deki en kucuk eyalet nedir
+(answer (smallest (state (loc_2 (countryid usa:e)))))
+
+georgia daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid georgia:e)))))
+
+en genis alana sahip eyaletin en alcak noktasi nedir
+(answer (lowest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+new hampshire a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid new_hampshire:e))))
+
+maine in nufus yogunlugu nedir
+(answer (density_1 (stateid maine:e)))
+
+south dakota nun nufusu nedir
+(answer (population_1 (stateid south_dakota:e)))
+
+kentucky a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+california da ne kadar vatandas yasamaktadir
+(answer (population_1 (stateid california:e)))
+
+hangi eyaletin hawaii ya siniri vardir
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+mississippi yi saran eyaletlerin yuksek noktalari nelerdir
+(answer (high_point_1 (state (next_to_2 (stateid mississippi:e)))))
+
+denver sehri hangi eyalettedir
+(answer (state (loc_1 (cityid denver:e _:e))))
+
+south dakota a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid south_dakota:e))))
+
+colorado nehrinin uzunlugu nedir
+(answer (len (riverid colorado:e)))
+
+texas daki en alcak nokta nerededir
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+usa deki en yuksek nokta nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+montana in nufusu nedir
+(answer (population_1 (stateid montana:e)))
+
+illinois deki en buyuk nehir nedir
+(answer (longest (river (loc_2 (stateid illinois:e)))))
+
+alaska daki en genis sehirin genisligi ne kadardir
+(answer (size (largest (city (loc_2 (stateid alaska:e))))))
+
+kansas daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid kansas:e)))))
+
+hangi eyalet en yuksek nufus yogunluguna sahiptir
+(answer (largest_one (density_1 (state all:e))))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+wyoming daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid wyoming:e)))))
+
+montana daki en yuksek nokta ne kadar yuksektir
+(answer (elevation_1 (highest (place (loc_2 (stateid montana:e))))))
+
+florida daki en uzun nehir nedir
+(answer (longest (river (loc_2 (stateid florida:e)))))
+
+mississippi nehrinin uzunlugu nedir
+(answer (len (riverid mississippi:e)))
+

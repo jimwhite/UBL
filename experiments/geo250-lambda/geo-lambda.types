@@ -1,0 +1,12 @@
+(
+n		//name
+lo		// location
+(s lo) 		// state
+(c lo)		// city
+(r lo)		// river
+(l lo)		// lake
+(m lo)		// mountain
+(co lo)		// country 
+(p lo)		// place
+(to lo)		// town
+)

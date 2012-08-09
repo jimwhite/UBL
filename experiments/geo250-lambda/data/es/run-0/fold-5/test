@@ -1,0 +1,75 @@
+cuantos rios hay en colorado
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+cuales estados tienen puntos mas alto que el punto mas alto en colorado
+(lambda $0 e (and (state:t $0) (exists $1 (and (place:t $1) (> (elevation:i $1) (elevation:i (argmax $2 (and (place:t $2) (loc:t $2 colorado:s)) (elevation:i $2))))))))
+
+que tiene de largo el rio mississippi
+(len:i mississippi_river:r)
+
+cual estado tiene la densidad de poblacion mas pequena
+(argmin $0 (state:t $0) (density:i $0))
+
+que es la area de idaho
+(area:i idaho:s)
+
+que tiene de largo el rio mississippi
+(len:i mississippi_river:r)
+
+que tan largo esta el rio colorado
+(len:i colorado_river:r)
+
+nombra los rios en arkansas
+(lambda $0 e (and (river:t $0) (loc:t $0 arkansas:s)))
+
+que rios corren por west virginia
+(lambda $0 e (and (river:t $0) (loc:t $0 west_virginia:s)))
+
+cuales son los rios en alaska
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+que es la ciudad mas grande en los estados que bordean a california
+(argmax $0 (and (city:t $0) (exists $1 (and (state:t $1) (next_to:t $1 california:s) (loc:t $0 $1)))) (size:i $0))
+
+que es la poblacion de idaho
+(population:i idaho:s)
+
+que es la area combinada de todos los 50 estados
+(sum $0 (state:t $0) (area:i $0))
+
+cuales estados bordean a arkansas
+(lambda $0 e (and (state:t $0) (next_to:t $0 arkansas:s)))
+
+que es el punto mas alto en hawaii
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 hawaii:s)) (elevation:i $1)) $0))
+
+en que estado esta kalamazoo
+(lambda $0 e (and (state:t $0) (loc:t kalamazoo_mi:c $0)))
+
+que es el punto mas bajo en el estado de california
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+que es el rio mas largo en mississippi
+(argmax $0 (and (river:t $0) (loc:t $0 mississippi:s)) (len:i $0))
+
+cuales estados bordean a new york
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_york:s)))
+
+que es el punto mas alto en wyoming
+(argmax $0 (and (place:t $0) (loc:t $0 wyoming:s)) (elevation:i $0))
+
+que es el punto mas alto en iowa
+(argmax $0 (and (place:t $0) (loc:t $0 iowa:s)) (elevation:i $0))
+
+cuantas personas viven en hawaii
+(population:i hawaii:s)
+
+cuales rios corren por estados bordeando a new mexico
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (next_to:t $1 new_mexico:s) (loc:t $0 $1)))))
+
+que es la poblacion de erie pennsylvania
+(population:i erie_pa:c)
+
+que es el punto mas alto en rhode island
+(argmax $0 (and (place:t $0) (loc:t $0 rhode_island:s)) (elevation:i $0))
+

@@ -1,0 +1,75 @@
+usa deki en kucuk eyalet nedir
+(argmin $0 (and (state:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+georgia daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 georgia:s)) (size:i $0))
+
+en genis alana sahip eyaletin en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+new hampshire a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_hampshire:s)))
+
+maine in nufus yogunlugu nedir
+(density:i maine:s)
+
+south dakota nun nufusu nedir
+(population:i south_dakota:s)
+
+kentucky a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+california da ne kadar vatandas yasamaktadir
+(population:i california:s)
+
+hangi eyaletin hawaii ya siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+mississippi yi saran eyaletlerin yuksek noktalari nelerdir
+(lambda $0 e (exists $1 (and (state:t $1) (next_to:t $1 mississippi:s) (high_point:t $1 $0))))
+
+denver sehri hangi eyalettedir
+(lambda $0 e (and (state:t $0) (loc:t denver_co:c $0)))
+
+south dakota a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 south_dakota:s)))
+
+colorado nehrinin uzunlugu nedir
+(len:i colorado_river:r)
+
+texas daki en alcak nokta nerededir
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+usa deki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+montana in nufusu nedir
+(population:i montana:s)
+
+illinois deki en buyuk nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 illinois:s)) (size:i $0))
+
+alaska daki en genis sehirin genisligi ne kadardir
+(size:i (argmax $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0)))
+
+kansas daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 kansas:s)) (elevation:i $0))
+
+hangi eyalet en yuksek nufus yogunluguna sahiptir
+(argmax $0 (state:t $0) (density:i $0))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(argmax $1 (state:t $1) (elevation:i $1))
+
+wyoming daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 wyoming:s)) (size:i $0))
+
+montana daki en yuksek nokta ne kadar yuksektir
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0)))
+
+florida daki en uzun nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 florida:s)) (len:i $0))
+
+mississippi nehrinin uzunlugu nedir
+(len:i mississippi_river:r)
+

@@ -1,0 +1,675 @@
+texas in baskentinde ne kadar insan yasamaktadir
+(answer (population_1 (capital (loc_2 (stateid texas:e)))))
+
+hangi nehirler new mexico ya siniri olan eyaletlerden gecer
+(answer (river (traverse_2 (state (next_to_2 (stateid new_mexico:e))))))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+columbus hangi eyaletin baskentidir
+(answer (state (loc_1 (capital (cityid columbus:e _:e)))))
+
+us deki en genis baskent hangisidir
+(answer (largest (capital (loc_2 (countryid usa:e)))))
+
+kalamazoo hangi eyalettedir
+(answer (state (loc_1 (cityid kalamazoo:e _:e))))
+
+kansas daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid kansas:e)))))
+
+colorado dan hangi nehirler gecer
+(answer (river (traverse_2 (stateid colorado:e))))
+
+arkansas daki nehirlerin isimlerini ver
+(answer (river (loc_2 (stateid arkansas:e))))
+
+iowa in baskenti nedir
+(answer (capital (loc_2 (stateid iowa:e))))
+
+texas daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid texas:e)))))
+
+oregon daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid oregon:e)))))
+
+north platte nehrinin uzunlugu ne kadardir
+(answer (len (riverid north_platte:e)))
+
+en genis eyaletin yuzolcumu nedir
+(answer (area_1 (largest (state all:e))))
+
+mississippi nehrinin uzunlugu ne kadardir
+(answer (len (riverid mississippi:e)))
+
+california eyaletinin en alcak noktasi nedir
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+hangi eyaletlerde dallas sehri vardir
+(answer (state (loc_1 (city (cityid dallas:e _:e)))))
+
+alaska daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid alaska:e)))))
+
+washington in baskenti nedir
+(answer (capital (loc_2 (stateid washington:e))))
+
+texas nun nufusu nedir
+(answer (population_1 (stateid texas:e)))
+
+oklahoma daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid oklahoma:e)))))
+
+us kac kilometrekaredir
+(answer (area_1 (countryid usa:e)))
+
+hangi eyaletin baskenti en buyuktur
+(answer (state (loc_1 (largest (city (capital_1 (state all:e)))))))
+
+en genis alana sahip eyaletin en alcak noktasi nedir
+(answer (lowest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+usa nin en yuksek noktasi nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+texas in nufus yogunlugu nedir
+(answer (density_1 (stateid texas:e)))
+
+amerika daki en yuksek nokta ne kadar yuksektir
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e))))))
+
+nebraska daki en alcak nokta metre olarak nedir
+(answer (lowest (place (loc_2 (stateid nebraska:e)))))
+
+us deki en alcak nokta nerededir
+(answer (loc_1 (lowest (place (loc_2 (countryid usa:e))))))
+
+ohio ya siniri bulunan eyaletler nelerdir
+(answer (state (next_to_2 (stateid ohio:e))))
+
+en yuksek noktayi iceren eyaletin baskenti nedir
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e)))))))
+
+hangi eyaletler colorado nun en yuksek noktasindan daha yuksek noktaya sahiptirler
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e)))))))))
+
+new york sehrinin nufusu nedir
+(answer (population_1 (cityid new_york:e _:e)))
+
+utah nun nufusu nedir
+(answer (population_1 (stateid utah:e)))
+
+50 eyaletin toplam alani nedir
+(answer (sum (area_1 (state all:e))))
+
+usa deki en yuksek nokta nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+south dakota nun nufusu nedir
+(answer (population_1 (stateid south_dakota:e)))
+
+usa deki en kisa nehirin uzunlugu nedir
+(answer (len (shortest (river (loc_2 (countryid usa:e))))))
+
+alabama da kac tane vatandas vardir
+(answer (population_1 (stateid alabama:e)))
+
+birlesik devletler in en uzun nehri nedir
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+idaho da kac tane nehir vardir
+(answer (count (river (loc_2 (stateid idaho:e)))))
+
+missouri hangi eyaletlerin icinden gecer
+(answer (state (traverse_1 (riverid missouri:e))))
+
+hangi eyaletin michigan ya siniri vardir
+(answer (state (next_to_2 (stateid michigan:e))))
+
+vermont in baskenti nedir
+(answer (capital (loc_2 (stateid vermont:e))))
+
+hangi eyaletin en cok eyalete siniri vardir
+(answer (most (state (next_to_2 (state all:e)))))
+
+iowa daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid iowa:e)))))
+
+minneapolis minnesota da ne kadar insan yasamaktadir
+(answer (population_1 (cityid minneapolis:e mn:e)))
+
+hangi eyalet en kucuktur
+(answer (smallest (state all:e)))
+
+usa deki en buyuk sehir nedir
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+san antonio nun nufusu nedir
+(answer (population_1 (cityid san_antonio:e _:e)))
+
+us deki en uzun nehir nedir
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+idaho nin yuzolcumu nedir
+(answer (area_1 (stateid idaho:e)))
+
+washington eyaletindeki en genis nehir nedir
+(answer (longest (river (loc_2 (stateid washington:e)))))
+
+alaska daki nehirler nelerdir
+(answer (river (loc_2 (stateid alaska:e))))
+
+hangi eyaletin florida ya siniri vardir
+(answer (state (next_to_2 (stateid florida:e))))
+
+springfield missouri in nufusu nedir
+(answer (population_1 (cityid springfield:e mo:e)))
+
+hangi eyaletin baskenti dover dir
+(answer (state (capital_2 (cityid dover:e _:e))))
+
+texas in baslica sehirleri nelerdir
+(answer (major (city (loc_2 (stateid texas:e)))))
+
+utah in baskenti nedir
+(answer (capital (loc_2 (stateid utah:e))))
+
+baskenti atlanta olan eyalete komsu eyaletlerden gecen nehir nedir
+(answer (river (traverse_2 (state (next_to_2 (state (loc_1 (capital (cityid atlanta:e _:e)))))))))
+
+texas daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid texas:e)))))
+
+colorado daki butun nehirlerin isimlerini ver
+(answer (river (loc_2 (stateid colorado:e))))
+
+hangi nehirler alaska nin icinden akar
+(answer (river (traverse_2 (stateid alaska:e))))
+
+usa deki en yuksek nokta nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+50 eyaletin toplam nufusu nedir
+(answer (sum (population_1 (state all:e))))
+
+colorado da kac tane nehir vardir
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+minnesota da nufus acisindan en buyuk sehir nedir
+(answer (largest_one (population_1 (city (loc_2 (stateid minnesota:e))))))
+
+south carolina nin yuzolcumu nedir
+(answer (area_1 (stateid south_carolina:e)))
+
+en buyuk sehir nedir
+(answer (largest (city all:e)))
+
+hawaii a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+rhode island daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid rhode_island:e)))))
+
+oklahoma ya siniri olan en kalabalik eyalet nedir
+(answer (largest_one (population_1 (state (next_to_2 (stateid oklahoma:e))))))
+
+riverside da ne kadar insan yasamaktadir
+(answer (population_1 (cityid riverside:e _:e)))
+
+ohio nehri hangi eyaletlerin icinden gecer
+(answer (state (traverse_1 (riverid ohio:e))))
+
+washington daki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (stateid washington:e)))))
+
+georgia in baskenti nedir
+(answer (capital (loc_2 (stateid georgia:e))))
+
+hawaii deki en yuksek nokta nerededir
+(answer (loc_1 (highest (place (loc_2 (stateid hawaii:e))))))
+
+hangi eyalet en buyuk nufusa sahiptir
+(answer (largest_one (population_1 (state all:e))))
+
+indiana a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid indiana:e))))
+
+kentucky yi hangi eyaletler cevreler
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+hangi eyalet en uzun nehre sahiptir
+(answer (state (loc_1 (longest (river all:e)))))
+
+hangi eyaletin hawaii ya siniri vardir
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+mississippi hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+rhode island a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid rhode_island:e))))
+
+georgia daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid georgia:e)))))
+
+colorado nehrinin uzunlugu ne kadardir
+(answer (len (riverid colorado:e)))
+
+delaware nehrinin uzunlugu ne kadardir
+(answer (len (riverid delaware:e)))
+
+south dakota a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid south_dakota:e))))
+
+hangi eyalet us deki en yusek noktayi kapsar
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e)))))))
+
+kalamazoo da ne kadar insan yasamaktadir
+(answer (population_1 (cityid kalamazoo:e _:e)))
+
+des moines hangi eyalettedir
+(answer (state (loc_1 (cityid des_moines:e _:e))))
+
+arizona nun nufusu nedir
+(answer (population_1 (stateid arizona:e)))
+
+texas daki en alcak nokta nerededir
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+new york a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid new_york:e))))
+
+virginia daki sehirlerin isimlerini ver
+(answer (city (loc_2 (stateid virginia:e))))
+
+us de kac tane sehir vardir
+(answer (count (city (loc_2 (countryid usa:e)))))
+
+louisiana daki en alcak nokta nedir
+(answer (lowest (place (loc_2 (stateid louisiana:e)))))
+
+louisiana daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid louisiana:e)))))
+
+delaware nehri hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid delaware:e))))
+
+iowa daki en kisa nehir nedir
+(answer (shortest (river (loc_2 (stateid iowa:e)))))
+
+hangi eyaletlerde plano sehri vardir
+(answer (state (loc_1 (city (cityid plano:e _:e)))))
+
+montana da kac tane sehir vardir
+(answer (count (city (loc_2 (stateid montana:e)))))
+
+washington da ne kadar insan yasamaktadir
+(answer (population_1 (stateid washington:e)))
+
+en az nufuslu eyalet nedir
+(answer (smallest_one (population_1 (state all:e))))
+
+ulkedeki en yuksek nokta nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+west virginia dan hangi nehirler gecer
+(answer (river (traverse_2 (stateid west_virginia:e))))
+
+usa deki en kucuk eyalet nedir
+(answer (smallest (state (loc_2 (countryid usa:e)))))
+
+colorado daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid colorado:e)))))
+
+portland maine in nufusu nedir
+(answer (population_1 (cityid portland:e me:e)))
+
+en kucuk eyaletin baskentinin nufusu nedir
+(answer (population_1 (capital (loc_2 (smallest (state all:e))))))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+hangi eyaletin texas ye siniri vardir
+(answer (state (next_to_2 (stateid texas:e))))
+
+mississippi nehrinin uzunlugu ne kadardir
+(answer (len (riverid mississippi:e)))
+
+rio grande nehrinin uzunlugu ne kadardir
+(answer (len (riverid rio_grande:e)))
+
+us in en alcak noktasi nedir
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+florida a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid florida:e))))
+
+mississippi nehrinin icinden gectigi eyaletlerin nufuslari nelerdir
+(answer (population_1 (state (traverse_1 (riverid mississippi:e)))))
+
+colorado nehrinin uzunlugu nedir
+(answer (len (riverid colorado:e)))
+
+alaska daki en genis sehirin genisligi ne kadardir
+(answer (size (largest (city (loc_2 (stateid alaska:e))))))
+
+mississippi nin en uzun nehri nedir
+(answer (longest (river (loc_2 (stateid mississippi:e)))))
+
+mississippi nehrinin hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+new jersey a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid new_jersey:e))))
+
+hangi eyalet en kucuk nufus yogunluguna sahiptir
+(answer (smallest_one (density_1 (state all:e))))
+
+california daki en alcak nokta nerededir
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+oregon daki en alcak nokta nedir
+(answer (lowest (place (loc_2 (stateid oregon:e)))))
+
+hawaii deki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (stateid hawaii:e)))))
+
+denver sehri hangi eyalettedir
+(answer (state (loc_1 (cityid denver:e _:e))))
+
+hangi eyalet ulkedeki en yuksek zirveye sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+hawaii nun nufusu nedir
+(answer (population_1 (stateid hawaii:e)))
+
+en az nufuslu sehir nedir
+(answer (smallest_one (population_1 (city all:e))))
+
+usa deki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+mississippi nehrinin uzunlugu nedir
+(answer (len (riverid mississippi:e)))
+
+hangi nehirler tennessee den gecmez
+(answer (exclude (river all:e) (traverse_2 (stateid tennessee:e))))
+
+arkansas daki en alcak nokta nerededir
+(answer (lowest (place (loc_2 (stateid arkansas:e)))))
+
+mississippi nehri kac tane eyaletten gecmektedir
+(answer (count (state (traverse_1 (riverid mississippi:e)))))
+
+new jersey in baskenti nedir
+(answer (capital (loc_2 (stateid new_jersey:e))))
+
+en kucuk eyaletin nufus yogunlugu nedir
+(answer (density_1 (smallest (state all:e))))
+
+alaska nun kac tane nehri vardir
+(answer (count (river (loc_2 (stateid alaska:e)))))
+
+alaska ne kadar genisliktedir
+(answer (size (stateid alaska:e)))
+
+california da ne kadar vatandas yasamaktadir
+(answer (population_1 (stateid california:e)))
+
+wisconsin deki baslica sehirlerin nufusu nedir
+(answer (population_1 (major (city (loc_2 (stateid wisconsin:e))))))
+
+arizona daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid arizona:e)))))
+
+new york dan hangi nehirler gecer
+(answer (river (traverse_2 (stateid new_york:e))))
+
+tempe arizona in nufusu nedir
+(answer (population_1 (cityid tempe:e az:e)))
+
+en kalabalik eyalet nedir
+(answer (largest_one (population_1 (state all:e))))
+
+kentucky a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+hawaii da ne kadar insan yasamaktadir
+(answer (population_1 (stateid hawaii:e)))
+
+wyoming in nufus yogunlugu nedir
+(answer (density_1 (stateid wyoming:e)))
+
+massachusetts daki en alcak nokta nerededir
+(answer (lowest (place (loc_2 (stateid massachusetts:e)))))
+
+wisconsin nin yuzolcumu nedir
+(answer (area_1 (stateid wisconsin:e)))
+
+nufus bakimindan en buyuk eyalet baskenti nedir
+(answer (largest_one (population_1 (capital_1 (state all:e)))))
+
+wyoming daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid wyoming:e)))))
+
+california ya komsu eyaletler deki en genis sehir nedir
+(answer (largest (city (loc_2 (state (next_to_2 (stateid california:e)))))))
+
+us deki en kisa nehir nedir
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+illinois deki en buyuk nehir nedir
+(answer (longest (river (loc_2 (stateid illinois:e)))))
+
+wyoming daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid wyoming:e)))))
+
+usa deki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+tucson nun nufusu nedir
+(answer (population_1 (cityid tucson:e _:e)))
+
+montana in nufusu nedir
+(answer (population_1 (stateid montana:e)))
+
+us deki en yuksek dag nedir
+(answer (highest (mountain (loc_2 (countryid usa:e)))))
+
+california da ne kadar insan yasamaktadir
+(answer (population_1 (stateid california:e)))
+
+hangi eyalet en yuksek noktaya sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+georgia ya siniri olan eyaletlerdeki en yuksek nokta nedir
+(answer (highest (place (loc_2 (state (next_to_2 (stateid georgia:e)))))))
+
+texas daki nehirler nelerdir
+(answer (river (loc_2 (stateid texas:e))))
+
+hangi eyalet en buyuk sehre sahiptir
+(answer (state (loc_1 (largest (city all:e)))))
+
+hangi eyalet in flint sehri vardir
+(answer (state (loc_1 (cityid flint:e _:e))))
+
+hangi eyalet en buyuk nufus yogunluguna sahiptir
+(answer (largest_one (density_1 (state all:e))))
+
+illinois nun nufusu nedir
+(answer (population_1 (stateid illinois:e)))
+
+spokane washington da ne kadar insan yasamaktadir
+(answer (population_1 (cityid spokane:e wa:e)))
+
+idaho nun nufusu nedir
+(answer (population_1 (stateid idaho:e)))
+
+texas daki en uzun nehir nedir
+(answer (longest (river (loc_2 (stateid texas:e)))))
+
+hangi eyalet en buyuk nufus yogunluguna sahiptir
+(answer (largest_one (density_1 (state all:e))))
+
+mississippi yi saran eyaletlerin yuksek noktalari nelerdir
+(answer (high_point_1 (state (next_to_2 (stateid mississippi:e)))))
+
+en genis alana sahip eyaletin en yuksek noktasi nedir
+(answer (highest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+ohio daki baslica nehirler nelerdir
+(answer (major (river (loc_2 (stateid ohio:e)))))
+
+hangi eyalet en yuksek nufus yogunluguna sahiptir
+(answer (largest_one (density_1 (state all:e))))
+
+birlesik devletler in en uzun nehri nedir
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+kentucky a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+en kucuk eyaletin yuzolcumu nedir
+(answer (area_1 (smallest (state all:e))))
+
+nevada daki en yuksek nokta metre olarak nedir
+(answer (highest (place (loc_2 (stateid nevada:e)))))
+
+kansas daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid kansas:e)))))
+
+illinois den baslica hangi nehirler gecer
+(answer (major (river (traverse_2 (stateid illinois:e)))))
+
+hangi eyalet en yuksek nufusa sahiptir
+(answer (largest_one (population_1 (state all:e))))
+
+missouri nehri hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid missouri:e))))
+
+texas eyaletinin en alcak noktasi nedir
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+alan acisindan en kucuk eyalet nedir
+(answer (smallest_one (area_1 (state all:e))))
+
+austin da ne kadar insan yasamaktadir
+(answer (population_1 (cityid austin:e _:e)))
+
+kac tane baslica nehir ohio dan gecer
+(answer (count (major (river (traverse_2 (stateid ohio:e))))))
+
+maine in nufus yogunlugu nedir
+(answer (density_1 (stateid maine:e)))
+
+north dakota in baskenti nedir
+(answer (capital (loc_2 (stateid north_dakota:e))))
+
+texas a komsu eyaletlerin toplam nufusu nedir
+(answer (sum (population_1 (state (next_to_2 (stateid texas:e))))))
+
+texas ne kadar genistir
+(answer (size (stateid texas:e)))
+
+montana daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid montana:e)))))
+
+alaska nin yuzolcumu nedir
+(answer (area_1 (stateid alaska:e)))
+
+wisconsin deki en genis sehir nedir
+(answer (largest (city (loc_2 (stateid wisconsin:e)))))
+
+mississippi nehri hangi eyaletlerden gecmektedir
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+florida daki en uzun nehir nedir
+(answer (longest (river (loc_2 (stateid florida:e)))))
+
+wyoming daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid wyoming:e)))))
+
+georgia a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid georgia:e))))
+
+hangi nehir en cok eyaletten gecer
+(answer (most (river (traverse_2 (state all:e)))))
+
+montana daki en yuksek nokta nerededir
+(answer (loc_1 (highest (place (loc_2 (stateid montana:e))))))
+
+colorado nun kac tane nehri vardir
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+erie pennsylvania in nufusu nedir
+(answer (population_1 (cityid erie:e pa:e)))
+
+alaska daki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (stateid alaska:e)))))
+
+maine nin yuzolcumu nedir
+(answer (area_1 (stateid maine:e)))
+
+montana daki en yuksek nokta ne kadar yuksektir
+(answer (elevation_1 (highest (place (loc_2 (stateid montana:e))))))
+
+ohio nehrinin uzunlugu ne kadardir
+(answer (len (riverid ohio:e)))
+
+en kisa nehir nedir
+(answer (shortest (river all:e)))
+
+arkansas a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid arkansas:e))))
+
+washington da kac tane nehir vardir
+(answer (count (river (loc_2 (stateid washington:e)))))
+
+colorado nehri kac eyaletin icinden gecer
+(answer (count (state (traverse_1 (riverid colorado:e)))))
+
+usa nin toplam yuzolcumu nedir
+(answer (area_1 (countryid usa:e)))
+
+iowa daki en alcak nokta nerededir
+(answer (loc_1 (lowest (place (loc_2 (stateid iowa:e))))))
+
+new york da ne kadar insan yasamaktadir
+(answer (population_1 (stateid new_york:e)))
+
+boston massachusetts in nufusu nedir
+(answer (population_1 (cityid boston:e ma:e)))
+
+new york da kac tane nehir vardir
+(answer (count (river (loc_2 (stateid new_york:e)))))
+
+ohio daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid ohio:e)))))
+
+florida da baslica kac tane sehir vardir
+(answer (count (major (city (loc_2 (stateid florida:e))))))
+
+usa deki en buyuk sehir nedir
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+en genis eyaletin ismini ver
+(answer (largest (state all:e)))
+
+new hampshire a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid new_hampshire:e))))
+
+colorado a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid colorado:e))))
+
+rhode island daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid rhode_island:e)))))
+
+california daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid california:e)))))
+
+hangi eyaletin kentucky ye siniri vardir
+(answer (state (next_to_2 (stateid kentucky:e))))
+

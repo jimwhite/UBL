@@ -1,0 +1,75 @@
+kororado ni wa kawa ga ikutsu arimasu ka
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+kororado no mottomo takai chiten yori motto takai chiten ga aru shuu wa nan desu ka
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e)))))))))
+
+mishishippi kawa no nagasa wa dore gurai desu ka
+(answer (len (riverid mississippi:e)))
+
+mottomo chiisai jinkou no mitsudo ga aru shuu wa nan desu ka
+(answer (smallest_one (density_1 (state all:e))))
+
+aidahou no chiiki wa nan desu ka
+(answer (area_1 (stateid idaho:e)))
+
+mishishippi kawa no nagasa wa dore gurai desu ka
+(answer (len (riverid mississippi:e)))
+
+kororado kawa no nagasa wa dore gurai desu ka
+(answer (len (riverid colorado:e)))
+
+aakansaa no kawa wo agete kudasai
+(answer (river (loc_2 (stateid arkansas:e))))
+
+dono kawa wa uesuto baajinia wo nagarete imasu ka
+(answer (river (traverse_2 (stateid west_virginia:e))))
+
+arasuka no kawa wa nan desu ka
+(answer (river (loc_2 (stateid alaska:e))))
+
+karifuorunia ni rinsetsu suru shuu no mottomo ookii toshi wa nan desu ka
+(answer (largest (city (loc_2 (state (next_to_2 (stateid california:e)))))))
+
+aidahou no jinkou wa nan desu ka
+(answer (population_1 (stateid idaho:e)))
+
+gojuu shuu zenbu no zentai no chiiki wa nan desu ka
+(answer (sum (area_1 (state all:e))))
+
+aakansaa ni rinsetsu suru shuu wa nan desu ka
+(answer (state (next_to_2 (stateid arkansas:e))))
+
+hawai no mottomo takai chiten wa doko desu ka
+(answer (loc_1 (highest (place (loc_2 (stateid hawaii:e))))))
+
+dono shuu ni wa karamazuu kawa desu ka
+(answer (state (loc_1 (cityid kalamazoo:e _:e))))
+
+karifuorunia no shuu no mottomo hikui chiten wa nan desu ka
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+mishishippi de mottomo nagai kawa wa nan desu ka
+(answer (longest (river (loc_2 (stateid mississippi:e)))))
+
+nyuu yooku ni rinsetsu suru shuu wa nan desu ka
+(answer (state (next_to_2 (stateid new_york:e))))
+
+waiomingu no mottomo takai chiten wa nan desu ka
+(answer (highest (place (loc_2 (stateid wyoming:e)))))
+
+aiowa no mottomo takai chiten wa nan desu ka
+(answer (highest (place (loc_2 (stateid iowa:e)))))
+
+hawai ni wa nannin no hito ga sumimasu ka
+(answer (population_1 (stateid hawaii:e)))
+
+donna kawa wa nyuu mekishiko ni rinsetsu suru shuu wo nagarete imasu ka
+(answer (river (traverse_2 (state (next_to_2 (stateid new_mexico:e))))))
+
+penshirubenia no eri no jinkou wa nan desu ka
+(answer (population_1 (cityid erie:e pa:e)))
+
+roodoairando no mottomo takai chiten wa nan desu ka
+(answer (highest (place (loc_2 (stateid rhode_island:e)))))
+

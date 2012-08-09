@@ -1,0 +1,75 @@
+cual estado tiene la poblacion mas alta
+(argmax $0 (state:t $0) (population:i $0))
+
+cual estado tiene la ciudad mas grande
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (city:t $1) (size:i $1)) $0)))
+
+que es el rio mas largo en los us
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+cual estado es el mas pequeno
+(argmin $0 (state:t $0) (size:i $0))
+
+cuantos rios tiene alaska
+(count $0 (and (river:t $0) (loc:t $0 alaska:s)))
+
+que estado tiene la densidad de poblacion mas grande
+(argmax $0 (state:t $0) (density:i $0))
+
+cual estado tiene la ciudad capital mas grande
+(lambda $0 e (and (state:t $0) (capital:t $0 (argmax $1 (capital:t $1) (size:i $1)))))
+
+que es la poblacion de arizona
+(population:i arizona:s)
+
+por cuantos estados corre el rio colorado
+(count $0 (and (state:t $0) (loc:t colorado_river:r $0)))
+
+cual estado tiene el punto mas alto
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (place:t $1) (elevation:i $1)) $0)))
+
+cuantas personas viven en minneapolis minnesota
+(population:i minneapolis_mn:c)
+
+que son las ciudades mayores en wyoming
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 wyoming:s)))
+
+que estado tiene la densidad de poblacion mas grande
+(argmax $0 (state:t $0) (density:i $0))
+
+que es la ciudad mas grande en texas
+(argmax $0 (and (city:t $0) (loc:t $0 texas:s)) (size:i $0))
+
+por cuales estados corre el rio delaware
+(lambda $0 e (and (state:t $0) (loc:t delaware_river:r $0)))
+
+que es el rio mas largo en texas
+(argmax $0 (and (river:t $0) (loc:t $0 texas:s)) (len:i $0))
+
+cuantas personas viven en washington
+(population:i washington:s)
+
+que es la ciudad mas pequena en hawaii
+(argmin $0 (and (city:t $0) (loc:t $0 hawaii:s)) (size:i $0))
+
+que estado tiene la capital dover
+(lambda $0 e (and (state:t $0) (capital:t $0 dover_de:c)))
+
+que es el punto mas alto en el pais
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+que es el rio mas corto
+(argmin $0 (river:t $0) (len:i $0))
+
+que es el punto mas bajo en massachusetts
+(argmin $0 (and (place:t $0) (loc:t $0 massachusetts:s)) (elevation:i $0))
+
+que rios corren por colorado
+(lambda $0 e (and (river:t $0) (loc:t $0 colorado:s)))
+
+cuales estados bordean a colorado
+(lambda $0 e (and (state:t $0) (next_to:t $0 colorado:s)))
+
+cual estado tiene la poblacion mas grande
+(argmax $0 (state:t $0) (population:i $0))
+

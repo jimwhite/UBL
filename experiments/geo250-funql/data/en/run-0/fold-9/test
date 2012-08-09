@@ -1,0 +1,75 @@
+what is the highest point of the usa
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+what is the population of boston massachusetts
+(answer (population_1 (cityid boston:e ma:e)))
+
+what is the population of texas
+(answer (population_1 (stateid texas:e)))
+
+how many square kilometers in the us
+(answer (area_1 (countryid usa:e)))
+
+which state border kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+what is the biggest city in arizona
+(answer (largest (city (loc_2 (stateid arizona:e)))))
+
+what is the smallest city in alaska
+(answer (smallest (city (loc_2 (stateid alaska:e)))))
+
+what states have cities named plano
+(answer (state (loc_1 (city (cityid plano:e _:e)))))
+
+what is the capital of vermont
+(answer (capital (loc_2 (stateid vermont:e))))
+
+what is the population density of wyoming
+(answer (density_1 (stateid wyoming:e)))
+
+what is the population of tucson
+(answer (population_1 (cityid tucson:e _:e)))
+
+what is the city with the smallest population
+(answer (smallest_one (population_1 (city all:e))))
+
+what is the highest point in nevada in meters
+(answer (highest (place (loc_2 (stateid nevada:e)))))
+
+what are the populations of states through which the mississippi river runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e)))))
+
+what is the largest river in washington state
+(answer (longest (river (loc_2 (stateid washington:e)))))
+
+what is the population density of texas
+(answer (density_1 (stateid texas:e)))
+
+what is the biggest city in the us
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+give me the largest state
+(answer (largest (state all:e)))
+
+what state contains the highest point in the us
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e)))))))
+
+what is the state with the lowest population
+(answer (smallest_one (population_1 (state all:e))))
+
+what states border indiana
+(answer (state (next_to_2 (stateid indiana:e))))
+
+what is the biggest city in oregon
+(answer (largest (city (loc_2 (stateid oregon:e)))))
+
+what is the area of south carolina
+(answer (area_1 (stateid south_carolina:e)))
+
+what is the population of utah
+(answer (population_1 (stateid utah:e)))
+
+which states border kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+

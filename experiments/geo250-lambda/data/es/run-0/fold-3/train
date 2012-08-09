@@ -1,0 +1,675 @@
+cuantos rios hay en idaho
+(count $0 (and (river:t $0) (loc:t $0 idaho:s)))
+
+cuales estados bordean a rhode island
+(lambda $0 e (and (state:t $0) (next_to:t $0 rhode_island:s)))
+
+cuales estados bordean a ohio
+(lambda $0 e (and (state:t $0) (next_to:t $0 ohio:s)))
+
+que es el punto mas bajo en los united states
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+nombra los rios en arkansas
+(lambda $0 e (and (river:t $0) (loc:t $0 arkansas:s)))
+
+que es la area total de los usa
+(area:i usa:co)
+
+cuantas ciudades hay en los us
+(count $0 (and (city:t $0) (loc:t $0 usa:co)))
+
+que es el rio mas grande en illinois
+(argmax $0 (and (river:t $0) (loc:t $0 illinois:s)) (size:i $0))
+
+que es el punto mas alto en los usa
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+que es el punto mas alto de el estado con la capital des moines
+(argmax $0 (and (place:t $0) (loc:t $0 (the $1 (and (state:t $1) (capital:t $1 des_moines_ia:c))))) (elevation:i $0))
+
+cuales estados tienen ciudades con el nombre plano
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 plano:n) (loc:t $1 $0)))))
+
+que tan grande esta alaska
+(size:i alaska:s)
+
+que es la poblacion de south dakota
+(population:i south_dakota:s)
+
+que es la poblacion de oregon
+(population:i oregon:s)
+
+que es la poblacion de la capital de el estado mas pequeno
+(population:i (capital:c (argmin $1 (state:t $1) (size:i $1))))
+
+que estado tiene la capital dover
+(lambda $0 e (and (state:t $0) (capital:t $0 dover_de:c)))
+
+cuantas personas viven en california
+(population:i california:s)
+
+que es la densidad de poblacion de texas
+(density:i texas:s)
+
+cual estado bordea a michigan
+(lambda $0 e (and (state:t $0) (next_to:t $0 michigan:s)))
+
+que son los puntos altos de los estados rodeando a mississippi
+(lambda $0 e (exists $1 (and (state:t $1) (next_to:t $1 mississippi:s) (high_point:t $1 $0))))
+
+que es la ciudad mas pequena en hawaii
+(argmin $0 (and (city:t $0) (loc:t $0 hawaii:s)) (size:i $0))
+
+de cual estado es columbus la capital
+(lambda $0 e (and (state:t $0) (capital:t $0 columbus_oh:c)))
+
+que es el punto mas bajo de el estado con la area mas grande
+(argmin $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+cuales estados bordean a south dakota
+(lambda $0 e (and (state:t $0) (next_to:t $0 south_dakota:s)))
+
+que es la ciudad mas grande en los usa
+(argmax $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+que es la densidad de poblacion de wyoming
+(density:i wyoming:s)
+
+que es la capital de new jersey
+(capital:c new_jersey:s)
+
+dame las ciudades en virginia
+(lambda $0 e (and (city:t $0) (loc:t $0 virginia:s)))
+
+que rios corren por los estados que bordean a el estado con la capital atlanta
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (loc:t $0 $1) (next_to:t $1 (the $2 (and (state:t $2) (capital:t $2 atlanta_ga:c))))))))
+
+donde esta el punto mas bajo en iowa
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 iowa:s)) (elevation:i $1)) $0))
+
+que es la poblacion de la ciudad new york
+(population:i new_york_city:c)
+
+que es el punto mas bajo en louisiana
+(argmin $0 (and (place:t $0) (loc:t $0 louisiana:s)) (elevation:i $0))
+
+cuales rios corren por alaska
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+que es la ciudad mas grande en minnesota por poblacion
+(argmax $0 (and (city:t $0) (loc:t $0 minnesota:s)) (population:i $0))
+
+cuales estados bordean a kentucky
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+que rios no corren por tennessee
+(lambda $0 e (and (river:t $0) (not (loc:t $0 tennessee:s))))
+
+cuantos kilometros cuadrados en los us
+(size:i usa:co)
+
+que es el rio mas corto en iowa
+(argmin $0 (and (river:t $0) (loc:t $0 iowa:s)) (len:i $0))
+
+que es el rio mas largo en los us
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+cual estado tiene la densidad de poblacion mas pequena
+(argmin $0 (state:t $0) (density:i $0))
+
+cual estado bordean a kentucky
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+que es la ciudad mas pequena en alaska
+(argmin $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0))
+
+cuales estados bordean a new jersey
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_jersey:s)))
+
+que son las ciudades mayores en wyoming
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 wyoming:s)))
+
+que es la poblacion de montana
+(population:i montana:s)
+
+que es el rio mas largo en los united states
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+que es el rio mas largo en texas
+(argmax $0 (and (river:t $0) (loc:t $0 texas:s)) (len:i $0))
+
+en que estado esta kalamazoo
+(lambda $0 e (and (state:t $0) (loc:t kalamazoo_mi:c $0)))
+
+que es el total de la poblacion de los estados que bordean a texas
+(sum $0 (and (state:t $0) (next_to:t $0 texas:s)) (population:i $0))
+
+que es el punto mas alto en iowa
+(argmax $0 (and (place:t $0) (loc:t $0 iowa:s)) (elevation:i $0))
+
+que estado tiene la elevacion mas alta
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (place:t $1) (elevation:i $1)) $0)))
+
+que es el estado mas pequeno por area
+(argmin $0 (state:t $0) (area:i $0))
+
+cuantas personas viven en riverside
+(population:i riverside_ca:c)
+
+que es el rio mas largo en los united states
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+que es el punto mas bajo en nebraska en metros
+(argmin $0 (and (place:t $0) (loc:t $0 nebraska:s)) (elevation:i $0))
+
+que es la ciudad con la poblacion mas pequena
+(argmin $0 (city:t $0) (population:i $0))
+
+que son las ciudades mayores en ohio
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 ohio:s)))
+
+en que estado se encuentra des moines
+(lambda $0 e (and (state:t $0) (loc:t des_moines_ia:c $0)))
+
+por cuales estados corre el mississippi
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+cuantas ciudades hay en montana
+(count $0 (and (city:t $0) (loc:t $0 montana:s)))
+
+que es el punto mas bajo en texas
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+dame el estado mas grande
+(argmax $0 (state:t $0) (size:i $0))
+
+que estado tiene la capital salem
+(lambda $0 e (and (state:t $0) (capital:t $0 salem_or:c)))
+
+que estado tiene la densidad de poblacion mas grande
+(argmax $0 (state:t $0) (density:i $0))
+
+cual rio corre por mas estados
+(argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1))))
+
+que rios corren por west virginia
+(lambda $0 e (and (river:t $0) (loc:t $0 west_virginia:s)))
+
+que es el punto mas alto de el estado con la area mas grande
+(argmax $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+que rios corren por new york
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+que rios estan en utah
+(lambda $0 e (and (river:t $0) (loc:t $0 utah:s)))
+
+que es el punto mas bajo en el estado de california
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+cual estado bordea a florida
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+
+que es el rio mas largo en mississippi
+(argmax $0 (and (river:t $0) (loc:t $0 mississippi:s)) (len:i $0))
+
+cuales rios corren por estados bordeando a new mexico
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (next_to:t $1 new_mexico:s) (loc:t $0 $1)))))
+
+que tiene de largo el rio mississippi
+(len:i mississippi_river:r)
+
+por cuales estados corre el missouri
+(lambda $0 e (and (state:t $0) (loc:t missouri_river:r $0)))
+
+cual estado tiene el pico mas alto en el pais
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (mountain:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+que es la poblacion de dallas
+(population:i dallas_tx:c)
+
+que es la ciudad mas grande en texas
+(argmax $0 (and (city:t $0) (loc:t $0 texas:s)) (size:i $0))
+
+que es la ciudad mas grande en rhode island
+(argmax $0 (and (city:t $0) (loc:t $0 rhode_island:s)) (size:i $0))
+
+que es la ciudad mas pequena en washington
+(argmin $0 (and (city:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+por cuantos estados corre el rio colorado
+(count $0 (and (state:t $0) (loc:t colorado_river:r $0)))
+
+cuantas personas viven en new york
+(population:i new_york:s)
+
+que son las ciudades mayores en california
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 california:s)))
+
+que es el punto mas bajo en arkansas
+(argmin $0 (and (place:t $0) (loc:t $0 arkansas:s)) (elevation:i $0))
+
+que capital es la mas grande en los us
+(argmax $0 (and (capital:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+que es el punto mas alto en los usa
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+donde esta el punto mas bajo en los us
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0))
+
+cuales estados tienen ciudades con el nombre dallas
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 dallas:n) (loc:t $1 $0)))))
+
+que es la elevacion mas alta en new mexico
+(argmax $0 (and (place:t $0) (loc:t $0 new_mexico:s)) (elevation:i $0))
+
+cual estado tiene la poblacion mas alta
+(argmax $0 (state:t $0) (population:i $0))
+
+que es la poblacion de san antonio
+(population:i san_antonio_tx:c)
+
+que es el estado con la poblacion mas baja
+(argmin $0 (state:t $0) (population:i $0))
+
+que es el punto mas alto en kansas
+(argmax $0 (and (place:t $0) (loc:t $0 kansas:s)) (elevation:i $0))
+
+cual estado tiene la poblacion mas grande
+(argmax $0 (state:t $0) (population:i $0))
+
+cuales estados bordean a delaware
+(lambda $0 e (and (state:t $0) (next_to:t $0 delaware:s)))
+
+que es la area de el estado mas pequeno
+(area:i (argmin $0 (state:t $0) (size:i $0)))
+
+que es la poblacion de las ciudades mayores en wisconsin
+(population:i (the $0 (and (major:t $0) (loc:t $0 wisconsin:s) (city:t $0))))
+
+que es la ciudad mas grande en georgia
+(argmax $0 (and (city:t $0) (loc:t $0 georgia:s)) (size:i $0))
+
+que es la densidad de poblacion de maine
+(density:i maine:s)
+
+cual estado tiene el punto mas alto
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (place:t $1) (elevation:i $1)) $0)))
+
+cual estado bordea a hawaii
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+cuantas personas viven en hawaii
+(population:i hawaii:s)
+
+que son los rios mayores en ohio
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+que es el rio mas corto
+(argmin $0 (river:t $0) (len:i $0))
+
+que es el rio mas largo en florida
+(argmax $0 (and (river:t $0) (loc:t $0 florida:s)) (len:i $0))
+
+por cuantos estados corre el rio mississippi
+(count $0 (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+cuales estados bordean a colorado
+(lambda $0 e (and (state:t $0) (next_to:t $0 colorado:s)))
+
+que es el punto mas bajo en oregon
+(argmin $0 (and (place:t $0) (loc:t $0 oregon:s)) (elevation:i $0))
+
+que es el rio mas grande en el estado de washington
+(argmax $0 (and (river:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+cuales estados bordean a georgia
+(lambda $0 e (and (state:t $0) (next_to:t $0 georgia:s)))
+
+que es la capital de north dakota
+(capital:c north_dakota:s)
+
+que es la poblacion de arizona
+(population:i arizona:s)
+
+cuantas personas viven en spokane washington
+(population:i spokane_wa:c)
+
+que es la ciudad mas grande
+(argmax $0 (city:t $0) (size:i $0))
+
+que es la area de el estado mas grande
+(area:i (argmax $0 (state:t $0) (size:i $0)))
+
+que tan largo esta el rio north platte
+(len:i north_platte_river:r)
+
+que estado tiene la ciudad flint
+(lambda $0 e (and (state:t $0) (loc:t flint_mi:c $0)))
+
+que es la montana mas alta en los us
+(argmax $0 (and (mountain:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+cuantos ciudadanos viven en california
+(population:i california:s)
+
+cuantos rios hay en colorado
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+que estado tiene la densidad de poblacion mas grande
+(argmax $0 (state:t $0) (density:i $0))
+
+que tan largo esta el rio colorado
+(len:i colorado_river:r)
+
+cual estado bordea a mas estados
+(argmax $0 (state:t $0) (count $1 (and (state:t $1) (next_to:t $0 $1))))
+
+que es la poblacion de idaho
+(population:i idaho:s)
+
+que es el punto mas alto de los usa
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+que es la poblacion de tempe arizona
+(population:i tempe_az:c)
+
+que es el punto mas bajo de los us
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+que es la capital de utah
+(capital:c utah:s)
+
+cuales estados bordean a new york
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_york:s)))
+
+que es la ciudad mas grande en louisiana
+(argmax $0 (and (city:t $0) (loc:t $0 louisiana:s)) (size:i $0))
+
+que es la ciudad mas grande en oregon
+(argmax $0 (and (city:t $0) (loc:t $0 oregon:s)) (size:i $0))
+
+que es la poblacion de utah
+(population:i utah:s)
+
+cuales estados bordean a florida
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+
+que es la poblacion de erie pennsylvania
+(population:i erie_pa:c)
+
+cuantas personas viven en la capital de texas
+(population:i (capital:c texas:s))
+
+por cuales estados corre el mississippi
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+que es la capital de maine
+(capital:c maine:s)
+
+cuales estados bordean a arizona
+(lambda $0 e (and (state:t $0) (next_to:t $0 arizona:s)))
+
+que es la poblacion de hawaii
+(population:i hawaii:s)
+
+cuantas ciudades mayores hay en florida
+(count $0 (and (major:t $0) (city:t $0) (loc:t $0 florida:s)))
+
+que tan grande esta texas
+(size:i texas:s)
+
+que es la ciudad mas grande en los estados que bordean a california
+(argmax $0 (and (city:t $0) (exists $1 (and (state:t $1) (next_to:t $1 california:s) (loc:t $0 $1)))) (size:i $0))
+
+que es la ciudad mas pequena en los usa
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+cuantas personas viven en minneapolis minnesota
+(population:i minneapolis_mn:c)
+
+cuales estados bordean a new hampshire
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_hampshire:s)))
+
+que tiene de largo el rio mississippi
+(len:i mississippi_river:r)
+
+que estado tiene la elevacion mas alta
+(argmax $1 (state:t $1) (elevation:i $1))
+
+que es la poblacion de portland maine
+(population:i portland_me:c)
+
+cual estado tiene la elevacion mas alta
+(argmax $0 (state:t $0) (elevation:i $0))
+
+que es la area de alaska
+(area:i alaska:s)
+
+cuantas personas viven en washington
+(population:i washington:s)
+
+cuales estados bordean a hawaii
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+que es la poblacion combinada de todos los 50 estados
+(sum $0 (state:t $0) (population:i $0))
+
+que es la area de idaho
+(area:i idaho:s)
+
+que es el punto mas alto en colorado
+(argmax $0 (and (place:t $0) (loc:t $0 colorado:s)) (elevation:i $0))
+
+que es el punto mas bajo en el estado de texas
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+que es la capital de el estado con el punto mas alto
+(capital:c (the $1 (and (state:t $1) (loc:t (argmax $2 (place:t $2) (elevation:i $2)) $1))))
+
+que tan alto esta el punto mas alto en america
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0)))
+
+que tan grande esta la ciudad mas grande en alaska
+(size:i (argmax $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0)))
+
+cuales estados tienen ciudades con el nombre austin
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 austin:n) (loc:t $1 $0)))))
+
+que rios mayores corren por illinois
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 illinois:s)))
+
+cual estado es el mas pequeno
+(argmin $0 (state:t $0) (size:i $0))
+
+rios en new york
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+que es la capital de el estado con la poblacion mas grande
+(capital:c (argmax $1 (state:t $1) (population:i $1)))
+
+que rios corren por colorado
+(lambda $0 e (and (river:t $0) (loc:t $0 colorado:s)))
+
+que es la ciudad mas pequena en los usa
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+que son las poblaciones de los estados por cual corre el rio mississippi
+(lambda $0 e (exists $1 (and (state:t $1) (loc:t mississippi_river:r $1) (population:t $1 $0))))
+
+que es el punto mas alto en montana
+(argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0))
+
+cuantos rios tiene alaska
+(count $0 (and (river:t $0) (loc:t $0 alaska:s)))
+
+que es la capital de new hampshire
+(capital:c new_hampshire:s)
+
+que es la poblacion de springfield missouri
+(population:i springfield_mo:c)
+
+que es la ciudad mas grande en arizona
+(argmax $0 (and (city:t $0) (loc:t $0 arizona:s)) (size:i $0))
+
+que son las ciudades mayores en oklahoma
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 oklahoma:s)))
+
+que es el punto mas alto en los estados bordeando a georgia
+(argmax $0 (and (place:t $0) (exists $1 (and (state:t $1) (next_to:t $1 georgia:s) (loc:t $0 $1)))) (elevation:i $0))
+
+cuantas personas viven en rhode island
+(population:i rhode_island:s)
+
+que es la capital de georgia
+(capital:c georgia:s)
+
+cuales estados rodean a kentucky
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+que es el punto mas bajo en massachusetts
+(argmin $0 (and (place:t $0) (loc:t $0 massachusetts:s)) (elevation:i $0))
+
+cuales estados bordean a arkansas
+(lambda $0 e (and (state:t $0) (next_to:t $0 arkansas:s)))
+
+que es el estado mas poblado
+(argmax $0 (state:t $0) (population:i $0))
+
+que es la ciudad mas grande en wyoming
+(argmax $0 (and (city:t $0) (loc:t $0 wyoming:s)) (size:i $0))
+
+que es la poblacion de boston massachusetts
+(population:i boston_ma:c)
+
+que estado contiene el punto mas alto en los us
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+cuales estados bordean a kentucky
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+que tan largo esta el rio delaware
+(len:i delaware_river:r)
+
+que tiene de largo el rio mississippi
+(len:i mississippi_river:r)
+
+que es el estado mas pequeno en los usa
+(argmin $0 (and (state:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+cuantas personas viven en kalamazoo
+(population:i kalamazoo_mi:c)
+
+cuales estados tienen puntos mas alto que el punto mas alto en colorado
+(lambda $0 e (and (state:t $0) (exists $1 (and (place:t $1) (> (elevation:i $1) (elevation:i (argmax $2 (and (place:t $2) (loc:t $2 colorado:s)) (elevation:i $2))))))))
+
+que es la capital de vermont
+(capital:c vermont:s)
+
+cuales estados bordean a indiana
+(lambda $0 e (and (state:t $0) (next_to:t $0 indiana:s)))
+
+cuales estados bordean a montana
+(lambda $0 e (and (state:t $0) (next_to:t $0 montana:s)))
+
+que es la area combinada de todos los 50 estados
+(sum $0 (state:t $0) (area:i $0))
+
+que tan alto esta el punto mas alto en montana
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0)))
+
+cual estado tiene la densidad de poblacion mas alta
+(argmax $0 (state:t $0) (density:i $0))
+
+que es la densidad de poblacion de el estado mas pequeno
+(density:i (argmin $0 (state:t $0) (size:i $0)))
+
+cual estado tiene la ciudad mas grande
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (city:t $1) (size:i $1)) $0)))
+
+cuanto tiene de largo el rio colorado
+(len:i colorado_river:r)
+
+que es el punto mas alto en el pais
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+que es la area de south carolina
+(area:i south_carolina:s)
+
+que es la poblacion de texas
+(population:i texas:s)
+
+que es el rio mas corto en los usa
+(argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+en cual estado se encuentra la ciudad denver
+(lambda $0 e (and (state:t $0) (loc:t denver_co:c $0)))
+
+que es la poblacion de tucson
+(population:i tucson_az:c)
+
+que es el punto mas alto en nevada en metros
+(argmax $0 (and (place:t $0) (loc:t $0 nevada:s)) (elevation:i $0))
+
+cuantos rios hay en new york
+(count $0 (and (river:t $0) (loc:t $0 new_york:s)))
+
+que es la area de maine
+(area:i maine:s)
+
+cuantas personas viven en austin
+(population:i austin_tx:c)
+
+cuantos ciudadanos en alabama
+(population:i alabama:s)
+
+que es el punto mas alto en rhode island
+(argmax $0 (and (place:t $0) (loc:t $0 rhode_island:s)) (elevation:i $0))
+
+que ciudad tiene mas personas
+(argmax $0 (city:t $0) (population:i $0))
+
+cuanto tiene de largo el rio rio grande
+(len:i rio_grande_river:r)
+
+que tan largo esta el rio missouri
+(len:i missouri_river:r)
+
+que es la poblacion de seattle washington
+(population:i seattle_wa:c)
+
+cuales estados bordean a texas
+(lambda $0 e (and (state:t $0) (next_to:t $0 texas:s)))
+
+por cuales estados corre el rio delaware
+(lambda $0 e (and (state:t $0) (loc:t delaware_river:r $0)))
+
+que es el rio mas corto en los us
+(argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+cuanto tiene de largo el mississippi
+(len:i mississippi_river:r)
+
+cuales son los rios en alaska
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+que es el punto mas alto en hawaii
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 hawaii:s)) (elevation:i $1)) $0))
+
+cuantos rios tiene colorado
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+donde esta el punto mas alto en montana
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 montana:s)) (elevation:i $1)) $0))
+
+que es el punto mas alto en wyoming
+(argmax $0 (and (place:t $0) (loc:t $0 wyoming:s)) (elevation:i $0))
+
+cual estado tiene la ciudad capital mas grande
+(lambda $0 e (and (state:t $0) (capital:t $0 (argmax $1 (capital:t $1) (size:i $1)))))
+
+que tamano esta texas
+(size:i texas:s)
+

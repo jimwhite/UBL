@@ -1,0 +1,75 @@
+colorado da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+hangi eyaletler colorado nun en yuksek noktasindan daha yuksek noktaya sahiptirler
+(lambda $0 e (and (state:t $0) (exists $1 (and (place:t $1) (> (elevation:i $1) (elevation:i (argmax $2 (and (place:t $2) (loc:t $2 colorado:s)) (elevation:i $2))))))))
+
+mississippi nehrinin uzunlugu ne kadardir
+(len:i mississippi_river:r)
+
+hangi eyalet en kucuk nufus yogunluguna sahiptir
+(argmin $0 (state:t $0) (density:i $0))
+
+idaho nin yuzolcumu nedir
+(area:i idaho:s)
+
+mississippi nehrinin uzunlugu ne kadardir
+(len:i mississippi_river:r)
+
+colorado nehrinin uzunlugu ne kadardir
+(len:i colorado_river:r)
+
+arkansas daki nehirlerin isimlerini ver
+(lambda $0 e (and (river:t $0) (loc:t $0 arkansas:s)))
+
+west virginia dan hangi nehirler gecer
+(lambda $0 e (and (river:t $0) (loc:t $0 west_virginia:s)))
+
+alaska daki nehirler nelerdir
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+california ya komsu eyaletler deki en genis sehir nedir
+(argmax $0 (and (city:t $0) (exists $1 (and (state:t $1) (next_to:t $1 california:s) (loc:t $0 $1)))) (size:i $0))
+
+idaho nun nufusu nedir
+(population:i idaho:s)
+
+50 eyaletin toplam alani nedir
+(sum $0 (state:t $0) (area:i $0))
+
+arkansas a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 arkansas:s)))
+
+hawaii deki en yuksek nokta nerededir
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 hawaii:s)) (elevation:i $1)) $0))
+
+kalamazoo hangi eyalettedir
+(lambda $0 e (and (state:t $0) (loc:t kalamazoo_mi:c $0)))
+
+california eyaletinin en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+mississippi nin en uzun nehri nedir
+(argmax $0 (and (river:t $0) (loc:t $0 mississippi:s)) (len:i $0))
+
+new york a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_york:s)))
+
+wyoming daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 wyoming:s)) (elevation:i $0))
+
+iowa daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 iowa:s)) (elevation:i $0))
+
+hawaii da ne kadar insan yasamaktadir
+(population:i hawaii:s)
+
+hangi nehirler new mexico ya siniri olan eyaletlerden gecer
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (next_to:t $1 new_mexico:s) (loc:t $0 $1)))))
+
+erie pennsylvania in nufusu nedir
+(population:i erie_pa:c)
+
+rhode island daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 rhode_island:s)) (elevation:i $0))
+

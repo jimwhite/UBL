@@ -1,0 +1,75 @@
+que es la poblacion de tempe arizona
+(answer (population_1 (cityid tempe:e az:e)))
+
+donde esta el punto mas bajo en iowa
+(answer (loc_1 (lowest (place (loc_2 (stateid iowa:e))))))
+
+que es el punto mas alto en los usa
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+por cuales estados corre el mississippi
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+cuantos ciudadanos en alabama
+(answer (population_1 (stateid alabama:e)))
+
+que rios mayores corren por illinois
+(answer (major (river (traverse_2 (stateid illinois:e)))))
+
+que es la ciudad mas grande
+(answer (largest (city all:e)))
+
+que es la ciudad mas pequena en los usa
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+cuales estados bordean a new jersey
+(answer (state (next_to_2 (stateid new_jersey:e))))
+
+cuanto tiene de largo el rio rio grande
+(answer (len (riverid rio_grande:e)))
+
+cuales rios corren por alaska
+(answer (river (traverse_2 (stateid alaska:e))))
+
+cuantas personas viven en austin
+(answer (population_1 (cityid austin:e _:e)))
+
+que es la capital de georgia
+(answer (capital (loc_2 (stateid georgia:e))))
+
+que es la ciudad mas grande en louisiana
+(answer (largest (city (loc_2 (stateid louisiana:e)))))
+
+que tan grande esta alaska
+(answer (size (stateid alaska:e)))
+
+que es el rio mas largo en los united states
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+que es el rio mas corto en los us
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+que es la capital de new jersey
+(answer (capital (loc_2 (stateid new_jersey:e))))
+
+cuales estados tienen ciudades con el nombre dallas
+(answer (state (loc_1 (city (cityid dallas:e _:e)))))
+
+cuantas personas viven en new york
+(answer (population_1 (stateid new_york:e)))
+
+que es la densidad de poblacion de el estado mas pequeno
+(answer (density_1 (smallest (state all:e))))
+
+cuantas ciudades hay en montana
+(answer (count (city (loc_2 (stateid montana:e)))))
+
+que es la poblacion de san antonio
+(answer (population_1 (cityid san_antonio:e _:e)))
+
+que es el punto mas bajo en nebraska en metros
+(answer (lowest (place (loc_2 (stateid nebraska:e)))))
+
+por cuales estados corre el missouri
+(answer (state (traverse_1 (riverid missouri:e))))
+

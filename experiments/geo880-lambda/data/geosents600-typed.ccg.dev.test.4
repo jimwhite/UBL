@@ -1,0 +1,180 @@
+what is the lowest point of the us
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+what is the elevation of the highest point in the usa
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0)))
+
+in which state does the highest point in usa exist
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+what is the largest state that borders california
+(argmax $0 (and (state:t $0) (next_to:t $0 california:s)) (size:i $0))
+
+how many rivers are found in colorado
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+how many people live in hawaii
+(population:i hawaii:s)
+
+how many states border texas
+(count $0 (and (state:t $0) (next_to:t $0 texas:s)))
+
+what is the lowest point in louisiana
+(argmin $0 (and (place:t $0) (loc:t $0 louisiana:s)) (elevation:i $0))
+
+what state contains the highest point in the us
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+which capitals are in the states that border texas
+(lambda $0 e (and (capital:t $0) (exists $1 (and (state:t $1) (next_to:t $1 texas:s) (loc:t $0 $1)))))
+
+which states have a major city named austin
+(lambda $0 e (and (state:t $0) (exists $1 (and (major:t $1) (city:t $1) (named:t $1 austin:n) (loc:t $1 $0)))))
+
+what is the elevation of death valley
+(elevation:i death_valley:lo)
+
+which state borders florida
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+
+how big is texas
+(size:i texas:s)
+
+what capital is the largest in the us
+(argmax $0 (and (capital:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+what states high point are higher than that of colorado
+(lambda $0 e (and (state:t $0) (> (elevation:i (argmax $1 (and (place:t $1) (loc:t $1 $0)) (elevation:i $1))) (elevation:i (argmax $1 (and (place:t $1) (loc:t $1 colorado:s)) (elevation:i $1))))))
+
+how many states have a city named springfield
+(count $0 (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 springfield:n) (loc:t $1 $0)))))
+
+what is the population of boston massachusetts
+(population:i boston_ma:c)
+
+what is the population density of the state with the smallest population
+(density:i (argmin $0 (state:t $0) (population:i $0)))
+
+what is the population of portland maine
+(population:i portland_me:c)
+
+what is the biggest city in usa
+(argmax $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+what state is boston in
+(lambda $0 e (and (state:t $0) (loc:t boston_ma:c $0)))
+
+what state has the greatest population density
+(argmax $0 (state:t $0) (density:i $0))
+
+what is the average population per square km in the us
+(density:i usa:co)
+
+what states have a capital that is the highest point in the state
+(lambda $0 e (and (state:t $0) (exists $1 (and (capital:t $1) (loc:t $1 $0) (equals:t $1 (argmax $2 (and (place:t $2) (loc:t $2 $0)) (elevation:i $2)))))))
+
+what is the area of alaska
+(area:i alaska:s)
+
+what states are next to texas
+(lambda $0 e (and (state:t $0) (next_to:t $0 texas:s)))
+
+how long is rio grande
+(len:i rio_grande_river:r)
+
+name the 50 capitals in the usa
+(lambda $0 e (and (capital:t $0) (loc:t $0 usa:co)))
+
+how many people live in new hampshire
+(population:i new_hampshire:s)
+
+what states border rhode island
+(lambda $0 e (and (state:t $0) (next_to:t $0 rhode_island:s)))
+
+which states border states through which the mississippi traverses
+(lambda $0 e (and (state:t $0) (exists $1 (and (state:t $1) (loc:t mississippi_river:r $1) (next_to:t $0 $1)))))
+
+what is the smallest state that borders texas
+(argmin $0 (and (state:t $0) (next_to:t $0 texas:s)) (size:i $0))
+
+what is the length of the river that traverses the most states
+(len:i (argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1)))))
+
+what are the major lakes in united states
+(lambda $0 e (and (major:t $0) (lake:t $0) (loc:t $0 usa:co)))
+
+what are the states through which the longest river runs
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (river:t $1) (len:i $1)) $0)))
+
+how many major cities are in florida
+(count $0 (and (major:t $0) (city:t $0) (loc:t $0 florida:s)))
+
+where is springfield
+(lambda $0 e (loc:t springfield_il:c $0))
+
+what is the area of all the states combined
+(sum $0 (state:t $0) (area:i $0))
+
+how high is guadalupe peak
+(elevation:i guadalupe_peak:m)
+
+what is the capital of the alabama state
+(capital:c alabama:s)
+
+what state is the biggest
+(argmax $0 (state:t $0) (size:i $0))
+
+what state has the smallest capital
+(lambda $0 e (and (state:t $0) (loc:t (argmin $1 (capital:t $1) (size:i $1)) $0)))
+
+what is the lowest point in wisconsin
+(argmin $0 (and (place:t $0) (loc:t $0 wisconsin:s)) (elevation:i $0))
+
+how many states does the colorado river run through
+(count $0 (and (state:t $0) (loc:t colorado_river:r $0)))
+
+how many people are there in iowa
+(population:i iowa:s)
+
+which rivers run through the state with the lowest elevation in the usa
+(lambda $0 e (and (river:t $0) (loc:t $0 (argmin $1 (and (state:t $1) (loc:t $1 usa:co)) (elevation:i $1)))))
+
+how many states in the us does the shortest river run through
+(count $0 (and (state:t $0) (loc:t $0 usa:co) (loc:t (argmin $1 (river:t $1) (len:i $1)) $0)))
+
+what is the total population of the states that border texas
+(sum $0 (and (state:t $0) (next_to:t $0 texas:s)) (population:i $0))
+
+which states do colorado river flow through
+(lambda $0 e (and (state:t $0) (loc:t colorado_river:r $0)))
+
+what is the population density in the state with capital austin
+(density:i (the $0 (and (state:t $0) (capital:t $0 austin_tx:c))))
+
+which rivers flow through alaska
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+how many people live in austin texas
+(population:i austin_tx:c)
+
+which states border no other states
+(lambda $0 e (and (state:t $0) (not (exists $1 (and (state:t $1) (next_to:t $0 $1))))))
+
+what is the highest point in the state with the capital des moines
+(argmax $0 (and (place:t $0) (loc:t $0 (the $1 (and (state:t $1) (capital:t $1 des_moines_ia:c))))) (elevation:i $0))
+
+what is the highest mountain in texas
+(argmax $0 (and (mountain:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+what states border hawaii
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+what are the rivers of montana
+(lambda $0 e (and (river:t $0) (loc:t $0 montana:s)))
+
+what are the major cities in california
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 california:s)))
+
+what is the population of austin texas
+(population:i austin_tx:c)
+

@@ -1,0 +1,75 @@
+mishigan ni rinsetsu suru shuu wa dochira desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 michigan:s)))
+
+ohaio ni wa donna daitoshi ga arimasu ka
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 ohio:s)))
+
+aakansaa no mottomo hikui chiten wa nan desu ka
+(argmin $0 (and (place:t $0) (loc:t $0 arkansas:s)) (elevation:i $0))
+
+joojaa ni rinsetsu suru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 georgia:s)))
+
+nyuu yooku ni wa kawa ga ikutsu arimasu ka
+(count $0 (and (river:t $0) (loc:t $0 new_york:s)))
+
+tekisasu no shuu no mottomo hikui chiten wa nan desu ka
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+tekisasu ni rinsetsu suru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 texas:s)))
+
+washinton no mottomo chiisai toshi wa nan desu ka
+(argmin $0 (and (city:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+ohaio ni rinsetsu suru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 ohio:s)))
+
+nyuu yooku toshi no jinkou wa nan desu ka
+(population:i new_york_city:c)
+
+karifuorunia ni wa nannin no hito ga sumimasu ka
+(population:i california:s)
+
+washinton no supoken ni wa nannin no hito ga sumimasu ka
+(population:i spokane_wa:c)
+
+mizuuri no supuringufiirudo no jinkou wa nan desu ka
+(population:i springfield_mo:c)
+
+hawai ni rinsetsu suru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+amerika no zentai no chiiki wa nan desu ka
+(area:i usa:co)
+
+joojaa ni rinsetsu suru shuu no mottomo takai chiten wa nan desu ka
+(argmax $0 (and (place:t $0) (exists $1 (and (state:t $1) (next_to:t $1 georgia:s) (loc:t $0 $1)))) (elevation:i $0))
+
+montana no mottomo takai chiten wa nan desu ka
+(argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0))
+
+amerika no mottomo takai chiten no takasa wa nan desu ka
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0)))
+
+karifuorunia no ookina toshi wa nan desu ka
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 california:s)))
+
+gojuu shuu no zentai no jinkou wa ikura desu ka
+(sum $0 (state:t $0) (population:i $0))
+
+beikoku no mottomo chiisai toshi wa nan desu ka
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+beikoku no mottomo ookii shuto wa nan desu ka
+(argmax $0 (and (capital:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+beikoku no mottomo takai yama wa nan desu ka
+(argmax $0 (and (mountain:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+ataranta wo shuto ni motsu shuu ni rinsetsu suru shuu wo nagareru kawa wa nan desu ka
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (loc:t $0 $1) (next_to:t $1 (the $2 (and (state:t $2) (capital:t $2 atlanta_ga:c))))))))
+
+furorida ni rinsetsu suru shuu wa nan desu ka
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+

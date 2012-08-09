@@ -1,0 +1,75 @@
+arizona no tenpi no jinkou wa nan desu ka
+(answer (population_1 (cityid tempe:e az:e)))
+
+aiowa no mottomo hikui chiten wa nan desu ka
+(answer (loc_1 (lowest (place (loc_2 (stateid iowa:e))))))
+
+beikoku no mottomo takai chiten wa nan desu ka
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+mishishippi kawa wa dono shuu wo nagarete imasu ka
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+arabama ni wa nannin no shuumin ga imasu ka
+(answer (population_1 (stateid alabama:e)))
+
+ookina kawa wa irinoi wo nagarete imasu ka
+(answer (major (river (traverse_2 (stateid illinois:e)))))
+
+mottomo ookii toshi wa nan desu ka
+(answer (largest (city all:e)))
+
+beikoku no mottomo chiisai toshi wa nan desu ka
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+nyuu jaajii ni rinsetsu suru shuu wa nan desu ka
+(answer (state (next_to_2 (stateid new_jersey:e))))
+
+rio gurande kawa no nagasa wa dore gurai desu ka
+(answer (len (riverid rio_grande:e)))
+
+dono kawa wa arasuka wo nagarete imasu ka
+(answer (river (traverse_2 (stateid alaska:e))))
+
+ausuchin ni wa nannin no hito ga sumimasu ka
+(answer (population_1 (cityid austin:e _:e)))
+
+joojaa no shuto wa nan desu ka
+(answer (capital (loc_2 (stateid georgia:e))))
+
+ruijiana no mottomo ookii toshi wa nan desu ka
+(answer (largest (city (loc_2 (stateid louisiana:e)))))
+
+arasuka no ookisa wa dore gurai desu ka
+(answer (size (stateid alaska:e)))
+
+beikoku no mottomo nagai kawa wa nan desu ka
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+beikoku no mottomo mijikai kawa wa nan desu ka
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+nyuu jaajii no chuto wa nan desu ka
+(answer (capital (loc_2 (stateid new_jersey:e))))
+
+darasu to iu toshi ga aru shuu wa nan desu ka
+(answer (state (loc_1 (city (cityid dallas:e _:e)))))
+
+nyuu yooku ni wa nannin no hito ga sumimasu ka
+(answer (population_1 (stateid new_york:e)))
+
+mottomo chiisai shuu no jinkou no mitsudo wa nan desu ka
+(answer (density_1 (smallest (state all:e))))
+
+montana ni wa toshi ga ikutsu arimasu ka
+(answer (count (city (loc_2 (stateid montana:e)))))
+
+sanantonio no jinkou wa nan desu ka
+(answer (population_1 (cityid san_antonio:e _:e)))
+
+neburasuka no mottomo hikui chiten wa nan metoru desu ka
+(answer (lowest (place (loc_2 (stateid nebraska:e)))))
+
+mizuuri kawa wa dono shuu wo nagarete imasu ka
+(answer (state (traverse_1 (riverid missouri:e))))
+

@@ -1,0 +1,75 @@
+montana daki en yuksek nokta nerededir
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 montana:s)) (elevation:i $1)) $0))
+
+hangi eyalet en yuksek yukseltiye sahiptir
+(argmax $0 (state:t $0) (elevation:i $0))
+
+north dakota in baskenti nedir
+(capital:c north_dakota:s)
+
+utah in baskenti nedir
+(capital:c utah:s)
+
+iowa daki en kisa nehir nedir
+(argmin $0 (and (river:t $0) (loc:t $0 iowa:s)) (len:i $0))
+
+oklahoma daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 oklahoma:s)))
+
+delaware nehrinin uzunlugu ne kadardir
+(len:i delaware_river:r)
+
+oregon daki en alcak nokta nedir
+(argmin $0 (and (place:t $0) (loc:t $0 oregon:s)) (elevation:i $0))
+
+en kalabalik eyalet nedir
+(argmax $0 (state:t $0) (population:i $0))
+
+texas a komsu eyaletlerin toplam nufusu nedir
+(sum $0 (and (state:t $0) (next_to:t $0 texas:s)) (population:i $0))
+
+mississippi hangi eyaletlerden gecer
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+hangi eyaletin florida ya siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+
+hangi eyalet in flint sehri vardir
+(lambda $0 e (and (state:t $0) (loc:t flint_mi:c $0)))
+
+rhode island a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 rhode_island:s)))
+
+minnesota da nufus acisindan en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 minnesota:s)) (population:i $0))
+
+en kucuk eyaletin yuzolcumu nedir
+(area:i (argmin $0 (state:t $0) (size:i $0)))
+
+en genis eyaletin yuzolcumu nedir
+(area:i (argmax $0 (state:t $0) (size:i $0)))
+
+alan acisindan en kucuk eyalet nedir
+(argmin $0 (state:t $0) (area:i $0))
+
+north platte nehrinin uzunlugu ne kadardir
+(len:i north_platte_river:r)
+
+colorado daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 colorado:s)) (elevation:i $0))
+
+riverside da ne kadar insan yasamaktadir
+(population:i riverside_ca:c)
+
+kentucky yi hangi eyaletler cevreler
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+columbus hangi eyaletin baskentidir
+(lambda $0 e (and (state:t $0) (capital:t $0 columbus_oh:c)))
+
+us deki en alcak nokta nerededir
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0))
+
+louisiana daki en alcak nokta nedir
+(argmin $0 (and (place:t $0) (loc:t $0 louisiana:s)) (elevation:i $0))
+

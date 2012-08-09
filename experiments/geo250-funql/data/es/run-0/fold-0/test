@@ -1,0 +1,75 @@
+cual estado bordea a michigan
+(answer (state (next_to_2 (stateid michigan:e))))
+
+que son las ciudades mayores en ohio
+(answer (major (city (loc_2 (stateid ohio:e)))))
+
+que es el punto mas bajo en arkansas
+(answer (lowest (place (loc_2 (stateid arkansas:e)))))
+
+cuales estados bordean a georgia
+(answer (state (next_to_2 (stateid georgia:e))))
+
+cuantos rios hay en new york
+(answer (count (river (loc_2 (stateid new_york:e)))))
+
+que es el punto mas bajo en el estado de texas
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+cuales estados bordean a texas
+(answer (state (next_to_2 (stateid texas:e))))
+
+que es la ciudad mas pequena en washington
+(answer (smallest (city (loc_2 (stateid washington:e)))))
+
+cuales estados bordean a ohio
+(answer (state (next_to_2 (stateid ohio:e))))
+
+que es la poblacion de la ciudad new york
+(answer (population_1 (cityid new_york:e _:e)))
+
+cuantas personas viven en california
+(answer (population_1 (stateid california:e)))
+
+cuantas personas viven en spokane washington
+(answer (population_1 (cityid spokane:e wa:e)))
+
+que es la poblacion de springfield missouri
+(answer (population_1 (cityid springfield:e mo:e)))
+
+cuales estados bordean a hawaii
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+que es la area total de los usa
+(answer (area_1 (countryid usa:e)))
+
+que es el punto mas alto en los estados bordeando a georgia
+(answer (highest (place (loc_2 (state (next_to_2 (stateid georgia:e)))))))
+
+que es el punto mas alto en montana
+(answer (highest (place (loc_2 (stateid montana:e)))))
+
+que tan alto esta el punto mas alto en america
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e))))))
+
+que son las ciudades mayores en california
+(answer (major (city (loc_2 (stateid california:e)))))
+
+que es la poblacion combinada de todos los 50 estados
+(answer (sum (population_1 (state all:e))))
+
+que es la ciudad mas pequena en los usa
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+que capital es la mas grande en los us
+(answer (largest (capital (loc_2 (countryid usa:e)))))
+
+que es la montana mas alta en los us
+(answer (highest (mountain (loc_2 (countryid usa:e)))))
+
+que rios corren por los estados que bordean a el estado con la capital atlanta
+(answer (river (traverse_2 (state (next_to_2 (state (loc_1 (capital (cityid atlanta:e _:e)))))))))
+
+cuales estados bordean a florida
+(answer (state (next_to_2 (stateid florida:e))))
+

@@ -1,0 +1,75 @@
+tempe arizona in nufusu nedir
+(answer (population_1 (cityid tempe:e az:e)))
+
+iowa daki en alcak nokta nerededir
+(answer (loc_1 (lowest (place (loc_2 (stateid iowa:e))))))
+
+usa deki en yuksek nokta nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+mississippi nehrinin hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+alabama da kac tane vatandas vardir
+(answer (population_1 (stateid alabama:e)))
+
+illinois den baslica hangi nehirler gecer
+(answer (major (river (traverse_2 (stateid illinois:e)))))
+
+en buyuk sehir nedir
+(answer (largest (city all:e)))
+
+usa deki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+new jersey a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid new_jersey:e))))
+
+rio grande nehrinin uzunlugu ne kadardir
+(answer (len (riverid rio_grande:e)))
+
+hangi nehirler alaska nin icinden akar
+(answer (river (traverse_2 (stateid alaska:e))))
+
+austin da ne kadar insan yasamaktadir
+(answer (population_1 (cityid austin:e _:e)))
+
+georgia in baskenti nedir
+(answer (capital (loc_2 (stateid georgia:e))))
+
+louisiana daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid louisiana:e)))))
+
+alaska ne kadar genisliktedir
+(answer (size (stateid alaska:e)))
+
+birlesik devletler in en uzun nehri nedir
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+us deki en kisa nehir nedir
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+new jersey in baskenti nedir
+(answer (capital (loc_2 (stateid new_jersey:e))))
+
+hangi eyaletlerde dallas sehri vardir
+(answer (state (loc_1 (city (cityid dallas:e _:e)))))
+
+new york da ne kadar insan yasamaktadir
+(answer (population_1 (stateid new_york:e)))
+
+en kucuk eyaletin nufus yogunlugu nedir
+(answer (density_1 (smallest (state all:e))))
+
+montana da kac tane sehir vardir
+(answer (count (city (loc_2 (stateid montana:e)))))
+
+san antonio nun nufusu nedir
+(answer (population_1 (cityid san_antonio:e _:e)))
+
+nebraska daki en alcak nokta metre olarak nedir
+(answer (lowest (place (loc_2 (stateid nebraska:e)))))
+
+missouri hangi eyaletlerin icinden gecer
+(answer (state (traverse_1 (riverid missouri:e))))
+

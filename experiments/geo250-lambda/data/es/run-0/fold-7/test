@@ -1,0 +1,75 @@
+que son los rios mayores en ohio
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+que es la poblacion de hawaii
+(population:i hawaii:s)
+
+cuantos rios hay en idaho
+(count $0 (and (river:t $0) (loc:t $0 idaho:s)))
+
+en que estado se encuentra des moines
+(lambda $0 e (and (state:t $0) (loc:t des_moines_ia:c $0)))
+
+cual estado tiene el pico mas alto en el pais
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (mountain:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+cuantos rios tiene colorado
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+por cuantos estados corre el rio mississippi
+(count $0 (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+que es el punto mas alto de el estado con la area mas grande
+(argmax $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+cuantas personas viven en kalamazoo
+(population:i kalamazoo_mi:c)
+
+cual rio corre por mas estados
+(argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1))))
+
+que es la capital de el estado con el punto mas alto
+(capital:c (the $1 (and (state:t $1) (loc:t (argmax $2 (place:t $2) (elevation:i $2)) $1))))
+
+que es la area de alaska
+(area:i alaska:s)
+
+cuantas ciudades mayores hay en florida
+(count $0 (and (major:t $0) (city:t $0) (loc:t $0 florida:s)))
+
+que es el punto mas bajo de los us
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+cuantas personas viven en la capital de texas
+(population:i (capital:c texas:s))
+
+que es la poblacion de portland maine
+(population:i portland_me:c)
+
+que tan grande esta texas
+(size:i texas:s)
+
+que es la poblacion de la capital de el estado mas pequeno
+(population:i (capital:c (argmin $1 (state:t $1) (size:i $1))))
+
+que es la poblacion de las ciudades mayores en wisconsin
+(population:i (the $0 (and (major:t $0) (loc:t $0 wisconsin:s) (city:t $0))))
+
+dame las ciudades en virginia
+(lambda $0 e (and (city:t $0) (loc:t $0 virginia:s)))
+
+que es el rio mas largo en los united states
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+cuantas ciudades hay en los us
+(count $0 (and (city:t $0) (loc:t $0 usa:co)))
+
+que rios corren por new york
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+que es la area de maine
+(area:i maine:s)
+
+que rios no corren por tennessee
+(lambda $0 e (and (river:t $0) (not (loc:t $0 tennessee:s))))
+

@@ -1,0 +1,75 @@
+tempe arizona in nufusu nedir
+(population:i tempe_az:c)
+
+iowa daki en alcak nokta nerededir
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 iowa:s)) (elevation:i $1)) $0))
+
+usa deki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+mississippi hangi eyaletlerden gecer
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+alabama da kac tane vatandas vardir
+(population:i alabama:s)
+
+illinois den baslica hangi nehirler gecer
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 illinois:s)))
+
+en buyuk sehir nedir
+(argmax $0 (city:t $0) (size:i $0))
+
+usa deki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+new jersey a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_jersey:s)))
+
+rio grande nehrinin uzunlugu ne kadardir
+(len:i rio_grande_river:r)
+
+hangi nehirler alaska nin icinden akar
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+austin da ne kadar insan yasamaktadir
+(population:i austin_tx:c)
+
+georgia in baskenti nedir
+(capital:c georgia:s)
+
+louisiana daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 louisiana:s)) (size:i $0))
+
+alaska ne kadar genisliktedir
+(size:i alaska:s)
+
+birlesik devletler in en uzun nehri nedir
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+us deki en kisa nehir nedir
+(argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+new jersey in baskenti nedir
+(capital:c new_jersey:s)
+
+hangi eyaletlerde dallas sehri vardir
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 dallas:n) (loc:t $1 $0)))))
+
+new york da ne kadar insan yasamaktadir
+(population:i new_york:s)
+
+en kucuk eyaletin nufus yogunlugu nedir
+(density:i (argmin $0 (state:t $0) (size:i $0)))
+
+montana da kac tane sehir vardir
+(count $0 (and (city:t $0) (loc:t $0 montana:s)))
+
+san antonio nun nufusu nedir
+(population:i san_antonio_tx:c)
+
+nebraska daki en alcak nokta metre olarak nedir
+(argmin $0 (and (place:t $0) (loc:t $0 nebraska:s)) (elevation:i $0))
+
+missouri hangi eyaletlerin icinden gecer
+(lambda $0 e (and (state:t $0) (loc:t missouri_river:r $0)))
+

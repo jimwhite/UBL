@@ -1,0 +1,66 @@
+NOTE: the numbers reported in Kwiatkowski et al. 2010 are 
+from 10 runs of 10 fold cross validation on this data. 
+For reasons of space, only run-0 is included in this package.
+For the others please contact us.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To run fold i of the 10 fold cross validation on run-0 name
+fold and language
+	
+	./rundev.pl i [en es tr ja] 
+
+Options are set in DevTrain.java for development runs and 
+TestTrain.java for test runs. Details below.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Inputs:
+
+------------------------------
+Training and test data made up of sentence, logical-form 
+pairs such as:
+	
+	what is the highest point in the us
+	(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+------------------------------
+
+File of word, constant co-occurence statistics. One const, word
+pair per line with format:
+
+	const  ::  word  ::  probability
+
+------------------------------
+
+Initial NP lexicon (optional) with one lexical item per line:
+
+	word :- NP : logical-form
+
+------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Options (in DevTrain and TestTrain).
+
+Train.emptytest : defines whether or not word skipping
+		  is allowed at test time.
+
+Train.EPOCHS 	: number of iterations.
+
+Train.alpha_0 
+Train.c 	: for parameter update temperatures.
+
+Train.verbose	: print out details of training and 
+		  testing.
+
+Train.initWeightMultiplier : scaling for co-occurence
+			     probabilities
+
+Train.initLexMultiplier	: initial weight for items in NP 
+			  list.
+
+parser.pruneN	: beam width for parser
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

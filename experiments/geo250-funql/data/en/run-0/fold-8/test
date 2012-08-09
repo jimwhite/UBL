@@ -1,0 +1,75 @@
+what is the smallest state in the usa
+(answer (smallest (state (loc_2 (countryid usa:e)))))
+
+what is the biggest city in georgia
+(answer (largest (city (loc_2 (stateid georgia:e)))))
+
+what is the lowest point of the state with the largest area
+(answer (lowest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+what states border new hampshire
+(answer (state (next_to_2 (stateid new_hampshire:e))))
+
+what is the population density of maine
+(answer (density_1 (stateid maine:e)))
+
+what is the population of south dakota
+(answer (population_1 (stateid south_dakota:e)))
+
+what states border kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+how many citizens live in california
+(answer (population_1 (stateid california:e)))
+
+which state borders hawaii
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+what are the high points of states surrounding mississippi
+(answer (high_point_1 (state (next_to_2 (stateid mississippi:e)))))
+
+which state is the city denver located in
+(answer (state (loc_1 (cityid denver:e _:e))))
+
+which states border south dakota
+(answer (state (next_to_2 (stateid south_dakota:e))))
+
+what is the length of the colorado river
+(answer (len (riverid colorado:e)))
+
+what is the lowest point in texas
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+what is the highest point in the us
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+what is the population of montana
+(answer (population_1 (stateid montana:e)))
+
+what is the biggest river in illinois
+(answer (longest (river (loc_2 (stateid illinois:e)))))
+
+how large is the largest city in alaska
+(answer (size (largest (city (loc_2 (stateid alaska:e))))))
+
+what is the highest point in kansas
+(answer (highest (place (loc_2 (stateid kansas:e)))))
+
+which state has the highest population density
+(answer (largest_one (density_1 (state all:e))))
+
+what state has the highest elevation
+(answer (state (loc_1 (highest (place all:e)))))
+
+what is the biggest city in wyoming
+(answer (largest (city (loc_2 (stateid wyoming:e)))))
+
+how high is the highest point in montana
+(answer (elevation_1 (highest (place (loc_2 (stateid montana:e))))))
+
+what is the longest river in florida
+(answer (longest (river (loc_2 (stateid florida:e)))))
+
+what is the length of the mississippi river
+(answer (len (riverid mississippi:e)))
+

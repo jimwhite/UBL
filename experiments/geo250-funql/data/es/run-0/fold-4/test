@@ -1,0 +1,75 @@
+cual estado tiene la poblacion mas alta
+(answer (largest_one (population_1 (state all:e))))
+
+cual estado tiene la ciudad mas grande
+(answer (state (loc_1 (largest (city all:e)))))
+
+que es el rio mas largo en los us
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+cual estado es el mas pequeno
+(answer (smallest (state all:e)))
+
+cuantos rios tiene alaska
+(answer (count (river (loc_2 (stateid alaska:e)))))
+
+que estado tiene la densidad de poblacion mas grande
+(answer (largest_one (density_1 (state all:e))))
+
+cual estado tiene la ciudad capital mas grande
+(answer (state (loc_1 (largest (city (capital_1 (state all:e)))))))
+
+que es la poblacion de arizona
+(answer (population_1 (stateid arizona:e)))
+
+por cuantos estados corre el rio colorado
+(answer (count (state (traverse_1 (riverid colorado:e)))))
+
+cual estado tiene el punto mas alto
+(answer (state (loc_1 (highest (place all:e)))))
+
+cuantas personas viven en minneapolis minnesota
+(answer (population_1 (cityid minneapolis:e mn:e)))
+
+que son las ciudades mayores en wyoming
+(answer (major (city (loc_2 (stateid wyoming:e)))))
+
+que estado tiene la densidad de poblacion mas grande
+(answer (largest_one (density_1 (state all:e))))
+
+que es la ciudad mas grande en texas
+(answer (largest (city (loc_2 (stateid texas:e)))))
+
+por cuales estados corre el rio delaware
+(answer (state (traverse_1 (riverid delaware:e))))
+
+que es el rio mas largo en texas
+(answer (longest (river (loc_2 (stateid texas:e)))))
+
+cuantas personas viven en washington
+(answer (population_1 (stateid washington:e)))
+
+que es la ciudad mas pequena en hawaii
+(answer (smallest (city (loc_2 (stateid hawaii:e)))))
+
+que estado tiene la capital dover
+(answer (state (capital_2 (cityid dover:e _:e))))
+
+que es el punto mas alto en el pais
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+que es el rio mas corto
+(answer (shortest (river all:e)))
+
+que es el punto mas bajo en massachusetts
+(answer (lowest (place (loc_2 (stateid massachusetts:e)))))
+
+que rios corren por colorado
+(answer (river (traverse_2 (stateid colorado:e))))
+
+cuales estados bordean a colorado
+(answer (state (next_to_2 (stateid colorado:e))))
+
+cual estado tiene la poblacion mas grande
+(answer (largest_one (population_1 (state all:e))))
+

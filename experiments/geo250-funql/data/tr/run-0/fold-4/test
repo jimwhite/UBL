@@ -1,0 +1,75 @@
+hangi eyalet en yuksek nufusa sahiptir
+(answer (largest_one (population_1 (state all:e))))
+
+hangi eyalet en buyuk sehre sahiptir
+(answer (state (loc_1 (largest (city all:e)))))
+
+us deki en uzun nehir nedir
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+hangi eyalet en kucuktur
+(answer (smallest (state all:e)))
+
+alaska nun kac tane nehri vardir
+(answer (count (river (loc_2 (stateid alaska:e)))))
+
+hangi eyalet en buyuk nufus yogunluguna sahiptir
+(answer (largest_one (density_1 (state all:e))))
+
+hangi eyaletin baskenti en buyuktur
+(answer (state (loc_1 (largest (city (capital_1 (state all:e)))))))
+
+arizona nun nufusu nedir
+(answer (population_1 (stateid arizona:e)))
+
+colorado nehri kac eyaletin icinden gecer
+(answer (count (state (traverse_1 (riverid colorado:e)))))
+
+hangi eyalet en yuksek noktaya sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+minneapolis minnesota da ne kadar insan yasamaktadir
+(answer (population_1 (cityid minneapolis:e mn:e)))
+
+wyoming daki baslica sehirler nelerdir
+(answer (major (city (loc_2 (stateid wyoming:e)))))
+
+hangi eyalet en buyuk nufus yogunluguna sahiptir
+(answer (largest_one (density_1 (state all:e))))
+
+texas daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid texas:e)))))
+
+delaware nehri hangi eyaletlerden gecer
+(answer (state (traverse_1 (riverid delaware:e))))
+
+texas daki en uzun nehir nedir
+(answer (longest (river (loc_2 (stateid texas:e)))))
+
+washington da ne kadar insan yasamaktadir
+(answer (population_1 (stateid washington:e)))
+
+hawaii deki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (stateid hawaii:e)))))
+
+hangi eyaletin baskenti dover dir
+(answer (state (capital_2 (cityid dover:e _:e))))
+
+ulkedeki en yuksek nokta nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+en kisa nehir nedir
+(answer (shortest (river all:e)))
+
+massachusetts daki en alcak nokta nerededir
+(answer (lowest (place (loc_2 (stateid massachusetts:e)))))
+
+colorado dan hangi nehirler gecer
+(answer (river (traverse_2 (stateid colorado:e))))
+
+colorado a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid colorado:e))))
+
+hangi eyalet en buyuk nufusa sahiptir
+(answer (largest_one (population_1 (state all:e))))
+

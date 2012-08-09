@@ -1,0 +1,75 @@
+cual estado bordea a michigan
+(lambda $0 e (and (state:t $0) (next_to:t $0 michigan:s)))
+
+que son las ciudades mayores en ohio
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 ohio:s)))
+
+que es el punto mas bajo en arkansas
+(argmin $0 (and (place:t $0) (loc:t $0 arkansas:s)) (elevation:i $0))
+
+cuales estados bordean a georgia
+(lambda $0 e (and (state:t $0) (next_to:t $0 georgia:s)))
+
+cuantos rios hay en new york
+(count $0 (and (river:t $0) (loc:t $0 new_york:s)))
+
+que es el punto mas bajo en el estado de texas
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+cuales estados bordean a texas
+(lambda $0 e (and (state:t $0) (next_to:t $0 texas:s)))
+
+que es la ciudad mas pequena en washington
+(argmin $0 (and (city:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+cuales estados bordean a ohio
+(lambda $0 e (and (state:t $0) (next_to:t $0 ohio:s)))
+
+que es la poblacion de la ciudad new york
+(population:i new_york_city:c)
+
+cuantas personas viven en california
+(population:i california:s)
+
+cuantas personas viven en spokane washington
+(population:i spokane_wa:c)
+
+que es la poblacion de springfield missouri
+(population:i springfield_mo:c)
+
+cuales estados bordean a hawaii
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+que es la area total de los usa
+(area:i usa:co)
+
+que es el punto mas alto en los estados bordeando a georgia
+(argmax $0 (and (place:t $0) (exists $1 (and (state:t $1) (next_to:t $1 georgia:s) (loc:t $0 $1)))) (elevation:i $0))
+
+que es el punto mas alto en montana
+(argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0))
+
+que tan alto esta el punto mas alto en america
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0)))
+
+que son las ciudades mayores en california
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 california:s)))
+
+que es la poblacion combinada de todos los 50 estados
+(sum $0 (state:t $0) (population:i $0))
+
+que es la ciudad mas pequena en los usa
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+que capital es la mas grande en los us
+(argmax $0 (and (capital:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+que es la montana mas alta en los us
+(argmax $0 (and (mountain:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+que rios corren por los estados que bordean a el estado con la capital atlanta
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (loc:t $0 $1) (next_to:t $1 (the $2 (and (state:t $2) (capital:t $2 atlanta_ga:c))))))))
+
+cuales estados bordean a florida
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+

@@ -1,0 +1,75 @@
+what is the capital of the state with the largest population
+(answer (capital (loc_2 (largest_one (population_1 (state all:e))))))
+
+what is the largest city in rhode island
+(answer (largest (city (loc_2 (stateid rhode_island:e)))))
+
+what state has the capital salem
+(answer (state (loc_1 (capital (cityid salem:e _:e)))))
+
+what states border montana
+(answer (state (next_to_2 (stateid montana:e))))
+
+what city has the most people
+(answer (largest_one (population_1 (city all:e))))
+
+what is the capital of new hampshire
+(answer (capital (loc_2 (stateid new_hampshire:e))))
+
+what is the population of seattle washington
+(answer (population_1 (cityid seattle:e wa:e)))
+
+what state has highest elevation
+(answer (state (loc_1 (highest (place all:e)))))
+
+what is the capital of maine
+(answer (capital (loc_2 (stateid maine:e))))
+
+how many people live in rhode island
+(answer (population_1 (stateid rhode_island:e)))
+
+what is the lowest point in the united states
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+what is the highest elevation in new mexico
+(answer (highest (place (loc_2 (stateid new_mexico:e)))))
+
+how long is the missouri river
+(answer (len (riverid missouri:e)))
+
+which states border arizona
+(answer (state (next_to_2 (stateid arizona:e))))
+
+what length is the mississippi
+(answer (len (riverid mississippi:e)))
+
+what rivers are in utah
+(answer (river (loc_2 (stateid utah:e))))
+
+which state borders the most states
+(answer (most (state (next_to_2 (state all:e)))))
+
+what is the highest point in the state with the capital des moines
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid des_moines:e _:e))))))))
+
+how big is texas
+(answer (size (stateid texas:e)))
+
+rivers in new york
+(answer (river (loc_2 (stateid new_york:e))))
+
+which states have cities named austin
+(answer (state (loc_1 (city (cityid austin:e _:e)))))
+
+what is the shortest river in the usa
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+what states border delaware
+(answer (state (next_to_2 (stateid delaware:e))))
+
+what is the population of dallas
+(answer (population_1 (cityid dallas:e _:e)))
+
+what is the population of oregon
+(answer (population_1 (stateid oregon:e)))
+

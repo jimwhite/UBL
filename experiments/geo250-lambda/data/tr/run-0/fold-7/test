@@ -1,0 +1,75 @@
+ohio daki baslica nehirler nelerdir
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+hawaii nun nufusu nedir
+(population:i hawaii:s)
+
+idaho da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 idaho:s)))
+
+des moines hangi eyalettedir
+(lambda $0 e (and (state:t $0) (loc:t des_moines_ia:c $0)))
+
+hangi eyalet ulkedeki en yuksek zirveye sahiptir
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (mountain:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+colorado nun kac tane nehri vardir
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+mississippi nehri kac tane eyaletten gecmektedir
+(count $0 (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+en genis alana sahip eyaletin en yuksek noktasi nedir
+(argmax $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+kalamazoo da ne kadar insan yasamaktadir
+(population:i kalamazoo_mi:c)
+
+hangi nehir en cok eyaletten gecer
+(argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1))))
+
+en yuksek noktayi iceren eyaletin baskenti nedir
+(capital:c (the $1 (and (state:t $1) (loc:t (argmax $2 (place:t $2) (elevation:i $2)) $1))))
+
+alaska nin yuzolcumu nedir
+(area:i alaska:s)
+
+florida da baslica kac tane sehir vardir
+(count $0 (and (major:t $0) (city:t $0) (loc:t $0 florida:s)))
+
+us in en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+texas in baskentinde ne kadar insan yasamaktadir
+(population:i (capital:c texas:s))
+
+portland maine in nufusu nedir
+(population:i portland_me:c)
+
+texas ne kadar genistir
+(size:i texas:s)
+
+en kucuk eyaletin baskentinin nufusu nedir
+(population:i (capital:c (argmin $1 (state:t $1) (size:i $1))))
+
+wisconsin deki baslica sehirlerin nufusu nedir
+(population:i (the $0 (and (major:t $0) (loc:t $0 wisconsin:s) (city:t $0))))
+
+virginia daki sehirlerin isimlerini ver
+(lambda $0 e (and (city:t $0) (loc:t $0 virginia:s)))
+
+birlesik devletler in en uzun nehri nedir
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+us de kac tane sehir vardir
+(count $0 (and (city:t $0) (loc:t $0 usa:co)))
+
+new york dan hangi nehirler gecer
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+maine nin yuzolcumu nedir
+(area:i maine:s)
+
+hangi nehirler tennessee den gecmez
+(lambda $0 e (and (river:t $0) (not (loc:t $0 tennessee:s))))
+

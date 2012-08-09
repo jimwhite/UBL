@@ -1,0 +1,75 @@
+missouri nehri hangi eyaletlerden gecer
+(lambda $0 e (and (state:t $0) (loc:t missouri_river:r $0)))
+
+kac tane baslica nehir ohio dan gecer
+(count $0 (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+mississippi nehri hangi eyaletlerden gecmektedir
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+rhode island daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 rhode_island:s)))
+
+texas daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 texas:s)))
+
+california daki en alcak nokta nerededir
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+illinois nun nufusu nedir
+(population:i illinois:s)
+
+usa deki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+texas in baslica sehirleri nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 texas:s)))
+
+colorado daki butun nehirlerin isimlerini ver
+(lambda $0 e (and (river:t $0) (loc:t $0 colorado:s)))
+
+usa deki en kisa nehirin uzunlugu nedir
+(len:i (argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0)))
+
+ohio nehrinin uzunlugu ne kadardir
+(len:i ohio_river:r)
+
+hangi eyalet en uzun nehre sahiptir
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (river:t $1) (len:i $1)) $0)))
+
+iowa in baskenti nedir
+(capital:c iowa:s)
+
+washington da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 washington:s)))
+
+texas daki nehirler nelerdir
+(lambda $0 e (and (river:t $0) (loc:t $0 texas:s)))
+
+nufus bakimindan en buyuk eyalet baskenti nedir
+(argmax $0 (capital:t $0) (population:i $0))
+
+oklahoma ya siniri olan en kalabalik eyalet nedir
+(argmax $0 (and (state:t $0) (next_to:t $0 oklahoma:s)) (population:i $0))
+
+wisconsin nin yuzolcumu nedir
+(area:i wisconsin:s)
+
+hangi eyaletin en cok eyalete siniri vardir
+(argmax $0 (state:t $0) (count $1 (and (state:t $1) (next_to:t $0 $1))))
+
+alaska daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 alaska:s)))
+
+wisconsin deki en genis sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 wisconsin:s)) (size:i $0))
+
+washington in baskenti nedir
+(capital:c washington:s)
+
+kansas daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 kansas:s)))
+
+ohio nehri hangi eyaletlerin icinden gecer
+(lambda $0 e (and (state:t $0) (loc:t ohio_river:r $0)))
+

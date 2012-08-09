@@ -1,0 +1,75 @@
+hangi eyaletin michigan ya siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 michigan:s)))
+
+ohio daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 ohio:s)))
+
+arkansas daki en alcak nokta nerededir
+(argmin $0 (and (place:t $0) (loc:t $0 arkansas:s)) (elevation:i $0))
+
+georgia a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 georgia:s)))
+
+new york da kac tane nehir vardir
+(count $0 (and (river:t $0) (loc:t $0 new_york:s)))
+
+texas eyaletinin en alcak noktasi nedir
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+hangi eyaletin texas ye siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 texas:s)))
+
+washington daki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+ohio ya siniri bulunan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 ohio:s)))
+
+new york sehrinin nufusu nedir
+(population:i new_york_city:c)
+
+california da ne kadar insan yasamaktadir
+(population:i california:s)
+
+spokane washington da ne kadar insan yasamaktadir
+(population:i spokane_wa:c)
+
+springfield missouri in nufusu nedir
+(population:i springfield_mo:c)
+
+hawaii a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+usa nin toplam yuzolcumu nedir
+(area:i usa:co)
+
+georgia ya siniri olan eyaletlerdeki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (exists $1 (and (state:t $1) (next_to:t $1 georgia:s) (loc:t $0 $1)))) (elevation:i $0))
+
+montana daki en yuksek nokta nedir
+(argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0))
+
+amerika daki en yuksek nokta ne kadar yuksektir
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0)))
+
+california daki baslica sehirler nelerdir
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 california:s)))
+
+50 eyaletin toplam nufusu nedir
+(sum $0 (state:t $0) (population:i $0))
+
+usa deki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+us deki en genis baskent hangisidir
+(argmax $0 (and (capital:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+us deki en yuksek dag nedir
+(argmax $0 (and (mountain:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+baskenti atlanta olan eyalete komsu eyaletlerden gecen nehir nedir
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (loc:t $0 $1) (next_to:t $1 (the $2 (and (state:t $2) (capital:t $2 atlanta_ga:c))))))))
+
+florida a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+

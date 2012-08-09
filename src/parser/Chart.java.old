@@ -1,0 +1,549 @@
+package parser;
+
+import java.util.*;
+import lambda.*;
+
+public class Chart {
+
+    //< constructors and initialization code
+
+    public Chart(List t){
+	tokens = t;
+	init(t.size());
+    }
+
+    public Chart(int len){
+	init(len);
+    }
+
+    /*
+     * create the indexing structures used by the chart
+     */
+    private void init(int len){
+	numEntries = 0;
+	size = len;
+	chart = new List[len][len];
+	for (int i=0; i<len; i++){
+	    for (int j=i; j<len; j++){
+		chart[i][j]=new ArrayList();
+	    }
+	}
+	parses = new LinkedList();
+	fullparses = new LinkedList();
+	initPruning();
+    }
+
+    //>
+
+    //< code for pruning based on desired semantics or allowed syntax
+
+    // this code was written based on the idea that we might only
+    // want to allow a small, pre-defined set of syntactic categories
+    // to be created during parsing.  it is not currently used, but
+    // it might be useful in the future.
+    public void initPruning(){
+	preds = null;
+	predCounts = null;
+
+	allowedCats = new LinkedList();
+	allowedCats.add(Cat.makeCat("S\\NP/NP"));
+	allowedCats.add(Cat.makeCat("S/NP"));
+	allowedCats.add(Cat.makeCat("S\\NP"));
+	allowedCats.add(Cat.makeCat("N"));
+	allowedCats.add(Cat.makeCat("N/N"));
+	allowedCats.add(Cat.makeCat("N\\N"));
+	allowedCats.add(Cat.makeCat("N\\N/NP"));
+	allowedCats.add(Cat.makeCat("S/(S\\NP)/N"));
+	allowedCats.add(Cat.makeCat("S/(S/NP)/N"));
+	allowedCats.add(Cat.makeCat("NP/N"));
+	allowedCats.add(Cat.makeCat("S"));
+
+    }
+
+    public void setPruningSem(Exp e){
+	if (e==null){
+	    preds = null;
+	    predCounts = null;
+	}
+	preds = new LinkedList();
+	predCounts = new LinkedList();
+	e.allPreds(-1,preds);
+	Iterator i = preds.iterator();
+	while (i.hasNext()){
+	    Object p = i.next();
+	    predCounts.add(new Integer(e.predCount(p)));
+	}
+	System.out.println("PREDS: "+preds);
+	System.out.println("COUNTS: "+predCounts);
+    }
+
+    public boolean prune(Cell c){
+	// check that the semantics is ok
+	if (preds==null) return false;
+	if (c.getCat().equals(CONJ)) return false;
+	Exp e = c.getCat().getSem();
+	if (e==null) return true;
+	Iterator i = preds.iterator();
+	Iterator j = predCounts.iterator();
+	while (i.hasNext()){
+	    Object p = i.next();
+	    int count = ((Integer)j.next()).intValue();
+	    if (e.predCount(p)>count)
+		return true;
+	}	
+
+	// also, check syntax is in our list
+	//if (allowedCats.contains(c.getCat()))
+	return false;
+	//	else
+	// return true;
+    }
+    //>
+
+    //< code for adding Cells to the Chart
+
+    public void add(Cell c){
+	//System.out.print("*");
+	//System.out.flush();
+	if (prune(c)) return;
+	//System.out.println("----------");
+	//System.out.println("NEW CELL: "+c);
+	//System.out.println("WITH CHILDREN: ");
+	//c.printChildren();
+	//System.out.println("----------");
+	List l = chart[c.getStart()][c.getEnd()];
+	int i = l.indexOf(c);
+	if (i==-1){
+	    numEntries++;
+	    l.add(c);
+	    //System.out.println("ADDED: "+c+" from "+c.getChildLists());
+	    if (c.getStart()==0 && c.getEnd()==size-1){
+		parses.add(c);
+		//if (c.getCat() instanceof SimpCat){
+		if (c.getCat().equalsNoSem(S)){
+		    fullparses.add(c);
+		}
+	    }       
+	} else {
+	    Cell cold = (Cell)l.get(i);
+	    cold.addCell(c);
+	    //System.out.println("ADDED TO: "+cold+" from "+c.getChildLists());
+	}
+    }
+
+    public void addAll(List c){
+	Iterator i = c.iterator();
+	while (i.hasNext()){
+	    add((Cell)i.next());
+	}
+    }
+
+    //>
+
+    //< simple accessor functions
+    public Iterator getCellsIterator(int i, int j){
+	return chart[i][j].iterator();
+    }
+
+    public int numCells(int i, int j){
+	return chart[i][j].size();
+    }
+
+    public List getTokens(){
+	return tokens;
+    }
+
+    public int length(){
+	return size;
+    }
+
+    public int numParses(){
+	return parses.size();
+    }
+
+    public int numFullParses(){
+	return fullparses.size();
+    }
+
+    public long numEntries(){
+	return numEntries;
+    }
+
+    //>
+
+    //< toString()
+    public String toString(){
+	StringBuffer result = new StringBuffer();
+	for (int i=0; i<size; i++){
+	    for (int j=i; j<size; j++){
+		Iterator k = chart[i][j].iterator();
+		while (k.hasNext()){
+		    result.append(k.next()).append("\n");
+		}
+	    }
+	}
+	return result.toString();
+    }
+    //>
+
+    //< code for pruning based on the scores of chart entires.
+    //  this code is independent of the pruning based on 
+    //  syntax/semantics
+
+    public void pruneToTopN(int i, int j, int n){
+	List l = chart[i][j];
+	if (l.size()<n) return;
+	
+	//System.out.println("PRUNING!!!");
+
+	double[] scores = new double[l.size()];
+	for (int k=0; k<l.size(); k++)
+	    //scores[k] = ((Cell)l.get(k)).inside();
+	    scores[k] = ((Cell)l.get(k)).maxscore();
+
+	Arrays.sort(scores);
+	//for (int k=0; k<l.size(); k++)
+	//    System.out.print(scores[k]+",");
+	//System.out.println();
+
+	double thresh = scores[scores.length-n];
+	//System.out.println("TRESHOLD: "+thresh);
+
+	for (int k=0; k<l.size(); k++){
+	    //if (((Cell)l.get(k)).inside()<=thresh){
+	    if (((Cell)l.get(k)).maxscore()<=thresh){
+		//System.out.println("REMOVING: "+l.get(k)+" with score: "+((Cell)l.get(k)).inside());
+		l.remove(k);
+		k--;
+	    }
+	}
+    }
+    //>
+
+    //< code for printing out parses that are in the chart
+    //  support printing either the semantics in a Lisp-like
+    //  format or the entire parse in Latex
+
+    // all parses
+    public void printParses(){
+	Iterator i = parses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    System.out.println(c.getCat());
+	}
+    }
+
+    // full parses must have a simple category
+    public void printFullParses(){
+	Iterator i = fullparses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    System.out.println(c.getCat());
+	    System.out.println("Inside: "+c.inside());
+	    System.out.println("Max: "+c.maxscore());
+	}
+    }
+
+    public void printLatexParses(){
+	Iterator i = parses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    //System.out.println(c.getCat());
+	    System.out.println(c.toLatexString(tokens));
+	}
+    }
+
+    public void printFullLatexParses(){
+	Iterator i = fullparses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    //System.out.println(c.getCat());
+	    System.out.println(c.toLatexString(tokens));
+	}
+    }
+
+    public void printMaxLatexParses(Cat cat){
+	List result = new LinkedList();
+	double maxscore = 0;
+	Cell c;
+	Iterator i = fullparses.iterator();
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    if (c.getCat().equals(cat)){
+		if (c.maxscore()>maxscore){
+		    maxscore = c.maxscore();
+		    result.clear();
+		    result.add(c);
+		} else
+		    if (c.maxscore()==maxscore)
+			result.add(c);
+	    }
+	}
+
+	i = result.iterator();
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    System.out.println(c.toLatexString(tokens));
+	}
+    }
+    //>
+
+    //< checks if Exp e is associated with a full parse in this chart
+    public boolean hasExp(Exp e){
+	//System.out.println("hasExp: "+e);
+	Iterator i = fullparses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    Exp e2 = (Exp)c.getCat().getSem();
+	    //System.out.println("e2: "+e2);
+	    if (e2.equals(e))
+		return true;
+	}
+	return false;
+    }
+    //>
+
+    //< returns the list of Cats (in result) that are the 
+    //  highest scoring complete parses in this chart
+    public void getMaxParses(List result){
+	//System.out.println("hasExp: "+e);
+	Iterator i = fullparses.iterator();
+	double maxscore = 0.0;
+	Cell c;
+	result.clear();
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    if (c.inside()>maxscore){
+		maxscore = c.inside();
+		result.clear();
+		result.add(c.getCat());
+	    } else
+		if (c.inside()==maxscore)
+		    result.add(c.getCat());
+	}
+    }
+    //>
+
+    //< return the Cell that has Cat e and is the root of a full parse
+    public Cell getFullParseCell(Cat e){
+	//System.out.println("hasExp: "+e);
+	Iterator i = fullparses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    if (c.getCat().equals(e))
+		return c;
+	}
+	return null;
+    }
+    //>
+
+    //< code for pulling the lexical entries out of parses.
+
+    // checks only in the full parses.  returns all lexical entries.
+    public List getLexEntriesFor(Exp e){
+	Iterator i = fullparses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    Exp e2 = (Exp)c.getCat().getSem();
+	    if (e2.equals(e) && c.getCat().equals(S)){
+		//System.out.println("getting lex for: "+c);
+		List result = new LinkedList();
+		c.getLexEntries(result);
+		return result;
+	    }
+	}
+	return null;
+    }
+
+
+    // checks only in the full parses.  return the lexical entries
+    // in the highest scoring parse(s).
+    public List getMaxLexEntriesFor(Cat cin){
+	List cats = new LinkedList();
+	double highest = 0.0;
+	List result = new LinkedList();
+	Iterator i = fullparses.iterator();
+	Cell c;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    Cat c2 = c.getCat();
+	    if (c2.equals(cin)){
+		if (c.maxscore()>highest){
+		    highest = c.maxscore();
+		    cats.clear();
+		    cats.add(c);
+		}
+		if (c.maxscore()==highest){
+		    cats.add(c);
+		}
+	    }
+	}
+	i = cats.iterator();
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    c.getMaxLexEntries(result);
+	}
+	return result;
+    }
+
+    //>
+
+    //< code for computing probabilities and gradients
+    //  assumes that we are parsing with a probabilistic model
+
+    public void computeOutsideProbs(Cat inputCat){
+	Cell c;
+	Iterator i;
+
+	// first set all of outside probs to zero
+	for (int len = size-1; len>=0; len--){
+	    for (int begin = 0; begin<size-len; begin++){
+		// first do the type raised cells
+		i = chart[begin][begin+len].iterator();
+		while (i.hasNext()){
+		    c = (Cell)i.next();
+		    c.resetOutside();
+		    //System.out.println("outside: "+c+" : "+c.outside());
+		}
+	    }
+	}
+
+
+	// first, initalize all of the root level cells
+	//System.out.println("computing outside: [0,"+(size-1)+"]");
+	i = chart[0][size-1].iterator();
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    c.computeOutside(inputCat);
+	}
+
+	// now do the rest of the cells
+	for (int len = size-1; len>=0; len--){
+	    for (int begin = 0; begin<size-len; begin++){
+		// first do the type raised cells
+		i = chart[begin][begin+len].iterator();
+		while (i.hasNext()){
+		    c = (Cell)i.next();
+		    if (c.isTypeRaised())
+			c.computeOutside();
+		    //System.out.println("outside: "+c+" : "+c.outside());
+		}
+		// now do the rest of the cells
+		i = chart[begin][begin+len].iterator();
+		//System.out.println("computing outside: ["+begin+","+(begin+len)+"]");
+		while (i.hasNext()){
+		    c = (Cell)i.next();
+		    if (!c.isTypeRaised())
+			c.computeOutside();
+		    //System.out.println("outside: "+c+" : "+c.outside());
+		}
+	    }
+	}
+    }
+
+    private void computeGradient(Cat current, PVector g){
+	computeOutsideProbs(current);
+	for (int len = size-1; len>=0; len--){
+	    for (int begin = 0; begin<size-len; begin++){
+		//System.out.println("computing gradient: ["+begin+","+(begin+len)+"]");
+		Iterator i = chart[begin][begin+len].iterator();
+		while (i.hasNext()){
+		    Cell c = (Cell)i.next();
+		    c.updateGradient(g);
+		}
+	    }
+	}
+    }
+
+    public PVector computeGradient(Cat bestc, int psize){
+	PVector g = new ListVector(psize,0);
+	//g.setFixed(fixed);
+	// compute the first term
+	computeGradient(bestc,g);
+	Cell c = getFullParseCell(bestc);
+	if (c!=null){
+	    g.divideBy(c.inside());
+	} else {
+	    return new ListVector();
+	}
+	//Globals.lexPhi.printValuesFor(g);
+
+	//System.out.println("*****");
+
+	// compute the second term
+	PVector g2 = new ListVector(psize,0);
+	//g2.setFixed(fixed);
+	Iterator i = fullparses.iterator();
+	double norm = 0.0;
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    computeGradient(c.getCat(),g2);
+	    norm+=c.inside();
+	}
+	g2.divideBy(norm);
+	//Globals.lexPhi.printValuesFor(g2);
+	g2.addTimesInto(-1,g);
+
+	// compute the regularization term
+	// should set alpha as a global variable
+	//Globals.theta.addTimesInto(-.1,g);
+
+
+	return g;
+    }
+
+
+    public double logProb(Cat cat){
+	double prob=0,norm=0;
+	Cell c = getFullParseCell(cat);
+	if (c!=null){
+	    prob = Math.log(c.inside());
+	} else return -10000;  // a hack
+	
+	Iterator i = fullparses.iterator();
+	while (i.hasNext()){
+	    c = (Cell)i.next();
+	    norm+=c.inside();
+	}
+	return prob-Math.log(norm);
+    }
+    //>
+
+    static Cat S = Cat.makeCat("S");
+    static Cat CONJ = Cat.makeCat("CONJ");
+    
+    // the actual entries
+    List[][] chart;
+    
+    // any entry that spans the entire input sentence is kept here
+    List parses;
+
+    // stores entries with syntax "S" that span whole input
+    List fullparses;
+
+    // number of words in input sentence
+    int size;
+
+    // a running total of the number of unique Cells (chart entires)
+    long numEntries;
+
+    // the list of words being parsed
+    List tokens;
+
+    // variables used to do pruning based on syntax 
+    // and/or semantics.  
+    List preds;
+    List predCounts;
+    List allowedCats;
+
+
+
+
+}

@@ -1,0 +1,75 @@
+usa nin en yuksek noktasi nedir
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+boston massachusetts in nufusu nedir
+(answer (population_1 (cityid boston:e ma:e)))
+
+texas nun nufusu nedir
+(answer (population_1 (stateid texas:e)))
+
+us kac kilometrekaredir
+(answer (area_1 (countryid usa:e)))
+
+hangi eyaletin kentucky ye siniri vardir
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+arizona daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid arizona:e)))))
+
+alaska daki en kucuk sehir nedir
+(answer (smallest (city (loc_2 (stateid alaska:e)))))
+
+hangi eyaletlerde plano sehri vardir
+(answer (state (loc_1 (city (cityid plano:e _:e)))))
+
+vermont in baskenti nedir
+(answer (capital (loc_2 (stateid vermont:e))))
+
+wyoming in nufus yogunlugu nedir
+(answer (density_1 (stateid wyoming:e)))
+
+tucson nun nufusu nedir
+(answer (population_1 (cityid tucson:e _:e)))
+
+en az nufuslu sehir nedir
+(answer (smallest_one (population_1 (city all:e))))
+
+nevada daki en yuksek nokta metre olarak nedir
+(answer (highest (place (loc_2 (stateid nevada:e)))))
+
+mississippi nehrinin icinden gectigi eyaletlerin nufuslari nelerdir
+(answer (population_1 (state (traverse_1 (riverid mississippi:e)))))
+
+washington eyaletindeki en genis nehir nedir
+(answer (longest (river (loc_2 (stateid washington:e)))))
+
+texas in nufus yogunlugu nedir
+(answer (density_1 (stateid texas:e)))
+
+usa deki en buyuk sehir nedir
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+en genis eyaletin ismini ver
+(answer (largest (state all:e)))
+
+hangi eyalet us deki en yusek noktayi kapsar
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e)))))))
+
+en az nufuslu eyalet nedir
+(answer (smallest_one (population_1 (state all:e))))
+
+indiana a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid indiana:e))))
+
+oregon daki en buyuk sehir nedir
+(answer (largest (city (loc_2 (stateid oregon:e)))))
+
+south carolina nin yuzolcumu nedir
+(answer (area_1 (stateid south_carolina:e)))
+
+utah nun nufusu nedir
+(answer (population_1 (stateid utah:e)))
+
+kentucky a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid kentucky:e))))
+

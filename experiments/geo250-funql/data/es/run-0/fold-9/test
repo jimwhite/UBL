@@ -1,0 +1,75 @@
+que es el punto mas alto de los usa
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+que es la poblacion de boston massachusetts
+(answer (population_1 (cityid boston:e ma:e)))
+
+que es la poblacion de texas
+(answer (population_1 (stateid texas:e)))
+
+cuantos kilometros cuadrados en los us
+(answer (area_1 (countryid usa:e)))
+
+cual estado bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+
+que es la ciudad mas grande en arizona
+(answer (largest (city (loc_2 (stateid arizona:e)))))
+
+que es la ciudad mas pequena en alaska
+(answer (smallest (city (loc_2 (stateid alaska:e)))))
+
+cuales estados tienen ciudades con el nombre plano
+(answer (state (loc_1 (city (cityid plano:e _:e)))))
+
+que es la capital de vermont
+(answer (capital (loc_2 (stateid vermont:e))))
+
+que es la densidad de poblacion de wyoming
+(answer (density_1 (stateid wyoming:e)))
+
+que es la poblacion de tucson
+(answer (population_1 (cityid tucson:e _:e)))
+
+que es la ciudad con la poblacion mas pequena
+(answer (smallest_one (population_1 (city all:e))))
+
+que es el punto mas alto en nevada en metros
+(answer (highest (place (loc_2 (stateid nevada:e)))))
+
+que son las poblaciones de los estados por cual corre el rio mississippi
+(answer (population_1 (state (traverse_1 (riverid mississippi:e)))))
+
+que es el rio mas grande en el estado de washington
+(answer (longest (river (loc_2 (stateid washington:e)))))
+
+que es la densidad de poblacion de texas
+(answer (density_1 (stateid texas:e)))
+
+que es la ciudad mas grande en los usa
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+dame el estado mas grande
+(answer (largest (state all:e)))
+
+que estado contiene el punto mas alto en los us
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e)))))))
+
+que es el estado con la poblacion mas baja
+(answer (smallest_one (population_1 (state all:e))))
+
+cuales estados bordean a indiana
+(answer (state (next_to_2 (stateid indiana:e))))
+
+que es la ciudad mas grande en oregon
+(answer (largest (city (loc_2 (stateid oregon:e)))))
+
+que es la area de south carolina
+(answer (area_1 (stateid south_carolina:e)))
+
+que es la poblacion de utah
+(answer (population_1 (stateid utah:e)))
+
+cuales estados bordean a kentucky
+(answer (state (next_to_2 (stateid kentucky:e))))
+

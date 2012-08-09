@@ -1,0 +1,75 @@
+what are the major rivers in ohio
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+what is the population of hawaii
+(population:i hawaii:s)
+
+how many rivers are there in idaho
+(count $0 (and (river:t $0) (loc:t $0 idaho:s)))
+
+what state is des moines located in
+(lambda $0 e (and (state:t $0) (loc:t des_moines_ia:c $0)))
+
+which state has the highest peak in the country
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (mountain:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+how many rivers does colorado have
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+how many states does the mississippi river run through
+(count $0 (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+what is the highest point of the state with the largest area
+(argmax $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+how many people live in kalamazoo
+(population:i kalamazoo_mi:c)
+
+which river runs through the most states
+(argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1))))
+
+what is the capital of the state with the highest point
+(capital:c (the $1 (and (state:t $1) (loc:t (argmax $2 (place:t $2) (elevation:i $2)) $1))))
+
+what is the area of alaska
+(area:i alaska:s)
+
+how many major cities are in florida
+(count $0 (and (major:t $0) (city:t $0) (loc:t $0 florida:s)))
+
+what is the lowest point of the us
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+how many people live in the capital of texas
+(population:i (capital:c texas:s))
+
+what is the population of portland maine
+(population:i portland_me:c)
+
+how large is texas
+(size:i texas:s)
+
+what is the population of the capital of the smallest state
+(population:i (capital:c (argmin $1 (state:t $1) (size:i $1))))
+
+what is the population of the major cities in wisconsin
+(population:i (the $0 (and (major:t $0) (loc:t $0 wisconsin:s) (city:t $0))))
+
+give me the cities in virginia
+(lambda $0 e (and (city:t $0) (loc:t $0 virginia:s)))
+
+what is the longest river in the us
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+how many cities are there in the us
+(count $0 (and (city:t $0) (loc:t $0 usa:co)))
+
+what rivers run through new york
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+what is the area of maine
+(area:i maine:s)
+
+what rivers do not run through tennessee
+(lambda $0 e (and (river:t $0) (not (loc:t $0 tennessee:s))))
+

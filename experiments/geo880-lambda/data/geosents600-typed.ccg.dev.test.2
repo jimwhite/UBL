@@ -1,0 +1,180 @@
+what is the name of the state with the lowest point
+(lambda $2 e (named:t (the $0 (and (state:t $0) (loc:t (argmin $1 (place:t $1) (elevation:i $1)) $0))) $2))
+
+where is austin
+(lambda $0 e (loc:t austin_tx:c $0))
+
+what is the most populous state in the us
+(argmax $0 (and (state:t $0) (loc:t $0 usa:co)) (population:i $0))
+
+what is the biggest city in the smallest state
+(argmax $0 (and (city:t $0) (loc:t $0 (argmin $1 (state:t $1) (size:i $1)))) (size:i $0))
+
+what is the longest river in the smallest state in the usa
+(argmax $0 (and (river:t $0) (loc:t $0 (argmin $1 (and (state:t $1) (loc:t $1 usa:co)) (size:i $1)))) (len:i $0))
+
+what is the lowest point in oregon
+(argmin $0 (and (place:t $0) (loc:t $0 oregon:s)) (elevation:i $0))
+
+what are the states that border the state with the greatest population
+(lambda $0 e (and (state:t $0) (next_to:t $0 (argmax $1 (state:t $1) (population:i $1)))))
+
+what state has the highest elevation
+(argmax $1 (state:t $1) (elevation:i $1))
+
+what rivers are in new mexico
+(lambda $0 e (and (river:t $0) (loc:t $0 new_mexico:s)))
+
+how high is the highest point of delaware
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 delaware:s)) (elevation:i $0)))
+
+what states border alaska
+(lambda $0 e (and (state:t $0) (next_to:t $0 alaska:s)))
+
+how many people live in new york
+(population:i new_york:s)
+
+what is the area of south carolina
+(area:i south_carolina:s)
+
+name the rivers in arkansas
+(lambda $0 e (and (river:t $0) (loc:t $0 arkansas:s)))
+
+what is the lowest point of colorado
+(argmin $0 (and (place:t $0) (loc:t $0 colorado:s)) (elevation:i $0))
+
+what is the highest point in ohio
+(argmax $0 (and (place:t $0) (loc:t $0 ohio:s)) (elevation:i $0))
+
+show me all the major lakes in the us
+(lambda $0 e (and (major:t $0) (lake:t $0) (loc:t $0 usa:co)))
+
+what is the shortest river in iowa
+(argmin $0 (and (river:t $0) (loc:t $0 iowa:s)) (len:i $0))
+
+what is the smallest state in the usa
+(argmin $0 (and (state:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+give me the cities in virginia
+(lambda $0 e (and (city:t $0) (loc:t $0 virginia:s)))
+
+how many rivers are in the state with the largest population
+(count $0 (and (river:t $0) (loc:t $0 (argmax $1 (state:t $1) (population:i $1)))))
+
+what states border georgia
+(lambda $0 e (and (state:t $0) (next_to:t $0 georgia:s)))
+
+which states does the colorado river run through
+(lambda $0 e (and (state:t $0) (loc:t colorado_river:r $0)))
+
+what is the population of washington dc
+(population:i washington_dc:c)
+
+how many rivers are called colorado
+(count $0 (and (river:t $0) (named:t $0 colorado:n)))
+
+what is the capital city of the largest state in the us
+(capital:c (argmax $1 (and (state:t $1) (loc:t $1 usa:co)) (size:i $1)))
+
+what is the smallest city in washington
+(argmin $0 (and (city:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+what is the population of dallas
+(population:i dallas_tx:c)
+
+how long is the mississippi river in miles
+(len:i mississippi_river:r)
+
+what are the major cities in north carolina
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 north_carolina:s)))
+
+what is the capital of hawaii
+(capital:c hawaii:s)
+
+what are the rivers in the state of indiana
+(lambda $0 e (and (river:t $0) (loc:t $0 indiana:s)))
+
+where is baton rouge
+(lambda $0 e (loc:t baton_rouge_la:c $0))
+
+what is the population of atlanta
+(population:i atlanta_ga:c)
+
+how big is the city of new york
+(size:i new_york_ny:c)
+
+what is the shortest river in the usa
+(argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+what is the longest river
+(argmax $0 (river:t $0) (len:i $0))
+
+where is san jose
+(lambda $0 e (loc:t san_jose_ca:c $0))
+
+how many states border alaska
+(count $0 (and (state:t $0) (next_to:t $0 alaska:s)))
+
+what is the smallest city in alaska
+(argmin $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0))
+
+what is the average population per square km in pennsylvania
+(density:i pennsylvania:s)
+
+name the major lakes in michigan
+(lambda $0 e (and (major:t $0) (lake:t $0) (loc:t $0 michigan:s)))
+
+what are the populations of the states through which the mississippi river runs
+(lambda $0 e (exists $1 (and (state:t $1) (loc:t mississippi_river:r $1) (population:t $1 $0))))
+
+what is the largest city in missouri
+(argmax $0 (and (city:t $0) (loc:t $0 missouri:s)) (size:i $0))
+
+where is new orleans
+(lambda $0 e (loc:t new_orleans_la:c $0))
+
+what is the smallest state through which the longest river runs
+(argmin $0 (and (state:t $0) (loc:t (argmax $1 (river:t $1) (len:i $1)) $0)) (size:i $0))
+
+how many people live in spokane washington
+(population:i spokane_wa:c)
+
+what city has the least population
+(argmin $0 (city:t $0) (population:i $0))
+
+how many states does the mississippi run through
+(count $0 (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+what states border new hampshire
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_hampshire:s)))
+
+what is the population of springfield missouri
+(population:i springfield_mo:c)
+
+what is the biggest city in texas
+(argmax $0 (and (city:t $0) (loc:t $0 texas:s)) (size:i $0))
+
+what is the capital of the state with the highest point
+(capital:c (the $1 (and (state:t $1) (loc:t (argmax $2 (place:t $2) (elevation:i $2)) $1))))
+
+give me the cities in texas
+(lambda $0 e (and (city:t $0) (loc:t $0 texas:s)))
+
+how many people live in the state with the largest population density
+(population:i (argmax $0 (state:t $0) (density:i $0)))
+
+what is the area of the state with the smallest population density
+(area:i (argmin $0 (state:t $0) (density:i $0)))
+
+what is the lowest point in texas
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+what state borders the state with the smallest population
+(lambda $0 e (and (state:t $0) (next_to:t $0 (argmin $1 (state:t $1) (population:i $1)))))
+
+what rivers run through west virginia
+(lambda $0 e (and (river:t $0) (loc:t $0 west_virginia:s)))
+
+which river runs through the most states
+(argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1))))
+

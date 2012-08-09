@@ -1,0 +1,75 @@
+ohaio no ookina kawa wa nan desu ka
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+hawai no jinkou wa nan desu ka
+(population:i hawaii:s)
+
+aidahou ni wa kawa ga ikutsu arimasu ka
+(count $0 (and (river:t $0) (loc:t $0 idaho:s)))
+
+demoin wa dono shuu ni arimasu ka
+(lambda $0 e (and (state:t $0) (loc:t des_moines_ia:c $0)))
+
+dono shuu wa kuni no mottomo takai choujou ga arimasu ka
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (mountain:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+kororado wa kawa ga ikutsu arimasu ka
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+mishishippi kawa wa ikutsu no shuu wo nagarete imasu ka
+(count $0 (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+mottomo ookii chiiki ga aru shuu no mottomo takai chiten wa nan desu ka
+(argmax $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+karamazuu ni wa nannin no hito ga sumimasu ka
+(population:i kalamazoo_mi:c)
+
+donna kawa ga mottomo ooku no kawa wo nagarete imasu ka
+(argmax $0 (river:t $0) (count $1 (and (state:t $1) (loc:t $0 $1))))
+
+mottomo takai chiten ga aru shuu no shuto wa nan desu ka
+(capital:c (the $1 (and (state:t $1) (loc:t (argmax $2 (place:t $2) (elevation:i $2)) $1))))
+
+arasuka no chiiki wa nan desu ka
+(area:i alaska:s)
+
+furorida no ookina toshi wa nankasho desu ka
+(count $0 (and (major:t $0) (city:t $0) (loc:t $0 florida:s)))
+
+beikoku no mottomo hikui chiten wa nan desu ka
+(argmin $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+tekisasu no shuto ni wa nannin no hito ga sumimasu ka
+(population:i (capital:c texas:s))
+
+meen no porutorando no jinkou wa nan desu ka
+(population:i portland_me:c)
+
+tekisasu no ookisa wa nan desu ka
+(size:i texas:s)
+
+mottomo chiisai shuu no shuto no jinkou wa nan desu ka
+(population:i (capital:c (argmin $1 (state:t $1) (size:i $1))))
+
+uisukonshin ni wa ookina toshi no jinkou ga nan desu ka
+(population:i (the $0 (and (major:t $0) (loc:t $0 wisconsin:s) (city:t $0))))
+
+baajinia no toshi wa nan desu ka
+(lambda $0 e (and (city:t $0) (loc:t $0 virginia:s)))
+
+beikoku no mottomo nagai kawa wa nan desu ka
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+beikoku ni wa toshi ga ikutsu arimasu ka
+(count $0 (and (city:t $0) (loc:t $0 usa:co)))
+
+dono kawa wa nyoo yooku wo nagarete imasu ka
+(lambda $0 e (and (river:t $0) (loc:t $0 new_york:s)))
+
+meen no chiiki wa nan desu ka
+(area:i maine:s)
+
+teneshii wo nagarenai kawa wa nan desu ka
+(lambda $0 e (and (river:t $0) (not (loc:t $0 tennessee:s))))
+

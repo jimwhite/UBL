@@ -1,0 +1,75 @@
+colorado da kac tane nehir vardir
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+hangi eyaletler colorado nun en yuksek noktasindan daha yuksek noktaya sahiptirler
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e)))))))))
+
+mississippi nehrinin uzunlugu ne kadardir
+(answer (len (riverid mississippi:e)))
+
+hangi eyalet en kucuk nufus yogunluguna sahiptir
+(answer (smallest_one (density_1 (state all:e))))
+
+idaho nin yuzolcumu nedir
+(answer (area_1 (stateid idaho:e)))
+
+mississippi nehrinin uzunlugu ne kadardir
+(answer (len (riverid mississippi:e)))
+
+colorado nehrinin uzunlugu ne kadardir
+(answer (len (riverid colorado:e)))
+
+arkansas daki nehirlerin isimlerini ver
+(answer (river (loc_2 (stateid arkansas:e))))
+
+west virginia dan hangi nehirler gecer
+(answer (river (traverse_2 (stateid west_virginia:e))))
+
+alaska daki nehirler nelerdir
+(answer (river (loc_2 (stateid alaska:e))))
+
+california ya komsu eyaletler deki en genis sehir nedir
+(answer (largest (city (loc_2 (state (next_to_2 (stateid california:e)))))))
+
+idaho nun nufusu nedir
+(answer (population_1 (stateid idaho:e)))
+
+50 eyaletin toplam alani nedir
+(answer (sum (area_1 (state all:e))))
+
+arkansas a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid arkansas:e))))
+
+hawaii deki en yuksek nokta nerededir
+(answer (loc_1 (highest (place (loc_2 (stateid hawaii:e))))))
+
+kalamazoo hangi eyalettedir
+(answer (state (loc_1 (cityid kalamazoo:e _:e))))
+
+california eyaletinin en alcak noktasi nedir
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+mississippi nin en uzun nehri nedir
+(answer (longest (river (loc_2 (stateid mississippi:e)))))
+
+new york a siniri olan eyaletler nelerdir
+(answer (state (next_to_2 (stateid new_york:e))))
+
+wyoming daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid wyoming:e)))))
+
+iowa daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid iowa:e)))))
+
+hawaii da ne kadar insan yasamaktadir
+(answer (population_1 (stateid hawaii:e)))
+
+hangi nehirler new mexico ya siniri olan eyaletlerden gecer
+(answer (river (traverse_2 (state (next_to_2 (stateid new_mexico:e))))))
+
+erie pennsylvania in nufusu nedir
+(answer (population_1 (cityid erie:e pa:e)))
+
+rhode island daki en yuksek nokta nedir
+(answer (highest (place (loc_2 (stateid rhode_island:e)))))
+

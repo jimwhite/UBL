@@ -1,0 +1,75 @@
+ohio daki baslica nehirler nelerdir
+(answer (major (river (loc_2 (stateid ohio:e)))))
+
+hawaii nun nufusu nedir
+(answer (population_1 (stateid hawaii:e)))
+
+idaho da kac tane nehir vardir
+(answer (count (river (loc_2 (stateid idaho:e)))))
+
+des moines hangi eyalettedir
+(answer (state (loc_1 (cityid des_moines:e _:e))))
+
+hangi eyalet ulkedeki en yuksek zirveye sahiptir
+(answer (state (loc_1 (highest (place all:e)))))
+
+colorado nun kac tane nehri vardir
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+mississippi nehri kac tane eyaletten gecmektedir
+(answer (count (state (traverse_1 (riverid mississippi:e)))))
+
+en genis alana sahip eyaletin en yuksek noktasi nedir
+(answer (highest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+kalamazoo da ne kadar insan yasamaktadir
+(answer (population_1 (cityid kalamazoo:e _:e)))
+
+hangi nehir en cok eyaletten gecer
+(answer (most (river (traverse_2 (state all:e)))))
+
+en yuksek noktayi iceren eyaletin baskenti nedir
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e)))))))
+
+alaska nin yuzolcumu nedir
+(answer (area_1 (stateid alaska:e)))
+
+florida da baslica kac tane sehir vardir
+(answer (count (major (city (loc_2 (stateid florida:e))))))
+
+us in en alcak noktasi nedir
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+texas in baskentinde ne kadar insan yasamaktadir
+(answer (population_1 (capital (loc_2 (stateid texas:e)))))
+
+portland maine in nufusu nedir
+(answer (population_1 (cityid portland:e me:e)))
+
+texas ne kadar genistir
+(answer (size (stateid texas:e)))
+
+en kucuk eyaletin baskentinin nufusu nedir
+(answer (population_1 (capital (loc_2 (smallest (state all:e))))))
+
+wisconsin deki baslica sehirlerin nufusu nedir
+(answer (population_1 (major (city (loc_2 (stateid wisconsin:e))))))
+
+virginia daki sehirlerin isimlerini ver
+(answer (city (loc_2 (stateid virginia:e))))
+
+birlesik devletler in en uzun nehri nedir
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+us de kac tane sehir vardir
+(answer (count (city (loc_2 (countryid usa:e)))))
+
+new york dan hangi nehirler gecer
+(answer (river (traverse_2 (stateid new_york:e))))
+
+maine nin yuzolcumu nedir
+(answer (area_1 (stateid maine:e)))
+
+hangi nehirler tennessee den gecmez
+(answer (exclude (river all:e) (traverse_2 (stateid tennessee:e))))
+

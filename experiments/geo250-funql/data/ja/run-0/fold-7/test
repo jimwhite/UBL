@@ -1,0 +1,75 @@
+ohaio no ookina kawa wa nan desu ka
+(answer (major (river (loc_2 (stateid ohio:e)))))
+
+hawai no jinkou wa nan desu ka
+(answer (population_1 (stateid hawaii:e)))
+
+aidahou ni wa kawa ga ikutsu arimasu ka
+(answer (count (river (loc_2 (stateid idaho:e)))))
+
+demoin wa dono shuu ni arimasu ka
+(answer (state (loc_1 (cityid des_moines:e _:e))))
+
+dono shuu wa kuni no mottomo takai choujou ga arimasu ka
+(answer (state (loc_1 (highest (place all:e)))))
+
+kororado wa kawa ga ikutsu arimasu ka
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+mishishippi kawa wa ikutsu no shuu wo nagarete imasu ka
+(answer (count (state (traverse_1 (riverid mississippi:e)))))
+
+mottomo ookii chiiki ga aru shuu no mottomo takai chiten wa nan desu ka
+(answer (highest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+karamazuu ni wa nannin no hito ga sumimasu ka
+(answer (population_1 (cityid kalamazoo:e _:e)))
+
+donna kawa ga mottomo ooku no kawa wo nagarete imasu ka
+(answer (most (river (traverse_2 (state all:e)))))
+
+mottomo takai chiten ga aru shuu no shuto wa nan desu ka
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e)))))))
+
+arasuka no chiiki wa nan desu ka
+(answer (area_1 (stateid alaska:e)))
+
+furorida no ookina toshi wa nankasho desu ka
+(answer (count (major (city (loc_2 (stateid florida:e))))))
+
+beikoku no mottomo hikui chiten wa nan desu ka
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+tekisasu no shuto ni wa nannin no hito ga sumimasu ka
+(answer (population_1 (capital (loc_2 (stateid texas:e)))))
+
+meen no porutorando no jinkou wa nan desu ka
+(answer (population_1 (cityid portland:e me:e)))
+
+tekisasu no ookisa wa nan desu ka
+(answer (size (stateid texas:e)))
+
+mottomo chiisai shuu no shuto no jinkou wa nan desu ka
+(answer (population_1 (capital (loc_2 (smallest (state all:e))))))
+
+uisukonshin ni wa ookina toshi no jinkou ga nan desu ka
+(answer (population_1 (major (city (loc_2 (stateid wisconsin:e))))))
+
+baajinia no toshi wa nan desu ka
+(answer (city (loc_2 (stateid virginia:e))))
+
+beikoku no mottomo nagai kawa wa nan desu ka
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+beikoku ni wa toshi ga ikutsu arimasu ka
+(answer (count (city (loc_2 (countryid usa:e)))))
+
+dono kawa wa nyoo yooku wo nagarete imasu ka
+(answer (river (traverse_2 (stateid new_york:e))))
+
+meen no chiiki wa nan desu ka
+(answer (area_1 (stateid maine:e)))
+
+teneshii wo nagarenai kawa wa nan desu ka
+(answer (exclude (river all:e) (traverse_2 (stateid tennessee:e))))
+

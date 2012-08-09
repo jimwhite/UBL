@@ -1,0 +1,75 @@
+what is the population of tempe arizona
+(population:i tempe_az:c)
+
+where is the lowest spot in iowa
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 iowa:s)) (elevation:i $1)) $0))
+
+what is the highest point in the usa
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+through which states does the mississippi run
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+how many citizens in alabama
+(population:i alabama:s)
+
+what major rivers run through illinois
+(lambda $0 e (and (major:t $0) (river:t $0) (loc:t $0 illinois:s)))
+
+what 's the largest city
+(argmax $0 (city:t $0) (size:i $0))
+
+what is the smallest city in the us
+(argmin $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+what states border new jersey
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_jersey:s)))
+
+how long is the rio grande river
+(len:i rio_grande_river:r)
+
+which rivers flow through alaska
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+how many people live in austin
+(population:i austin_tx:c)
+
+what is the capital of georgia
+(capital:c georgia:s)
+
+what is the biggest city in louisiana
+(argmax $0 (and (city:t $0) (loc:t $0 louisiana:s)) (size:i $0))
+
+how large is alaska
+(size:i alaska:s)
+
+what is the longest river in the united states
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+what is the shortest river in the us
+(argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+what is the capital of new jersey
+(capital:c new_jersey:s)
+
+what states have cities named dallas
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 dallas:n) (loc:t $1 $0)))))
+
+how many people live in new york
+(population:i new_york:s)
+
+what is the population density of the smallest state
+(density:i (argmin $0 (state:t $0) (size:i $0)))
+
+how many cities are in montana
+(count $0 (and (city:t $0) (loc:t $0 montana:s)))
+
+what is the population of san antonio
+(population:i san_antonio_tx:c)
+
+what is the lowest point in nebraska in meters
+(argmin $0 (and (place:t $0) (loc:t $0 nebraska:s)) (elevation:i $0))
+
+what states does the missouri run through
+(lambda $0 e (and (state:t $0) (loc:t missouri_river:r $0)))
+

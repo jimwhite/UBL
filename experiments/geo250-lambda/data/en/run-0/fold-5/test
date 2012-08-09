@@ -1,0 +1,75 @@
+how many rivers are in colorado
+(count $0 (and (river:t $0) (loc:t $0 colorado:s)))
+
+which states have points higher than the highest point in colorado
+(lambda $0 e (and (state:t $0) (exists $1 (and (place:t $1) (> (elevation:i $1) (elevation:i (argmax $2 (and (place:t $2) (loc:t $2 colorado:s)) (elevation:i $2))))))))
+
+how long is the mississippi
+(len:i mississippi_river:r)
+
+which state has the smallest population density
+(argmin $0 (state:t $0) (density:i $0))
+
+what is the area of idaho
+(area:i idaho:s)
+
+how long is the mississippi river
+(len:i mississippi_river:r)
+
+how long is the colorado river
+(len:i colorado_river:r)
+
+name the rivers in arkansas
+(lambda $0 e (and (river:t $0) (loc:t $0 arkansas:s)))
+
+what rivers run through west virginia
+(lambda $0 e (and (river:t $0) (loc:t $0 west_virginia:s)))
+
+what are the rivers in alaska
+(lambda $0 e (and (river:t $0) (loc:t $0 alaska:s)))
+
+what is the largest city in states that border california
+(argmax $0 (and (city:t $0) (exists $1 (and (state:t $1) (next_to:t $1 california:s) (loc:t $0 $1)))) (size:i $0))
+
+what is the population of idaho
+(population:i idaho:s)
+
+what is the combined area of all 50 states
+(sum $0 (state:t $0) (area:i $0))
+
+what states border arkansas
+(lambda $0 e (and (state:t $0) (next_to:t $0 arkansas:s)))
+
+where is the highest point in hawaii
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 hawaii:s)) (elevation:i $1)) $0))
+
+which state is kalamazoo in
+(lambda $0 e (and (state:t $0) (loc:t kalamazoo_mi:c $0)))
+
+what is the lowest point in the state of california
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+what is the longest river in mississippi
+(argmax $0 (and (river:t $0) (loc:t $0 mississippi:s)) (len:i $0))
+
+which states border new york
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_york:s)))
+
+what is the highest point in wyoming
+(argmax $0 (and (place:t $0) (loc:t $0 wyoming:s)) (elevation:i $0))
+
+what is the highest point in iowa
+(argmax $0 (and (place:t $0) (loc:t $0 iowa:s)) (elevation:i $0))
+
+how many people live in hawaii
+(population:i hawaii:s)
+
+which rivers run through states bordering new mexico
+(lambda $0 e (and (river:t $0) (exists $1 (and (state:t $1) (next_to:t $1 new_mexico:s) (loc:t $0 $1)))))
+
+what is the population of erie pennsylvania
+(population:i erie_pa:c)
+
+what is the highest point in rhode island
+(argmax $0 (and (place:t $0) (loc:t $0 rhode_island:s)) (elevation:i $0))
+

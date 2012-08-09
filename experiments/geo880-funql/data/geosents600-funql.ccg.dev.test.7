@@ -1,0 +1,180 @@
+how many people live in new mexico
+(answer (population_1 (stateid new_mexico:e)))
+
+what is the highest point in the state with capital des moines
+(answer (highest (place (loc_2 (state (loc_1 (capital (cityid des_moines:e _:e))))))))
+
+what are the major cities in oklahoma
+(answer (major (city (loc_2 (stateid oklahoma:e)))))
+
+how many states does the colorado river flow through
+(answer (count (state (traverse_1 (riverid colorado:e)))))
+
+what state has the largest population
+(answer (largest_one (population_1 (state all:e))))
+
+show major cities in colorado
+(answer (major (city (loc_2 (stateid colorado:e)))))
+
+could you tell me what is the highest point in the state of oregon
+(answer (highest (place (loc_2 (stateid oregon:e)))))
+
+how many people live in chicago
+(answer (population_1 (cityid chicago:e _:e)))
+
+what are the major rivers in the us
+(answer (major (river (loc_2 (countryid usa:e)))))
+
+where is indianapolis
+(answer (loc_1 (cityid indianapolis:e _:e)))
+
+how many rivers are in the state with the highest point
+(answer (count (river (loc_2 (state (loc_1 (highest (place all:e))))))))
+
+what is the highest point in the united states
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+list the states
+(answer (state all:e))
+
+which rivers run through the state with the largest city in the us
+(answer (river (traverse_2 (state (loc_1 (largest (city (loc_2 (countryid usa:e)))))))))
+
+which states have points higher than the highest point in colorado
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e)))))))))
+
+what state is the state with the most rivers
+(answer (state (most (state (loc_1 (river all:e))))))
+
+how many people live in kalamazoo
+(answer (population_1 (cityid kalamazoo:e _:e)))
+
+how long is the rio grande river
+(answer (len (riverid rio_grande:e)))
+
+what is the state with the highest elevation in the united states
+(answer (state (loc_1 (highest (place (loc_2 (countryid usa:e)))))))
+
+how many states border at least one other state
+(answer (count (state (next_to_2 (state all:e)))))
+
+what are the major cities in wyoming
+(answer (major (city (loc_2 (stateid wyoming:e)))))
+
+what is the highest point in texas
+(answer (highest (place (loc_2 (stateid texas:e)))))
+
+how many states border the state that borders the most states
+(answer (count (state (next_to_2 (most (state (next_to_2 (state all:e))))))))
+
+what are the cities in california
+(answer (city (loc_2 (stateid california:e))))
+
+what are the populations of states through which the mississippi river runs
+(answer (population_1 (state (traverse_1 (riverid mississippi:e)))))
+
+what is the highest point of the state with the largest area
+(answer (highest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+where is fort wayne
+(answer (loc_1 (cityid fort_wayne:e _:e)))
+
+what is the length of the river that runs through the most number of states
+(answer (len (most (river (traverse_2 (state all:e))))))
+
+which states border michigan
+(answer (state (next_to_2 (stateid michigan:e))))
+
+what is the biggest city in the usa
+(answer (largest (city (loc_2 (countryid usa:e)))))
+
+what are the major cities of the us
+(answer (major (city (loc_2 (countryid usa:e)))))
+
+what are the names of the major cities in illinois
+(answer (major (city (loc_2 (stateid illinois:e)))))
+
+where is houston
+(answer (loc_1 (cityid houston:e _:e)))
+
+which states does the missouri river pass through
+(answer (state (traverse_1 (riverid missouri:e))))
+
+where is new hampshire
+(answer (loc_1 (stateid new_hampshire:e)))
+
+what is the largest city of kansas
+(answer (largest (city (loc_2 (stateid kansas:e)))))
+
+what is the population density of wyoming
+(answer (density_1 (stateid wyoming:e)))
+
+what are the major cities of texas
+(answer (major (city (loc_2 (stateid texas:e)))))
+
+what are the lakes in states bordering texas
+(answer (lake (loc_2 (state (next_to_2 (stateid texas:e))))))
+
+what major rivers run through illinois
+(answer (major (river (traverse_2 (stateid illinois:e)))))
+
+what is the largest state in usa
+(answer (largest (state (loc_2 (countryid usa:e)))))
+
+what are the major cities in missouri
+(answer (major (city (loc_2 (stateid missouri:e)))))
+
+what state that borders texas has the highest population
+(answer (largest_one (population_1 (state (next_to_2 (stateid texas:e))))))
+
+what is the height of the highest mountain in texas
+(answer (elevation_1 (highest (mountain (loc_2 (stateid texas:e))))))
+
+what is the size of texas
+(answer (size (stateid texas:e)))
+
+what is the capital of the state that borders the most states
+(answer (capital (loc_2 (most (state (next_to_2 (state all:e)))))))
+
+how many states have cities or towns named springfield
+(answer (count (state (loc_1 (city (cityid springfield:e _:e))))))
+
+how many people are there in new york
+(answer (population_1 (stateid new_york:e)))
+
+what is the state with the lowest population
+(answer (smallest_one (population_1 (state all:e))))
+
+how many rivers run through texas
+(answer (count (river (traverse_2 (stateid texas:e)))))
+
+what is the population of the state with the largest area
+(answer (population_1 (largest_one (area_1 (state all:e)))))
+
+how many major rivers cross ohio
+(answer (count (major (river (traverse_2 (stateid ohio:e))))))
+
+what state has the largest urban population
+(answer (largest_one (population_1 (state all:e))))
+
+what are the biggest rivers in texas
+(answer (longest (river (loc_2 (stateid texas:e)))))
+
+how long is the shortest river in the usa
+(answer (len (shortest (river (loc_2 (countryid usa:e))))))
+
+how many rivers in texas are longer than the red
+(answer (count (intersection (river (loc_2 (stateid texas:e))) (longer (riverid red:e)))))
+
+what is the longest river in the us
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+what is the biggest state in the usa
+(answer (largest (state (loc_2 (countryid usa:e)))))
+
+how many states border colorado and border new mexico
+(answer (count (state (intersection (next_to_2 (stateid colorado:e)) (next_to_2 (stateid new_mexico:e))))))
+
+what are the neighboring states for michigan
+(answer (state (next_to_2 (stateid michigan:e))))
+

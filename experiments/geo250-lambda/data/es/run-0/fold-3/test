@@ -1,0 +1,75 @@
+por cuales estados corre el rio missouri
+(lambda $0 e (and (state:t $0) (loc:t missouri_river:r $0)))
+
+cuantos rios mayores cruzan ohio
+(count $0 (and (major:t $0) (river:t $0) (loc:t $0 ohio:s)))
+
+por cuales estados corre el rio mississippi
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+que son las ciudades mayores en rhode island
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 rhode_island:s)))
+
+que son las ciudades mayores en texas
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 texas:s)))
+
+que es el punto mas bajo en california
+(argmin $0 (and (place:t $0) (loc:t $0 california:s)) (elevation:i $0))
+
+que es la poblacion de illinois
+(population:i illinois:s)
+
+que es la ciudad mas grande en los usa
+(argmax $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+que son las ciudades mayores de texas
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 texas:s)))
+
+nombra todos los rios en colorado
+(lambda $0 e (and (river:t $0) (loc:t $0 colorado:s)))
+
+cuanto tiene de largo el rio mas corto en los usa
+(len:i (argmin $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0)))
+
+que tan largo esta el rio ohio
+(len:i ohio_river:r)
+
+cual estado tiene el rio mas largo
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (river:t $1) (len:i $1)) $0)))
+
+que es la capital de iowa
+(capital:c iowa:s)
+
+cuantos rios en washington
+(count $0 (and (river:t $0) (loc:t $0 washington:s)))
+
+que son todos los rios en texas
+(lambda $0 e (and (river:t $0) (loc:t $0 texas:s)))
+
+que es la capital de estado mas grande en poblacion
+(argmax $0 (capital:t $0) (population:i $0))
+
+que es el estado mas poblado bordeando a oklahoma
+(argmax $0 (and (state:t $0) (next_to:t $0 oklahoma:s)) (population:i $0))
+
+que es la area de wisconsin
+(area:i wisconsin:s)
+
+cual estado bordea a los mas estados
+(argmax $0 (state:t $0) (count $1 (and (state:t $1) (next_to:t $0 $1))))
+
+que son las ciudades mayores en alaska
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 alaska:s)))
+
+que es la ciudad mas grande en wisconsin
+(argmax $0 (and (city:t $0) (loc:t $0 wisconsin:s)) (size:i $0))
+
+que es la capital de washington
+(capital:c washington:s)
+
+que son las ciudades mayores en kansas
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 kansas:s)))
+
+por cuales estados corre el rio ohio
+(lambda $0 e (and (state:t $0) (loc:t ohio_river:r $0)))
+

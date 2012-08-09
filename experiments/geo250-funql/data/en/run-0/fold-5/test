@@ -1,0 +1,75 @@
+how many rivers are in colorado
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+which states have points higher than the highest point in colorado
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e)))))))))
+
+how long is the mississippi
+(answer (len (riverid mississippi:e)))
+
+which state has the smallest population density
+(answer (smallest_one (density_1 (state all:e))))
+
+what is the area of idaho
+(answer (area_1 (stateid idaho:e)))
+
+how long is the mississippi river
+(answer (len (riverid mississippi:e)))
+
+how long is the colorado river
+(answer (len (riverid colorado:e)))
+
+name the rivers in arkansas
+(answer (river (loc_2 (stateid arkansas:e))))
+
+what rivers run through west virginia
+(answer (river (traverse_2 (stateid west_virginia:e))))
+
+what are the rivers in alaska
+(answer (river (loc_2 (stateid alaska:e))))
+
+what is the largest city in states that border california
+(answer (largest (city (loc_2 (state (next_to_2 (stateid california:e)))))))
+
+what is the population of idaho
+(answer (population_1 (stateid idaho:e)))
+
+what is the combined area of all 50 states
+(answer (sum (area_1 (state all:e))))
+
+what states border arkansas
+(answer (state (next_to_2 (stateid arkansas:e))))
+
+where is the highest point in hawaii
+(answer (loc_1 (highest (place (loc_2 (stateid hawaii:e))))))
+
+which state is kalamazoo in
+(answer (state (loc_1 (cityid kalamazoo:e _:e))))
+
+what is the lowest point in the state of california
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+what is the longest river in mississippi
+(answer (longest (river (loc_2 (stateid mississippi:e)))))
+
+which states border new york
+(answer (state (next_to_2 (stateid new_york:e))))
+
+what is the highest point in wyoming
+(answer (highest (place (loc_2 (stateid wyoming:e)))))
+
+what is the highest point in iowa
+(answer (highest (place (loc_2 (stateid iowa:e)))))
+
+how many people live in hawaii
+(answer (population_1 (stateid hawaii:e)))
+
+which rivers run through states bordering new mexico
+(answer (river (traverse_2 (state (next_to_2 (stateid new_mexico:e))))))
+
+what is the population of erie pennsylvania
+(answer (population_1 (cityid erie:e pa:e)))
+
+what is the highest point in rhode island
+(answer (highest (place (loc_2 (stateid rhode_island:e)))))
+

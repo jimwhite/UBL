@@ -1,0 +1,75 @@
+what is the population of tempe arizona
+(answer (population_1 (cityid tempe:e az:e)))
+
+where is the lowest spot in iowa
+(answer (loc_1 (lowest (place (loc_2 (stateid iowa:e))))))
+
+what is the highest point in the usa
+(answer (highest (place (loc_2 (countryid usa:e)))))
+
+through which states does the mississippi run
+(answer (state (traverse_1 (riverid mississippi:e))))
+
+how many citizens in alabama
+(answer (population_1 (stateid alabama:e)))
+
+what major rivers run through illinois
+(answer (major (river (traverse_2 (stateid illinois:e)))))
+
+what 's the largest city
+(answer (largest (city all:e)))
+
+what is the smallest city in the us
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+what states border new jersey
+(answer (state (next_to_2 (stateid new_jersey:e))))
+
+how long is the rio grande river
+(answer (len (riverid rio_grande:e)))
+
+which rivers flow through alaska
+(answer (river (traverse_2 (stateid alaska:e))))
+
+how many people live in austin
+(answer (population_1 (cityid austin:e _:e)))
+
+what is the capital of georgia
+(answer (capital (loc_2 (stateid georgia:e))))
+
+what is the biggest city in louisiana
+(answer (largest (city (loc_2 (stateid louisiana:e)))))
+
+how large is alaska
+(answer (size (stateid alaska:e)))
+
+what is the longest river in the united states
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+what is the shortest river in the us
+(answer (shortest (river (loc_2 (countryid usa:e)))))
+
+what is the capital of new jersey
+(answer (capital (loc_2 (stateid new_jersey:e))))
+
+what states have cities named dallas
+(answer (state (loc_1 (city (cityid dallas:e _:e)))))
+
+how many people live in new york
+(answer (population_1 (stateid new_york:e)))
+
+what is the population density of the smallest state
+(answer (density_1 (smallest (state all:e))))
+
+how many cities are in montana
+(answer (count (city (loc_2 (stateid montana:e)))))
+
+what is the population of san antonio
+(answer (population_1 (cityid san_antonio:e _:e)))
+
+what is the lowest point in nebraska in meters
+(answer (lowest (place (loc_2 (stateid nebraska:e)))))
+
+what states does the missouri run through
+(answer (state (traverse_1 (riverid missouri:e))))
+

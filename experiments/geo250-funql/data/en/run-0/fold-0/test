@@ -1,0 +1,75 @@
+what state borders michigan
+(answer (state (next_to_2 (stateid michigan:e))))
+
+what are the major cities in ohio
+(answer (major (city (loc_2 (stateid ohio:e)))))
+
+what is the lowest point in arkansas
+(answer (lowest (place (loc_2 (stateid arkansas:e)))))
+
+what states border georgia
+(answer (state (next_to_2 (stateid georgia:e))))
+
+how many rivers are in new york
+(answer (count (river (loc_2 (stateid new_york:e)))))
+
+what is the lowest point in the state of texas
+(answer (lowest (place (loc_2 (stateid texas:e)))))
+
+which states border texas
+(answer (state (next_to_2 (stateid texas:e))))
+
+what is the smallest city in washington
+(answer (smallest (city (loc_2 (stateid washington:e)))))
+
+what states border ohio
+(answer (state (next_to_2 (stateid ohio:e))))
+
+what is the population of new york city
+(answer (population_1 (cityid new_york:e _:e)))
+
+how many people live in california
+(answer (population_1 (stateid california:e)))
+
+how many people live in spokane washington
+(answer (population_1 (cityid spokane:e wa:e)))
+
+what is the population of springfield missouri
+(answer (population_1 (cityid springfield:e mo:e)))
+
+what states border hawaii
+(answer (state (next_to_2 (stateid hawaii:e))))
+
+what is the total area of the usa
+(answer (area_1 (countryid usa:e)))
+
+what is the highest point in states bordering georgia
+(answer (highest (place (loc_2 (state (next_to_2 (stateid georgia:e)))))))
+
+what is the highest point in montana
+(answer (highest (place (loc_2 (stateid montana:e)))))
+
+how high is the highest point in america
+(answer (elevation_1 (highest (place (loc_2 (countryid usa:e))))))
+
+what are the major cities in california
+(answer (major (city (loc_2 (stateid california:e)))))
+
+what is the combined population of all 50 states
+(answer (sum (population_1 (state all:e))))
+
+what is the smallest city in the usa
+(answer (smallest (city (loc_2 (countryid usa:e)))))
+
+what capital is the largest in the us
+(answer (largest (capital (loc_2 (countryid usa:e)))))
+
+what is the highest mountain in the us
+(answer (highest (mountain (loc_2 (countryid usa:e)))))
+
+what rivers run through the states that border the state with the capital atlanta
+(answer (river (traverse_2 (state (next_to_2 (state (loc_1 (capital (cityid atlanta:e _:e)))))))))
+
+what states border florida
+(answer (state (next_to_2 (stateid florida:e))))
+

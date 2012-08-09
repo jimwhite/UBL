@@ -1,0 +1,75 @@
+cuantos rios hay en colorado
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+cuales estados tienen puntos mas alto que el punto mas alto en colorado
+(answer (state (loc_1 (place (higher_2 (highest (place (loc_2 (stateid colorado:e)))))))))
+
+que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e)))
+
+cual estado tiene la densidad de poblacion mas pequena
+(answer (smallest_one (density_1 (state all:e))))
+
+que es la area de idaho
+(answer (area_1 (stateid idaho:e)))
+
+que tiene de largo el rio mississippi
+(answer (len (riverid mississippi:e)))
+
+que tan largo esta el rio colorado
+(answer (len (riverid colorado:e)))
+
+nombra los rios en arkansas
+(answer (river (loc_2 (stateid arkansas:e))))
+
+que rios corren por west virginia
+(answer (river (traverse_2 (stateid west_virginia:e))))
+
+cuales son los rios en alaska
+(answer (river (loc_2 (stateid alaska:e))))
+
+que es la ciudad mas grande en los estados que bordean a california
+(answer (largest (city (loc_2 (state (next_to_2 (stateid california:e)))))))
+
+que es la poblacion de idaho
+(answer (population_1 (stateid idaho:e)))
+
+que es la area combinada de todos los 50 estados
+(answer (sum (area_1 (state all:e))))
+
+cuales estados bordean a arkansas
+(answer (state (next_to_2 (stateid arkansas:e))))
+
+que es el punto mas alto en hawaii
+(answer (loc_1 (highest (place (loc_2 (stateid hawaii:e))))))
+
+en que estado esta kalamazoo
+(answer (state (loc_1 (cityid kalamazoo:e _:e))))
+
+que es el punto mas bajo en el estado de california
+(answer (lowest (place (loc_2 (stateid california:e)))))
+
+que es el rio mas largo en mississippi
+(answer (longest (river (loc_2 (stateid mississippi:e)))))
+
+cuales estados bordean a new york
+(answer (state (next_to_2 (stateid new_york:e))))
+
+que es el punto mas alto en wyoming
+(answer (highest (place (loc_2 (stateid wyoming:e)))))
+
+que es el punto mas alto en iowa
+(answer (highest (place (loc_2 (stateid iowa:e)))))
+
+cuantas personas viven en hawaii
+(answer (population_1 (stateid hawaii:e)))
+
+cuales rios corren por estados bordeando a new mexico
+(answer (river (traverse_2 (state (next_to_2 (stateid new_mexico:e))))))
+
+que es la poblacion de erie pennsylvania
+(answer (population_1 (cityid erie:e pa:e)))
+
+que es el punto mas alto en rhode island
+(answer (highest (place (loc_2 (stateid rhode_island:e)))))
+

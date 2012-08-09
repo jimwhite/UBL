@@ -1,0 +1,75 @@
+where is the highest point in montana
+(lambda $0 e (loc:t (argmax $1 (and (place:t $1) (loc:t $1 montana:s)) (elevation:i $1)) $0))
+
+which state has the highest elevation
+(argmax $0 (state:t $0) (elevation:i $0))
+
+what is the capital of north dakota
+(capital:c north_dakota:s)
+
+what is the capital of utah
+(capital:c utah:s)
+
+what is the shortest river in iowa
+(argmin $0 (and (river:t $0) (loc:t $0 iowa:s)) (len:i $0))
+
+what are the major cities in oklahoma
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 oklahoma:s)))
+
+how long is the delaware river
+(len:i delaware_river:r)
+
+what is the lowest point in oregon
+(argmin $0 (and (place:t $0) (loc:t $0 oregon:s)) (elevation:i $0))
+
+what is the most populous state
+(argmax $0 (state:t $0) (population:i $0))
+
+what is the total population of the states that border texas
+(sum $0 (and (state:t $0) (next_to:t $0 texas:s)) (population:i $0))
+
+which states does the mississippi run through
+(lambda $0 e (and (state:t $0) (loc:t mississippi_river:r $0)))
+
+which state borders florida
+(lambda $0 e (and (state:t $0) (next_to:t $0 florida:s)))
+
+what state has the city flint
+(lambda $0 e (and (state:t $0) (loc:t flint_mi:c $0)))
+
+what states border rhode island
+(lambda $0 e (and (state:t $0) (next_to:t $0 rhode_island:s)))
+
+what is the largest city in minnesota by population
+(argmax $0 (and (city:t $0) (loc:t $0 minnesota:s)) (population:i $0))
+
+what is the area of the smallest state
+(area:i (argmin $0 (state:t $0) (size:i $0)))
+
+what is the area of the largest state
+(area:i (argmax $0 (state:t $0) (size:i $0)))
+
+what is the smallest state by area
+(argmin $0 (state:t $0) (area:i $0))
+
+how long is the north platte river
+(len:i north_platte_river:r)
+
+what is the highest point in colorado
+(argmax $0 (and (place:t $0) (loc:t $0 colorado:s)) (elevation:i $0))
+
+how many people live in riverside
+(population:i riverside_ca:c)
+
+what states surround kentucky
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+what state is columbus the capital of
+(lambda $0 e (and (state:t $0) (capital:t $0 columbus_oh:c)))
+
+where is the lowest point in the us
+(lambda $0 e (loc:t (argmin $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0))
+
+what is the lowest point in louisiana
+(argmin $0 (and (place:t $0) (loc:t $0 louisiana:s)) (elevation:i $0))
+

@@ -1,0 +1,75 @@
+que son los rios mayores en ohio
+(answer (major (river (loc_2 (stateid ohio:e)))))
+
+que es la poblacion de hawaii
+(answer (population_1 (stateid hawaii:e)))
+
+cuantos rios hay en idaho
+(answer (count (river (loc_2 (stateid idaho:e)))))
+
+e _:e))))
+(answer (state (loc_1 (cityid des_moines:e _:e))))
+
+cual estado tiene el pico mas alto en el pais
+(answer (state (loc_1 (highest (place all:e)))))
+
+cuantos rios tiene colorado
+(answer (count (river (loc_2 (stateid colorado:e)))))
+
+por cuantos estados corre el rio mississippi
+(answer (count (state (traverse_1 (riverid mississippi:e)))))
+
+que es el punto mas alto de el estado con la area mas grande
+(answer (highest (place (loc_2 (largest_one (area_1 (state all:e)))))))
+
+cuantas personas viven en kalamazoo
+(answer (population_1 (cityid kalamazoo:e _:e)))
+
+cual rio corre por mas estados
+(answer (most (river (traverse_2 (state all:e)))))
+
+que es la capital de el estado con el punto mas alto
+(answer (capital (loc_2 (state (loc_1 (highest (place all:e)))))))
+
+que es la area de alaska
+(answer (area_1 (stateid alaska:e)))
+
+cuantas ciudades mayores hay en florida
+(answer (count (major (city (loc_2 (stateid florida:e))))))
+
+que es el punto mas bajo de los us
+(answer (lowest (place (loc_2 (countryid usa:e)))))
+
+cuantas personas viven en la capital de texas
+(answer (population_1 (capital (loc_2 (stateid texas:e)))))
+
+que es la poblacion de portland maine
+(answer (population_1 (cityid portland:e me:e)))
+
+que tan grande esta texas
+(answer (size (stateid texas:e)))
+
+que es la poblacion de la capital de el estado mas pequeno
+(answer (population_1 (capital (loc_2 (smallest (state all:e))))))
+
+que es la poblacion de las ciudades mayores en wisconsin
+(answer (population_1 (major (city (loc_2 (stateid wisconsin:e))))))
+
+dame las ciudades en virginia
+(answer (city (loc_2 (stateid virginia:e))))
+
+que es el rio mas largo en los united states
+(answer (longest (river (loc_2 (countryid usa:e)))))
+
+cuantas ciudades hay en los us
+(answer (count (city (loc_2 (countryid usa:e)))))
+
+que rios corren por new york
+(answer (river (traverse_2 (stateid new_york:e))))
+
+que es la area de maine
+(answer (area_1 (stateid maine:e)))
+
+que rios no corren por tennessee
+(answer (exclude (river all:e) (traverse_2 (stateid tennessee:e))))
+

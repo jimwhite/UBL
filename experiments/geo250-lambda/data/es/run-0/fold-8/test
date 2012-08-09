@@ -1,0 +1,75 @@
+que es el estado mas pequeno en los usa
+(argmin $0 (and (state:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+que es la ciudad mas grande en georgia
+(argmax $0 (and (city:t $0) (loc:t $0 georgia:s)) (size:i $0))
+
+que es el punto mas bajo de el estado con la area mas grande
+(argmin $0 (and (place:t $0) (loc:t $0 (argmax $1 (state:t $1) (area:i $1)))) (elevation:i $0))
+
+cuales estados bordean a new hampshire
+(lambda $0 e (and (state:t $0) (next_to:t $0 new_hampshire:s)))
+
+que es la densidad de poblacion de maine
+(density:i maine:s)
+
+que es la poblacion de south dakota
+(population:i south_dakota:s)
+
+cuales estados bordean a kentucky
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+cuantos ciudadanos viven en california
+(population:i california:s)
+
+cual estado bordea a hawaii
+(lambda $0 e (and (state:t $0) (next_to:t $0 hawaii:s)))
+
+que son los puntos altos de los estados rodeando a mississippi
+(lambda $0 e (exists $1 (and (state:t $1) (next_to:t $1 mississippi:s) (high_point:t $1 $0))))
+
+en cual estado se encuentra la ciudad denver
+(lambda $0 e (and (state:t $0) (loc:t denver_co:c $0)))
+
+cuales estados bordean a south dakota
+(lambda $0 e (and (state:t $0) (next_to:t $0 south_dakota:s)))
+
+cuanto tiene de largo el rio colorado
+(len:i colorado_river:r)
+
+que es el punto mas bajo en texas
+(argmin $0 (and (place:t $0) (loc:t $0 texas:s)) (elevation:i $0))
+
+que es el punto mas alto en los usa
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+que es la poblacion de montana
+(population:i montana:s)
+
+que es el rio mas grande en illinois
+(argmax $0 (and (river:t $0) (loc:t $0 illinois:s)) (size:i $0))
+
+que tan grande esta la ciudad mas grande en alaska
+(size:i (argmax $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0)))
+
+que es el punto mas alto en kansas
+(argmax $0 (and (place:t $0) (loc:t $0 kansas:s)) (elevation:i $0))
+
+cual estado tiene la densidad de poblacion mas alta
+(argmax $0 (state:t $0) (density:i $0))
+
+que estado tiene la elevacion mas alta
+(argmax $1 (state:t $1) (elevation:i $1))
+
+que es la ciudad mas grande en wyoming
+(argmax $0 (and (city:t $0) (loc:t $0 wyoming:s)) (size:i $0))
+
+que tan alto esta el punto mas alto en montana
+(elevation:i (argmax $0 (and (place:t $0) (loc:t $0 montana:s)) (elevation:i $0)))
+
+que es el rio mas largo en florida
+(argmax $0 (and (river:t $0) (loc:t $0 florida:s)) (len:i $0))
+
+que tiene de largo el rio mississippi
+(len:i mississippi_river:r)
+

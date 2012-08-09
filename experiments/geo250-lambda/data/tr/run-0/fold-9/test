@@ -1,0 +1,75 @@
+usa nin en yuksek noktasi nedir
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+boston massachusetts in nufusu nedir
+(population:i boston_ma:c)
+
+texas nun nufusu nedir
+(population:i texas:s)
+
+us kac kilometrekaredir
+(size:i usa:co)
+
+hangi eyaletin kentucky ye siniri vardir
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+
+arizona daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 arizona:s)) (size:i $0))
+
+alaska daki en kucuk sehir nedir
+(argmin $0 (and (city:t $0) (loc:t $0 alaska:s)) (size:i $0))
+
+hangi eyaletlerde plano sehri vardir
+(lambda $0 e (and (state:t $0) (exists $1 (and (city:t $1) (named:t $1 plano:n) (loc:t $1 $0)))))
+
+vermont in baskenti nedir
+(capital:c vermont:s)
+
+wyoming in nufus yogunlugu nedir
+(density:i wyoming:s)
+
+tucson nun nufusu nedir
+(population:i tucson_az:c)
+
+en az nufuslu sehir nedir
+(argmin $0 (city:t $0) (population:i $0))
+
+nevada daki en yuksek nokta metre olarak nedir
+(argmax $0 (and (place:t $0) (loc:t $0 nevada:s)) (elevation:i $0))
+
+mississippi nehrinin icinden gectigi eyaletlerin nufuslari nelerdir
+(lambda $0 e (exists $1 (and (state:t $1) (loc:t mississippi_river:r $1) (population:t $1 $0))))
+
+washington eyaletindeki en genis nehir nedir
+(argmax $0 (and (river:t $0) (loc:t $0 washington:s)) (size:i $0))
+
+texas in nufus yogunlugu nedir
+(density:i texas:s)
+
+usa deki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 usa:co)) (size:i $0))
+
+en genis eyaletin ismini ver
+(argmax $0 (state:t $0) (size:i $0))
+
+hangi eyalet us deki en yusek noktayi kapsar
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (and (place:t $1) (loc:t $1 usa:co)) (elevation:i $1)) $0)))
+
+en az nufuslu eyalet nedir
+(argmin $0 (state:t $0) (population:i $0))
+
+indiana a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 indiana:s)))
+
+oregon daki en buyuk sehir nedir
+(argmax $0 (and (city:t $0) (loc:t $0 oregon:s)) (size:i $0))
+
+south carolina nin yuzolcumu nedir
+(area:i south_carolina:s)
+
+utah nun nufusu nedir
+(population:i utah:s)
+
+kentucky a siniri olan eyaletler nelerdir
+(lambda $0 e (and (state:t $0) (next_to:t $0 kentucky:s)))
+

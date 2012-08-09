@@ -1,0 +1,75 @@
+what state has the highest population
+(argmax $0 (state:t $0) (population:i $0))
+
+which state has the largest city
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (city:t $1) (size:i $1)) $0)))
+
+what is the longest river in the us
+(argmax $0 (and (river:t $0) (loc:t $0 usa:co)) (len:i $0))
+
+which state is the smallest
+(argmin $0 (state:t $0) (size:i $0))
+
+how many rivers does alaska have
+(count $0 (and (river:t $0) (loc:t $0 alaska:s)))
+
+what state has the greatest population density
+(argmax $0 (state:t $0) (density:i $0))
+
+which state 's capital city is the largest
+(lambda $0 e (and (state:t $0) (capital:t $0 (argmax $1 (capital:t $1) (size:i $1)))))
+
+what is the population of arizona
+(population:i arizona:s)
+
+how many states does the colorado river run through
+(count $0 (and (state:t $0) (loc:t colorado_river:r $0)))
+
+which state has the highest point
+(lambda $0 e (and (state:t $0) (loc:t (argmax $1 (place:t $1) (elevation:i $1)) $0)))
+
+how many people live in minneapolis minnesota
+(population:i minneapolis_mn:c)
+
+what are the major cities in wyoming
+(lambda $0 e (and (major:t $0) (city:t $0) (loc:t $0 wyoming:s)))
+
+what state has the largest population density
+(argmax $0 (state:t $0) (density:i $0))
+
+what is the biggest city in texas
+(argmax $0 (and (city:t $0) (loc:t $0 texas:s)) (size:i $0))
+
+what states does the delaware river run through
+(lambda $0 e (and (state:t $0) (loc:t delaware_river:r $0)))
+
+what is the longest river in texas
+(argmax $0 (and (river:t $0) (loc:t $0 texas:s)) (len:i $0))
+
+how many people live in washington
+(population:i washington:s)
+
+what is the smallest city in hawaii
+(argmin $0 (and (city:t $0) (loc:t $0 hawaii:s)) (size:i $0))
+
+what state 's capital is dover
+(lambda $0 e (and (state:t $0) (capital:t $0 dover_de:c)))
+
+what is the highest point in the country
+(argmax $0 (and (place:t $0) (loc:t $0 usa:co)) (elevation:i $0))
+
+what is the shortest river
+(argmin $0 (river:t $0) (len:i $0))
+
+what is the lowest point in massachusetts
+(argmin $0 (and (place:t $0) (loc:t $0 massachusetts:s)) (elevation:i $0))
+
+what rivers run through colorado
+(lambda $0 e (and (river:t $0) (loc:t $0 colorado:s)))
+
+which states border colorado
+(lambda $0 e (and (state:t $0) (next_to:t $0 colorado:s)))
+
+which state has the greatest population
+(argmax $0 (state:t $0) (population:i $0))
+
