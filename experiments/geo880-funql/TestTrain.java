@@ -17,9 +17,9 @@
 
 
 
-import tomkwiatkowski.ubl.learn.*;
-import tomkwiatkowski.ubl.lambda.*;
-import tomkwiatkowski.ubl.parser.*;
+import tom_kwiatkowski.ubl.learn.*;
+import tom_kwiatkowski.ubl.lambda.*;
+import tom_kwiatkowski.ubl.parser.*;
 
 public class TestTrain extends Train {
 
