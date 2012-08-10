@@ -1,1 +1,8 @@
 Look in experiments for details of how to run.
+
+This code is from Tom Kwiatkowski's page at Edinburgh: http://homepages.inf.ed.ac.uk/s0791051/
+The download link being: http://homepages.inf.ed.ac.uk/s0791051/UBL.tgz
+This is the code for Kwiatkowski et al at EMNLP 2010:
+
+Inducing probabilistic CCG grammars from logical form with higher-order unification. Tom Kwiatkowski, Luke Zettlemoyer, Sharon Goldwater and Mark Steedman. Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), Cambridge, MA, 2010
+http://www.aclweb.org/anthology/D10-1119.pdf
